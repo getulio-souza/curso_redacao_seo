@@ -3,16 +3,16 @@ import {
   NavbarContainer,
   CategoryContainer,
   LogoContainer,
+  Logo,
   NavbarInnerContainer,
   NavbarExtendedContainer,
-  NavbarLinkContainer,
   NavbarLink,
   SubscribeBtn,
   SubscribeText,
-  Logo,
+  OpenLinksBtn,
 } from "./navbar.style";
 import LogoImg from "../../assets/logo-2.png";
-
+// import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   return (
     <NavbarContainer>
@@ -32,6 +32,8 @@ const Navbar = () => {
               <SubscribeText>Inscreva-se</SubscribeText>
             </NavbarLink>
           </SubscribeBtn>
+          {/* botão mobile */}
+          <OpenLinksBtn>&#8801;</OpenLinksBtn>
         </CategoryContainer>
       </NavbarInnerContainer>
       <NavbarExtendedContainer></NavbarExtendedContainer>

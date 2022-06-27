@@ -1,20 +1,23 @@
-import React from 'react'
-import Banner from "../../assets/banner.jpg"
-import { HeaderContainer, HeaderBanner, HeaderContent, HeaderTitle, HeaderBtn } from './header.style';
+import React from "react";
+import {
+  HeaderContainer,
+  HeaderContent,
+  HeaderTitle,
+  HeaderBtn,
+  Banner,
+} from "./header.style";
+import bannerImg from "../../assets/typing_1.jpg";
 
 const Header = () => {
   return (
-      <HeaderContainer>
-          {/* Banner */}
-          <HeaderBanner src={Banner}>
-          {/* Content */}
-          <HeaderContent>
-              <HeaderTitle>Aprenda redação para SEO do jeito certo!</HeaderTitle>
-              <HeaderBtn>Saiba mais</HeaderBtn>
-          </HeaderContent>
-          </HeaderBanner>
+    <HeaderContainer>
+      <Banner src={bannerImg}></Banner>
+      <HeaderContent>
+        <HeaderTitle>Aprenda redação para SEO do jeito certo!</HeaderTitle>
+        <HeaderBtn>Saiba mais</HeaderBtn>
+      </HeaderContent>
     </HeaderContainer>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,6 +1,5 @@
 import Styled from "styled-components";
 import { Link } from "react-router-dom";
-// import Logo from "../../assets/logo.PNG"
 
 export const NavbarContainer = Styled.nav`
     width: 100%;
@@ -28,6 +27,17 @@ export const CategoryContainer = Styled.div`
     align-items: center;
     padding-right:50px;
     background-color:#fff;
+`;
+
+{/* hamburguer menu */ }
+export const OpenLinksBtn = Styled.p`
+   width:70px;
+   height: 50px;
+   color:#000;
+   font-weight:700;
+   border:none;
+   font-size: 45px;
+   cursor: pointer;
 `;
 
 export const Logo = Styled.img`
