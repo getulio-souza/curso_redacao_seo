@@ -2,6 +2,7 @@ import Styled from "styled-components";
 
 export const DiferenciaisContainer = Styled.div`
    text-align:center;
+   margin-top: 8rem;
    margin-bottom: 8rem;
    width:100%;
 `;
@@ -9,10 +10,19 @@ export const DiferenciaisTitle = Styled.h3`
    font-size: 2.5rem;
    margin-bottom: 4rem;
    font-family: inter;
+   @media(max-width:700px){
+  font-size:2.2rem;
+  margin-left:7px;
+  margin-right: 7px;
+  }
 `;
 export const DiferenciaisBoxes = Styled.div`
    display: flex;
    justify-content: space-evenly;
+   @media(max-width:700px){
+      display: grid;
+      gap:2rem;
+   }
 `;
 export const DiferencialBox = Styled.div`
    background-color: #000;
@@ -24,7 +34,7 @@ export const DiferencialBox = Styled.div`
     transform: translateY(-10px);
    }
 `;
-export const DirencialImg = Styled.img`
+export const DirencialIcon = Styled.img`
   font-size:30px;
   margin-top:10px;
 `;

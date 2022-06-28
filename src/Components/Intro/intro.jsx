@@ -28,8 +28,9 @@ function Intro() {
         <SecondContentText>
           É possível contar histórias que cativam, informam, ensinam e ainda
           sejam encontradas pelas pessoas na web.
-          Chegou a sua vez de aprender de
-          verdade como escrever para a internet.
+          <SecondContentText>
+          Chegou a sua vez de aprender de verdade como escrever para a internet.
+          </SecondContentText>
         </SecondContentText>
       </SecondContent>
     </IntroContainer>

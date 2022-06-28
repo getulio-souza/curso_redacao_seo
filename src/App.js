@@ -5,6 +5,7 @@ import Welcome from './Components/Welcome/welcome';
 import Diferenciais from './Components/Diferenciais/diferenciais';
 import Steps from './Components/Steps/steps';
 import AboutUs from './Components/AboutUs/aboutUs';
+import Footer from './Components/Footer/footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function Site() {
@@ -18,6 +19,7 @@ function Site() {
       <Diferenciais/>
       <Steps/>
       <AboutUs/>
+      <Footer/>
       {/* rotas de navegação */}
       <Routes>
         <Route path='/Como Funciona'/>

@@ -4,6 +4,9 @@ export const HeaderContainer = Styled.div`
     width: 100%;
     height:80vh;  
     margin-bottom: 8rem;
+    @media(max-width:700px){
+      margin-bottom: 1rem;
+    }
 `;
 
 export const Banner = Styled.img`
@@ -30,6 +33,10 @@ export const HeaderTitle = Styled.h1`
    color:#fff;
    max-width:400px;
    height: auto;
+   @media(max-width:700px){
+   font-size:1.5rem;
+   line-height:1.8rem;
+    }
 `;
 
 export const HeaderBtn = Styled.h2`
@@ -43,8 +50,13 @@ export const HeaderBtn = Styled.h2`
    cursor:pointer;
    transition:.5s;
    
+   @media(max-width:700px){
+   padding: 5px 15px;
+   }
+
    &:hover{
    background-color: #fff;
    color:#000;
+   
 }
 `;

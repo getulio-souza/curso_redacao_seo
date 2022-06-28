@@ -4,7 +4,7 @@ import {
   DiferenciaisTitle,
   DiferenciaisBoxes,
   DiferencialBox,
-  DirencialImg,
+  DirencialIcon,
   DiferencialText,
 } from "./diferenciais.style";
 
@@ -17,24 +17,24 @@ const Diferenciais = () => {
       <DiferenciaisBoxes>
         {/* diferencial 1 */}
         <DiferencialBox>
-          <DirencialImg src={FaHandsHelping}></DirencialImg>
+          <DirencialIcon src={FaHandsHelping}></DirencialIcon>
           <DiferencialText>Acompanhamento personalizado</DiferencialText>
         </DiferencialBox>
         {/* diferencial 2 */}
         <DiferencialBox>
-          <DirencialImg src={FaHandsHelping}></DirencialImg>
+          <DirencialIcon src={FaHandsHelping}></DirencialIcon>
           <DiferencialText>Versatilidade na escrita</DiferencialText>
         </DiferencialBox>
         {/* diferencial 3 */}
         <DiferencialBox>
-          <DirencialImg src={FaHandsHelping}></DirencialImg>
+          <DirencialIcon src={FaHandsHelping}></DirencialIcon>
           <DiferencialText>
             Possibilidade de crescer na carreira
           </DiferencialText>
         </DiferencialBox>
         {/* diferencial 4 */}
         <DiferencialBox>
-          <DirencialImg src={FaHandsHelping}></DirencialImg>
+          <DirencialIcon src={FaHandsHelping}></DirencialIcon>
           <DiferencialText>Preço que cabe no seu bolso</DiferencialText>
         </DiferencialBox>
       </DiferenciaisBoxes>

@@ -35,12 +35,14 @@ export const CategoryContainer = Styled.div`
     align-items: center;
     padding-right:50px;
     background-color:#fff;
+
+    @media (max-width:700px){
+    display: none;
+  }
 `;
 
-{
-  /* hamburguer menu */
-}
-export const OpenLinksBtn = Styled.p`
+{/* Menu mobile */}
+export const OpenLinksBtn = Styled.button`
    width:70px;
    height: 50px;
    color:#000;
@@ -50,7 +52,6 @@ export const OpenLinksBtn = Styled.p`
    cursor: pointer;
    transition: .5s;
 
-   {/* responsivo */}
   @media (min-width:700px){
     display: none;
   }

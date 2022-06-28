@@ -5,17 +5,28 @@ export const StepsContainer = Styled.div`
   margin-bottom: 8rem;
   width:100%;
   height:50vh;
+  @media(max-width:700px){
+    margin-bottom:4rem;
+    height:fit-content;
+  }
 `;
 
 export const StepsTitle = Styled.h2`
    font-size: 2.5rem;
    margin-bottom: 4rem;
    font-family: inter;
+   @media(max-width:700px){
+  font-size:2.2rem;
+  }
 `;
 
 export const StepsItems = Styled.div`
    display: flex;
    justify-content: space-evenly;
+   @media(max-width:700px){
+    display: grid;
+    gap: 2rem;
+   }
 `;
 
 export const StepItem = Styled.div`
@@ -41,4 +52,7 @@ export const StepText = Styled.h6`
   max-width:300px;
   margin:20px auto;
   font-family: inter;
+  @media(max-width:700px){
+     font-size: 1rem;
+   }
 `;
