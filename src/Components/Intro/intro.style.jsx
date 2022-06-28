@@ -3,9 +3,7 @@ import Styled from "styled-components";
 export const IntroContainer = Styled.div`
    width: 100vw;
    height: 100vh;
-   /* background-color: red; */
-   display:flex;
-   flex-direction: column;
+   margin-bottom: 8rem;
 `;
 
 export const FirstContent = Styled.div`

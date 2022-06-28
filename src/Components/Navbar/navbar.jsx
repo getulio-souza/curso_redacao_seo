@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   NavbarContainer,
   CategoryContainer,
@@ -10,12 +10,19 @@ import {
   SubscribeBtn,
   SubscribeText,
   OpenLinksBtn,
+  NavbarLinkExtended,
+  SubscribeBtnExtended,
+  SubscribeTextExtended,
 } from "./navbar.style";
 import LogoImg from "../../assets/logo-2.png";
-// import { GiHamburgerMenu } from "react-icons/gi";
+
 const Navbar = () => {
+  {
+    /* adicionando funcionalidade no botão mobile */
+  }
+  const [ExtendNavbar, setExtendNavbar] = useState(false);
   return (
-    <NavbarContainer>
+    <NavbarContainer ExtendNavbar={ExtendNavbar}>
       <NavbarInnerContainer>
         {/* right container */}
         <LogoContainer>
@@ -33,10 +40,32 @@ const Navbar = () => {
             </NavbarLink>
           </SubscribeBtn>
           {/* botão mobile */}
-          <OpenLinksBtn>&#8801;</OpenLinksBtn>
+          <OpenLinksBtn
+            onClick={() => {
+              setExtendNavbar((curr) => !curr);
+            }}
+          >
+            {ExtendNavbar ? <> &#10005;</> : <> &#8801; </>}
+          </OpenLinksBtn>
         </CategoryContainer>
       </NavbarInnerContainer>
-      <NavbarExtendedContainer></NavbarExtendedContainer>
+
+      {ExtendNavbar && (
+        <NavbarExtendedContainer>
+        {/* categorias */}
+        <NavbarLinkExtended to="/comofunciona">Como funciona</NavbarLinkExtended>
+        <NavbarLinkExtended to="/quemsomos">Quem somos</NavbarLinkExtended>
+          <NavbarLinkExtended to="/contato">Contato</NavbarLinkExtended>
+          
+        {/* Botão de inscrição */}
+        <SubscribeBtnExtended>
+          <NavbarLinkExtended to="/inscreva">
+            <SubscribeTextExtended to="/inscreva">Inscreva-se</SubscribeTextExtended>
+          </NavbarLinkExtended>
+        </SubscribeBtnExtended>
+      </NavbarExtendedContainer>
+      )}
+
     </NavbarContainer>
   );
 };

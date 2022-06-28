@@ -3,13 +3,19 @@ import { Link } from "react-router-dom";
 
 export const NavbarContainer = Styled.nav`
     width: 100%;
-    height: 80px;
+    height: ${(props) => (props.ExtendNavbar ? "100vh" : "80px")};
     display: flex;
     flex-direction:column;
     background-color: #fff;
+
+    @media (min-width:700px){
+      height:80px;
+    }
 `;
 
-{/* container da esquerda */ }
+{
+  /* container da esquerda */
+}
 export const LogoContainer = Styled.div`
     flex:30%;
     display: flex;
@@ -20,7 +26,9 @@ export const LogoContainer = Styled.div`
     font-weight:700;
 `;
 
-{/* container da direita */}
+{
+  /* container da direita */
+}
 export const CategoryContainer = Styled.div`
     flex:70%;
     display: flex;
@@ -29,7 +37,9 @@ export const CategoryContainer = Styled.div`
     background-color:#fff;
 `;
 
-{/* hamburguer menu */ }
+{
+  /* hamburguer menu */
+}
 export const OpenLinksBtn = Styled.p`
    width:70px;
    height: 50px;
@@ -38,6 +48,12 @@ export const OpenLinksBtn = Styled.p`
    border:none;
    font-size: 45px;
    cursor: pointer;
+   transition: .5s;
+
+   {/* responsivo */}
+  @media (min-width:700px){
+    display: none;
+  }
 `;
 
 export const Logo = Styled.img`
@@ -46,7 +62,9 @@ export const Logo = Styled.img`
   height: auto;
 `;
 
-{/* mantem o logo e os links divididos lado a lado na barra de navegação  */}
+{
+  /* mantem o logo e os links divididos lado a lado na barra de navegação  */
+}
 export const NavbarInnerContainer = Styled.div`
     width:100%;
     height:80px;
@@ -56,7 +74,6 @@ export const NavbarInnerContainer = Styled.div`
 {/* Aqui fica o container que vai agrupar os links*/}
 export const NavbarLinkContainer = Styled.div`
   display: flex;
-  
 `;
 
 {/* links individuais */}
@@ -68,23 +85,80 @@ export const NavbarLink = Styled(Link)`
   text-decoration: none;
   margin: 0 10px;
   font-family: inter;
+  transition: .5s;
+  &:hover{
+  transform: translateY(-5px);
+ 
+  {/* responsivo */}
+  @media (max-width:700px){
+    display: none;
+  }
+`;
+export const NavbarLinkExtended = Styled(Link)`
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align:center;
+  text-decoration: none;
+   margin: 5px 10px;
+  font-family: inter;
 `;
 
-
 export const NavbarExtendedContainer = Styled.div`
-    
+    width:100%;
+    height:100vh;
+    background-color:#000;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:3;
+
+    @media(min-width:700px){
+      display: none;
+    }
+`;
+
+export const SubscribeBtnExtended = Styled.div`
+  margin-top:5px;
+  padding: 15px 20px;
+  height:20px;
+  border-radius: 20px;
+  background-color: #fff;
+  font-weight:700;
+ @media(min-width:700px){
+      display: none;
+    }
 `;
 
 export const SubscribeBtn = Styled.div`
   padding: 10px 20px;
   height:20px;
   border-radius: 20px;
-  background-color: #000;
+  background-color: transparent;
+  border:1px solid #000;
   margin:0 auto;
   font-weight:700;
   margin-left:10px;
+  transition: .5s;
+  
+  &:hover{
+  background-color: #000;
+  }
+
+  {/* responsivo */}
+  @media (max-width:700px){
+    display: none;
+  } 
   `;
 
 export const SubscribeText = Styled.a`
-  color:#fff;
+  color:#000;
+  &:hover{
+    color:#fff;
+  }
+`;
+
+export const SubscribeTextExtended = Styled.a`
+  color:#000;
 `;

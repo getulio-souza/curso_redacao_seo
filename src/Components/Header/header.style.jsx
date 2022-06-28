@@ -3,7 +3,7 @@ import Styled from "styled-components";
 export const HeaderContainer = Styled.div`
     width: 100%;
     height:80vh;  
-    /* position: relative; */
+    margin-bottom: 8rem;
 `;
 
 export const Banner = Styled.img`
@@ -33,11 +33,18 @@ export const HeaderTitle = Styled.h1`
 `;
 
 export const HeaderBtn = Styled.h2`
-   background-color: #fff;
-   color: #000;
+   background-color: transparent;
+   border:1px solid #fff;
+   color: #fff;
    width: fit-content;
    padding: 10px 30px;
    border-radius:20px;
    text-align:right;
    cursor:pointer;
+   transition:.5s;
+   
+   &:hover{
+   background-color: #fff;
+   color:#000;
+}
 `;

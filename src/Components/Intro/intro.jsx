@@ -11,7 +11,7 @@ import {
 } from "./intro.style";
 
 import introImg1 from "../../assets/introimg1.jpg";
-// import introImg2 from "../../assets";
+import introImg2 from "../../assets/introimg2.jpg";
 
 function Intro() {
   return (
@@ -24,7 +24,7 @@ function Intro() {
         <FirstContentImg src={introImg1}></FirstContentImg>
       </FirstContent>
       <SecondContent>
-        <SecondContentImg src={introImg1}></SecondContentImg>
+        <SecondContentImg src={introImg2}></SecondContentImg>
         <SecondContentText>
           É possível contar histórias que cativam, informam, ensinam e ainda
           sejam encontradas pelas pessoas na web.
