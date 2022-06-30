@@ -13,12 +13,11 @@ import {
   ModalCloseBtn,
 } from "./subscribeModal.style";
 import ModalImg from "../../assets/modal/modal_btn_subscribe.jpg"
-import CloseModalBtn from "../../assets/modal/close.png"
 
-function SubscribeModal() {
+function SubscribeModal({closeModal}) {
   return (
     <ModalContainer>
-        <ModalCloseBtn src={CloseModalBtn}></ModalCloseBtn>
+        <ModalCloseBtn onClick={()=> closeModal(false)}>X</ModalCloseBtn>
        {/* left column */}
       <ModalLeftColumn>
         <ModalLeftColumnTitle>VAMOS COMEÇAR?</ModalLeftColumnTitle>

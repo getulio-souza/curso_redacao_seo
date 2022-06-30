@@ -1,7 +1,7 @@
 import Styled from "styled-components";
 
 export const ModalContainer = Styled.div`
-position: absolute;
+position: fixed;
 height:fit-content;
 top: 50%;
 left:50%;
@@ -9,12 +9,11 @@ transform: translate(-50%, -50%);
 display: flex;
 flex-direction: row;
 z-index: 3;
+box-shadow: 2px 5px 7px #111010;
 cursor: default;
 `;
 
-
 export const ModalLeftColumn = Styled.div`
-border-radius:10px 0px 0px 10px;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -35,7 +34,6 @@ font-family:inter;
 `;
 
 export const ModalRightColumn = Styled.div`
-border-radius:0px 10px 10px 0px;
 background-color:#fff;
 padding:50px;
 `;
@@ -51,23 +49,26 @@ export const ModalRightColumnImage = Styled.img`
 `;
 
 export const ModalRightColumnForm = Styled.form`
+ display: grid;
+ grid-template-columns: 1fr 1fr;
 `;
 
 export const ModalRightColumnInput = Styled.input`
 border-style: none;
 border-bottom: 0.5px solid #D3D3D3;
 text-align:center;
-margin:5px;
+margin:10px;
 padding:5px;
 `;
 
 export const ModalRightColumnButton = Styled.button`
  border-style: none;
- margin-top: 10px;
+ margin-top: 20px;
  padding:10px 30px;
  border-radius:10px;
  background-color: #000;
  color: #fff;
+ font-size:15px;
  font-weight:700;
  transition:.5s;
  cursor: pointer;
@@ -78,10 +79,10 @@ export const ModalRightColumnButton = Styled.button`
  }
 `;
 
-export const ModalCloseBtn = Styled.img`
+export const ModalCloseBtn = Styled.div`
  width: 20px;
   font-family: inter;
-  font-size:2rem;
+  font-size:1.5em;
   color: #000;
   position:absolute;
   top:0;

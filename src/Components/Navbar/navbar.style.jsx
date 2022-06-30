@@ -132,9 +132,8 @@ export const SubscribeBtnExtended = Styled.div`
     }
 `;
 
-export const SubscribeBtn = Styled.div`
-  padding: 10px 20px;
-  height:20px;
+export const SubscribeBtn = Styled.button`
+  padding: 10px 20px; 
   border-radius: 20px;
   background-color: transparent;
   border:1px solid #000;
@@ -155,11 +154,10 @@ export const SubscribeBtn = Styled.div`
   } 
   `;
 
-export const SubscribeText = Styled.a`
-  color:#000;
-  
-`;
-
 export const SubscribeTextExtended = Styled.a`
   color:#fff;
+`;
+
+export const Modal = Styled.div`
+  text-align:center;
 `;

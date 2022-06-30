@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   NavbarContainer,
+  Modal,
   CategoryContainer,
   LogoContainer,
   Logo,
@@ -8,15 +9,19 @@ import {
   NavbarExtendedContainer,
   NavbarLink,
   SubscribeBtn,
-  SubscribeText,
   OpenLinksBtn,
   NavbarLinkExtended,
   SubscribeBtnExtended,
   SubscribeTextExtended,
 } from "./navbar.style";
 import LogoImg from "../../assets/logo-2.png";
-import SubscribeModal from "../SubscribeModal/subscribeModal"
+import SubscribeModal from "../SubscribeModal/subscribeModal";
 const Navbar = () => {
+  {
+    /* botão modal */
+  }
+  const [openModal, setOpenModal] = useState(false);
+
   {
     /* adicionando funcionalidade no botão mobile */
   }
@@ -24,23 +29,34 @@ const Navbar = () => {
   return (
     <NavbarContainer ExtendNavbar={ExtendNavbar}>
       <NavbarInnerContainer>
+
         {/* right container */}
         <LogoContainer>
           <Logo src={LogoImg}></Logo>
         </LogoContainer>
+
         {/* left container */}
         <CategoryContainer>
           <NavbarLink to="/comofunciona">Como funciona</NavbarLink>
           <NavbarLink to="/quemsomos">Quem somos</NavbarLink>
           <NavbarLink to="/contato">Contato</NavbarLink>
-          {/* Botão de inscrição */}
-          <SubscribeBtn>
+
+          {/* subscribe button */}
+          <SubscribeBtn
+            onClick={() => {
+              setOpenModal(true);
+            }}
+          >
             <NavbarLink to="/inscreva">
-              <SubscribeText>Inscreva-se</SubscribeText>
-              <SubscribeModal/>
+              Inscreva-se
             </NavbarLink>
           </SubscribeBtn>
-          {/* botão mobile */}
+          <Modal>
+              {/* modal button */}
+              {openModal && <SubscribeModal closeModal={setOpenModal} />}
+          </Modal>
+
+          {/* mobile button */}
           <OpenLinksBtn
             onClick={() => {
               setExtendNavbar((curr) => !curr);
@@ -53,20 +69,23 @@ const Navbar = () => {
 
       {ExtendNavbar && (
         <NavbarExtendedContainer>
-        {/* categorias */}
-        <NavbarLinkExtended to="/comofunciona">Como funciona</NavbarLinkExtended>
-        <NavbarLinkExtended to="/quemsomos">Quem somos</NavbarLinkExtended>
-          <NavbarLinkExtended to="/contato">Contato</NavbarLinkExtended>
-          
-        {/* Botão de inscrição */}
-        <SubscribeBtnExtended>
-          <NavbarLinkExtended to="/inscreva">
-            <SubscribeTextExtended to="/inscreva">Inscreva-se</SubscribeTextExtended>
+          {/* categories */}
+          <NavbarLinkExtended to="/comofunciona">
+            Como funciona
           </NavbarLinkExtended>
-        </SubscribeBtnExtended>
-      </NavbarExtendedContainer>
-      )}
+          <NavbarLinkExtended to="/quemsomos">Quem somos</NavbarLinkExtended>
+          <NavbarLinkExtended to="/contato">Contato</NavbarLinkExtended>
 
+          {/* subscribe button */}
+          <SubscribeBtnExtended>
+            <NavbarLinkExtended>
+              <SubscribeTextExtended>
+                Inscreva-se
+              </SubscribeTextExtended>
+            </NavbarLinkExtended>
+          </SubscribeBtnExtended>
+        </NavbarExtendedContainer>
+      )}
     </NavbarContainer>
   );
 };
