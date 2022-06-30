@@ -18,13 +18,16 @@ export const AboutUsContent = Styled.div`
    @media(max-width:700px){
      display: grid;
      gap: 2rem;
-   }
+    }
 `;
 
 export const AboutUsBoxContent = Styled.div`
   display: flex;
   flex-direction: column;
-`;
+  @media(max-width:700px){
+    margin: 0 auto;
+  }
+  `;
 
 export const AboutUsText = Styled.h6`
    max-width:400px;

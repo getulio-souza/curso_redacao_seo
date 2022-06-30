@@ -15,7 +15,7 @@ import {
   SubscribeTextExtended,
 } from "./navbar.style";
 import LogoImg from "../../assets/logo-2.png";
-
+import SubscribeModal from "../SubscribeModal/subscribeModal"
 const Navbar = () => {
   {
     /* adicionando funcionalidade no botão mobile */
@@ -37,6 +37,7 @@ const Navbar = () => {
           <SubscribeBtn>
             <NavbarLink to="/inscreva">
               <SubscribeText>Inscreva-se</SubscribeText>
+              <SubscribeModal/>
             </NavbarLink>
           </SubscribeBtn>
           {/* botão mobile */}

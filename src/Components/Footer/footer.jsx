@@ -31,7 +31,7 @@ function Footer() {
         <FooterLogo src={FooterLogoImg}></FooterLogo>
         <FooterText>
           Este site foi criado para democratizar a formação de produtores de
-          conteúdo para SEO que desejam se especializar na área.
+          conteúdo para SEO que desejam se especializar na área de redação para web.
         </FooterText>
         <FooterSocialIcons>
           <FooterSocialIcon src={FacebookIcon}></FooterSocialIcon>
@@ -54,7 +54,7 @@ function Footer() {
 
       {/* form */}
       <FooterFormContainer>
-              <FooterFormTitle>Entre em contato com a gente</FooterFormTitle>
+              <FooterFormTitle>Dúvidas? Mande uma mensagem pra gente</FooterFormTitle>
               <FooterForm>
               <FooterFormLabel placeholder="Nome"></FooterFormLabel>
               <FooterFormLabel placeholder="Telefone/Celular"></FooterFormLabel>

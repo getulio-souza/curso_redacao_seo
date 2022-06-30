@@ -2,12 +2,13 @@ import Styled from "styled-components";
 
 export const FooterContainer = Styled.div`
   width:100%;
-  height:400px;
+  height:500px;
   background-color: #000000;
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
   justify-items:center;
   align-items:center;
+  /* margin-bottom:4rem; */
 
   @media(max-width:700px){
   display:grid;
@@ -27,7 +28,7 @@ export const FooterIntro = Styled.div`
 `;
 
 export const FooterLogo = Styled.img`
-  margin:10px;
+  margin:2rem 0;
   max-width:180px;
   height: auto;
   
@@ -39,6 +40,7 @@ export const FooterText = Styled.div`
   padding:0 10px;
   font-family:inter;
   font-size: 15px;
+  margin-bottom: 2rem;
 `;
 
 export const FooterSocialIcons = Styled.div`
@@ -123,8 +125,10 @@ export const FooterForm = Styled.div`
 export const FooterFormTitle = Styled.h4`
    color:#fff;
    font-size:25px;
-   text-align:center;
    width:fit-content;
+   @media(max-width:700px){
+    text-align:center;
+   }
 `;
 
 export const FooterFormLabel = Styled.input`
@@ -140,8 +144,7 @@ export const FooterFormBtn = Styled.div`
    font-weight:700;
    text-align:center;
    border:1px solid #fff;
-   padding:5px;
-   width:200px;
+   padding:10px;
    transition:.5s;
    border-radius: 5px;
    cursor:pointer;
@@ -152,7 +155,7 @@ export const FooterFormBtn = Styled.div`
 `;
 
 export const FooterLabelTextArea = Styled.textarea`
-   max-width:210px;
+   width:206px;
    border-radius: 5px;
 
 `;

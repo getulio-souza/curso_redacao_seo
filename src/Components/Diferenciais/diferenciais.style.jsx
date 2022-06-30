@@ -34,7 +34,7 @@ export const DiferencialBox = Styled.div`
     transform: translateY(-10px);
    }
 `;
-export const DirencialIcon = Styled.img`
+export const DirencialIcon = Styled.i`
   font-size:30px;
   margin-top:10px;
 `;

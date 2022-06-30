@@ -43,11 +43,16 @@ export const FirstContentImg = Styled.img`
    border-radius: 20px;
    box-shadow: 2px 5px 7px #000;
    @media (max-width:700px){
-      width:250px;
+   max-width:350px;
+   margin: 0 auto;
    }
    
   `;
 
-export const SecondContentImg = Styled(FirstContentImg)``;
+export const SecondContentImg = Styled(FirstContentImg)`
+  @media (max-width: 700px){
+   margin: 0 auto;
+  }
+`;
 
 

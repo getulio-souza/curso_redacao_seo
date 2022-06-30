@@ -30,7 +30,11 @@ export const StepsItems = Styled.div`
 `;
 
 export const StepItem = Styled.div`
-
+  cursor: default;
+  transition:.5s;
+  &hover{
+    transform: translateY(5px);
+  }
 `;
 
 export const StepIcon = Styled.div`

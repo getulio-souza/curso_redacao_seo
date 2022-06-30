@@ -138,13 +138,15 @@ export const SubscribeBtn = Styled.div`
   border-radius: 20px;
   background-color: transparent;
   border:1px solid #000;
+  color: #000;
   margin:0 auto;
   font-weight:700;
   margin-left:10px;
   transition: .5s;
-  
+  cursor:pointer;
   &:hover{
   background-color: #000;
+  color: #fff;
   }
 
   {/* responsivo */}
@@ -155,11 +157,9 @@ export const SubscribeBtn = Styled.div`
 
 export const SubscribeText = Styled.a`
   color:#000;
-  &:hover{
-    color:#fff;
-  }
+  
 `;
 
 export const SubscribeTextExtended = Styled.a`
-  color:#000;
+  color:#fff;
 `;
