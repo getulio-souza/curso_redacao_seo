@@ -10,9 +10,12 @@ export const FooterContainer = Styled.div`
   align-items:center;
   /* margin-bottom:4rem; */
 
-  @media(max-width:700px){
-  display:grid;
-  grid-template-columns:1fr;
+  @media(max-width:900px){
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
   height: fit-content;
   padding-bottom:30px;
   }
@@ -21,7 +24,7 @@ export const FooterContainer = Styled.div`
 export const FooterIntro = Styled.div`
  margin:0 auto;
  padding: 20px;
- @media(max-width:700px){
+ @media(max-width:900px){
     text-align:center;
     margin-bottom:2rem;
  }
@@ -51,7 +54,7 @@ export const FooterSocialIcons = Styled.div`
   color:#fff;
   margin-top: 20px;
   padding:0 10px;
-  @media(max-width:700px){
+  @media(max-width:900px){
     margin-bottom:1rem;
     justify-content:center;
   }
@@ -74,7 +77,7 @@ export const FooterCategories = Styled.div`
   flex-direction:column;
   justify-content:center;
   text-align:center;
-  @media(max-width:700px){
+  @media(max-width:900px){
     margin-bottom:2rem;
   }
 `;
@@ -93,7 +96,6 @@ line-height:2rem;
 font-weight:700;
 transition:.5s;
 cursor:pointer;
-
 &:hover{
     transform: translateX(15px);
 }
@@ -114,6 +116,9 @@ export const FooterCategoryBtn = Styled.button`
 
 export const FooterFormContainer = Styled.div`
    max-width:200px;
+   @media(max-width:900px){
+    margin-bottom: 2rem;
+   }
 `;
 
 export const FooterForm = Styled.div`
@@ -151,6 +156,9 @@ export const FooterFormBtn = Styled.div`
    &:hover{
     background-color:transparent;
     color:#fff;
+   }
+   @media(max-width: 900px){
+    margin:0 auto;
    }
 `;
 

@@ -2,6 +2,7 @@ import Styled from "styled-components";
 
 export const StepsContainer = Styled.div`
   text-align:center;
+  margin-top:10rem;
   margin-bottom: 8rem;
   width:100%;
   height:50vh;

@@ -1,12 +1,11 @@
 import Styled from "styled-components";
 
 export const WelcomeContainer = Styled.div`
-  width:100%;
   max-width:600px;
   height:100vh;
   text-align:center;
   margin: 0 auto;
-  
+  margin-bottom: 8rem;
   @media(max-width:900px){
   margin-bottom: 4rem;
   height:fit-content;
