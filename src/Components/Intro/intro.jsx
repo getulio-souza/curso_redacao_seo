@@ -4,9 +4,8 @@ import {
   IntroContainer,
   FirstContent,
   FirstContentText,
-  FirstContentImg,
+  ContentImg,
   SecondContent,
-  SecondContentImg,
   SecondContentText,
 } from "./intro.style";
 
@@ -21,10 +20,10 @@ function Intro() {
           Cansado de pagar caro para aprender a escrever textos que não alcançam
           as primeiras posições no Google?
         </FirstContentText>
-        <FirstContentImg src={introImg1}></FirstContentImg>
+        <ContentImg src={introImg1}></ContentImg>
       </FirstContent>
       <SecondContent>
-        <SecondContentImg src={introImg2}></SecondContentImg>
+        <ContentImg src={introImg2}></ContentImg>
         <SecondContentText>
           É possível contar histórias que cativam, informam, ensinam e ainda
           sejam encontradas pelas pessoas na web.

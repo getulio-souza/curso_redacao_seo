@@ -10,6 +10,7 @@ import {
   NavbarLink,
   SubscribeBtn,
   OpenLinksBtn,
+  LoginBtn,
   NavbarLinkExtended,
   SubscribeBtnExtended,
   SubscribeTextExtended,
@@ -29,7 +30,6 @@ const Navbar = () => {
   return (
     <NavbarContainer ExtendNavbar={ExtendNavbar}>
       <NavbarInnerContainer>
-
         {/* right container */}
         <LogoContainer>
           <Logo src={LogoImg}></Logo>
@@ -47,13 +47,11 @@ const Navbar = () => {
               setOpenModal(true);
             }}
           >
-            <NavbarLink to="/inscreva">
-              Inscreva-se
-            </NavbarLink>
+            <NavbarLink to="/inscreva">Inscreva-se</NavbarLink>
           </SubscribeBtn>
           <Modal>
-              {/* modal button */}
-              {openModal && <SubscribeModal closeModal={setOpenModal} />}
+            {/* modal button */}
+            {openModal && <SubscribeModal closeModal={setOpenModal} />}
           </Modal>
 
           {/* mobile button */}
@@ -64,6 +62,11 @@ const Navbar = () => {
           >
             {ExtendNavbar ? <> &#10005;</> : <> &#8801; </>}
           </OpenLinksBtn>
+
+          <LoginBtn>
+          <NavbarLink to="/quemsomos">Entrar</NavbarLink>
+          </LoginBtn>
+          
         </CategoryContainer>
       </NavbarInnerContainer>
 
@@ -79,9 +82,7 @@ const Navbar = () => {
           {/* subscribe button */}
           <SubscribeBtnExtended>
             <NavbarLinkExtended>
-              <SubscribeTextExtended>
-                Inscreva-se
-              </SubscribeTextExtended>
+              <SubscribeTextExtended>Inscreva-se</SubscribeTextExtended>
             </NavbarLinkExtended>
           </SubscribeBtnExtended>
         </NavbarExtendedContainer>

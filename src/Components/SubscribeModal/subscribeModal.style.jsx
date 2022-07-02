@@ -11,6 +11,9 @@ flex-direction: row;
 z-index: 3;
 box-shadow: 2px 5px 7px #111010;
 cursor: default;
+@media(max-width:700px){
+  display: grid;
+}
 `;
 
 export const ModalLeftColumn = Styled.div`
@@ -80,7 +83,7 @@ export const ModalRightColumnButton = Styled.button`
 `;
 
 export const ModalCloseBtn = Styled.div`
- width: 20px;
+  width: 20px;
   font-family: inter;
   font-size:1.5em;
   color: #000;
@@ -93,5 +96,8 @@ export const ModalCloseBtn = Styled.div`
   cursor: pointer;
   &:hover{
     color: red;
+  }
+  @media (max-width:700px){
+   color:#fff;
   }
 `;

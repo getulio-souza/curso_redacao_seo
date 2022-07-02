@@ -5,8 +5,8 @@ export const StepsContainer = Styled.div`
   margin-bottom: 8rem;
   width:100%;
   height:50vh;
-  @media(max-width:700px){
-    margin-bottom:4rem;
+  @media(max-width:900px){
+    margin-bottom:2rem;
     height:fit-content;
   }
 `;
@@ -23,7 +23,7 @@ export const StepsTitle = Styled.h2`
 export const StepsItems = Styled.div`
    display: flex;
    justify-content: space-evenly;
-   @media(max-width:700px){
+   @media(max-width:900px){
     display: grid;
     gap: 2rem;
    }

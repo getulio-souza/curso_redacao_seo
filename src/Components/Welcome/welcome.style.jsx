@@ -6,21 +6,20 @@ export const WelcomeContainer = Styled.div`
   height:100vh;
   text-align:center;
   margin: 0 auto;
-  margin-bottom: 8rem;
   
-  @media(max-width:700px){
-  margin-bottom: 1rem;
+  @media(max-width:900px){
+  margin-bottom: 4rem;
   height:fit-content;
   }
 `;
 
 export const WelcomeTitle = Styled.h2`
-   font-size:2.5rem;
-   /* margin: 0 2rem; */
-   margin-bottom: 2rem;
+  font-size:2.5rem;
   font-family:inter;
   @media(max-width:700px){
-   font-size:2rem;
+    margin-bottom: 4rem;
+    font-size:2.2rem;
+  margin: 10px;
   }
 `;
 

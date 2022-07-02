@@ -1,22 +1,25 @@
 import Styled from "styled-components";
 
 export const IntroContainer = Styled.div`
+   text-align:center;
    width: 100vw;
    height: 100vh;
-   margin-bottom: 8rem;
    @media (max-width:700px){
+      margin: 0 auto;
+      margin-bottom: 8rem;
       height:fit-content;
    }
 `;
 
 export const FirstContent = Styled.div`
    display: flex;
-   gap: 4rem;
    justify-content: center;
-   align-items: center;
+   align-items:center;
+   gap: 4rem;
    margin: 4rem 8rem;
-  @media (max-width:700px){
+  @media (max-width:900px){
     display:grid;
+    align-items:center;
   } 
    `;
 
@@ -37,22 +40,15 @@ export const FirstContentText = Styled.h4`
 export const SecondContentText = Styled(FirstContentText)`
 `;
 
-export const FirstContentImg = Styled.img`
+export const ContentImg = Styled.img`
    width: 500px;
    height:auto;
    border-radius: 20px;
    box-shadow: 2px 5px 7px #000;
-   @media (max-width:700px){
-   max-width:350px;
+   @media (max-width:900px){
+   max-width: 350px;
    margin: 0 auto;
    }
    
   `;
-
-export const SecondContentImg = Styled(FirstContentImg)`
-  @media (max-width: 700px){
-   margin: 0 auto;
-  }
-`;
-
 

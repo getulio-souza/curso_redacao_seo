@@ -13,9 +13,9 @@ import AboutUsImage from "./../../assets/people2_about.jpg";
 function AboutUs() {
   return (
     <AboutUsContainer>
-      <AboutUsTitle>Quem somos</AboutUsTitle>
       <AboutUsContent>
         <AboutUsBoxContent>
+      <AboutUsTitle>Quem somos</AboutUsTitle>
           <AboutUsText>
             O curso de redação para SEO foi desenvolvido por profissionais com
             vasta experiência no mercado de marketing digital.

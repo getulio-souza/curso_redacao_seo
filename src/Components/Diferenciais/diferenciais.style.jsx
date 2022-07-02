@@ -2,9 +2,11 @@ import Styled from "styled-components";
 
 export const DiferenciaisContainer = Styled.div`
    text-align:center;
-   margin-top: 8rem;
    margin-bottom: 8rem;
    width:100%;
+   @media (min-width:850px){
+      margin-top: 2rem;
+   }
 `;
 export const DiferenciaisTitle = Styled.h3`
    font-size: 2.5rem;
@@ -19,10 +21,11 @@ export const DiferenciaisTitle = Styled.h3`
 export const DiferenciaisBoxes = Styled.div`
    display: flex;
    justify-content: space-evenly;
-   @media(max-width:700px){
+   @media(max-width:900px){
       display: grid;
       gap:2rem;
    }
+
 `;
 export const DiferencialBox = Styled.div`
    background-color: #000;

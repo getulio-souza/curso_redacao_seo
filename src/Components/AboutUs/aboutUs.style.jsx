@@ -15,19 +15,18 @@ export const AboutUsTitle = Styled.h2`
 export const AboutUsContent = Styled.div`
    display:flex;
    justify-content:space-evenly;
-   @media(max-width:700px){
-     display: grid;
-     gap: 2rem;
+   align-items:center;
+   @media(max-width:900px){
+     display: flex;
+     flex-direction:column;
     }
 `;
 
 export const AboutUsBoxContent = Styled.div`
-  display: flex;
-  flex-direction: column;
-  @media(max-width:700px){
-    margin: 0 auto;
-  }
-  `;
+@media(max-width:900px){
+    margin-bottom: 1rem;
+   }
+`;
 
 export const AboutUsText = Styled.h6`
    max-width:400px;
