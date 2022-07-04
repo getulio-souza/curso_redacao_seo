@@ -24,6 +24,7 @@ export const StepsTitle = Styled.h2`
 export const StepsItems = Styled.div`
    display: flex;
    justify-content: space-evenly;
+   margin-bottom:3rem;
    @media(max-width:900px){
     display: grid;
     gap: 2rem;
@@ -60,4 +61,23 @@ export const StepText = Styled.h6`
   @media(max-width:700px){
      font-size: 1rem;
    }
+`;
+
+export const CTABtn = Styled.button`
+  margin-bottom: 4rem;
+  padding: 20px 40px; 
+  border-radius: 20px;
+  background-color: yellow;
+  border:1px solid #000;
+  color: #000;
+  margin:0 auto;
+  font-weight:700;
+  margin-left:10px;
+  transition: .5s;
+  cursor:pointer;
+  transition:.5s;
+  &:hover{
+  background-color: #000;
+  color:#fff;
+  }
 `;

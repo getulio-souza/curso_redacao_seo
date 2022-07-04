@@ -6,26 +6,29 @@ import Diferenciais from './Components/Diferenciais/diferenciais';
 import Steps from './Components/Steps/steps';
 import AboutUs from './Components/AboutUs/aboutUs';
 import Footer from './Components/Footer/footer';
+import SelectPlans from './Components/Select_Plans/select_plans';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function Site() {
   return (
     <Router>
-      {/* páginas do site */}
+      {/* Categorias do site */}
       <Navbar />
-      <Header/>
+      {/* <Header/>
       <Intro/>
       <Welcome/>
       <Diferenciais/>
       <Steps/>
       <AboutUs/>
-      <Footer/>
+      <Footer/> */}
+      <SelectPlans/>
       {/* rotas de navegação */}
       <Routes>
         <Route path='/Como Funciona'/>
         <Route path='/Quem Somos'/>
         <Route path='/Contato'/>
         <Route path='/Inscreva-se'/>
+        <Route path='./select_plans'/>
       </Routes>
     </Router>
   );

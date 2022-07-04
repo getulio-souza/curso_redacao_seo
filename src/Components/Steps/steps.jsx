@@ -6,6 +6,7 @@ import {
   StepItem,
   StepIcon,
   StepText,
+  CTABtn,
 } from "./steps.style";
 
 function Steps() {
@@ -36,6 +37,10 @@ function Steps() {
           </StepText>
         </StepItem>
       </StepsItems>
+      {/* plans cta button */}
+      <CTABtn>
+        Conheça os planos
+      </CTABtn>
     </StepsContainer>
   );
 }
