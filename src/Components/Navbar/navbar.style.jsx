@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 
 export const NavbarContainer = Styled.nav`
     width: 100%;
-    height: ${(props) => (props.ExtendNavbar ? "100vh" : "80px")};
+    height: ${(props)=> (props.ExtendNavbar ? "100vh" : "80px")};
     display: flex;
     flex-direction:column;
     background-color: #fff;
 
-    @media (min-width:700px){
+    @media (min-width:900px){
       height:80px;
     }
 `;
 
-{
-  /* container da esquerda */
-}
+//38:57
+
+{/* container da esquerda */}
 export const LogoContainer = Styled.div`
     flex:30%;
     display: flex;
@@ -35,34 +35,34 @@ export const Logo = Styled.img`
   }
 `;
 
-{
-  /* container da direita */
-}
+{/* container da direita */}
 export const CategoryContainer = Styled.div`
     display: flex;
     align-items: center;
     padding-right:50px;
     background-color:#fff;
-   @media(max-width:800px){
+   @media(max-width:900px){
      display:none;
    }
 `;
 
-{/* Menu mobile */}
+{/* Menu mobile button */}
 export const OpenLinksBtn = Styled.button`
-   background-color: transparent;
-   color:#000;
-   font-weight:700;
-   border:none;
-   font-size: 45px;
-   cursor: pointer;
-   transition: .5s;
-  @media (min-width:700px){
-    display: none;
+      background-color: transparent;
+      color:#000;
+      border:none;
+      width:70px;
+      height:50px;
+      font-weight:700;
+      font-size: 45px;
+      cursor: pointer;
+      transition: .5s;
+      z-index:3;
+  @media(min-width:900px){
+    display:none;
   }
 `;
 
-{/* mantem o logo e os links divididos lado a lado na barra de navegação */}
 export const NavbarInnerContainer = Styled.div`
     width:100%;
     height:80px;
@@ -74,11 +74,10 @@ export const NavbarLinkContainer = Styled.div`
   display: flex;
 `;
 
-{/* links individuais */}
 export const NavbarLink = Styled.a`
   color: #000;
   font-size: 20px;
-  padding: 0 10px;
+  padding: 10px;
   text-align:center;
   text-decoration: none;
   margin: 0 10px;
@@ -89,32 +88,47 @@ export const NavbarLink = Styled.a`
   transform: translateY(-5px);
   font-weight:700;
  }
-  {/* responsivo */}
-  @media (max-width:700px){
+  {responsivo}
+  @media (max-width:900px){
     display: none;
   }
 `;
 export const NavbarLinkExtended = Styled(Link)`
-  color: #fff;
+  position:relative;
+  color: #000;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 10px;
   text-align:center;
   text-decoration: none;
-   margin: 5px 10px;
+  margin: 5px 10px;
   font-family: inter;
+  transition:.5s;
+  border-radius:10px;
+  cursor:pointer;
+  &:after{
+    content:"";
+    position:absolute;
+    background-color:#000;
+    height:3px;
+    width:0;
+    left:0;
+    bottom:-10px;
+    transition:0.3s;
+  }
+  &:hover:after{
+    width:100%;
+  }
 `;
 
+{/* menu mobile */}
 export const NavbarExtendedContainer = Styled.div`
-    width:100%;
-    height:100vh;
-    background-color:#000;
+    color:#000;
     display: flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    z-index:3;
+    margin:10rem auto;
+    z-index:999;
 
-    @media(min-width:700px){
+    @media(min-width:900px){
       display: none;
     }
 `;
@@ -124,9 +138,9 @@ export const SubscribeBtnExtended = Styled.div`
   padding: 15px 20px;
   height:20px;
   border-radius: 20px;
-  background-color: #fff;
+  color:#fff;
   font-weight:700;
- @media(min-width:700px){
+ @media(min-width:900px){
       display: none;
     }
 `;
@@ -156,20 +170,17 @@ export const SubscribeBtn = Styled.button`
 
 {/* login button */}
 export const LoginBtn = Styled.button`
-  border:1px solid #000;
+  text-align:center;
   background-color: transparent;
-  padding: 10px 20px; 
-  border-radius: 20px;
+  color:#000;
   margin:0 auto;
+  font-size:20px;
   font-weight:700;
   margin-left:10px;
   transition: .5s;
   border-style: none;
   cursor:pointer;
   transition:.5s;
-  &:hover{
-    background-color:orange;
-  }
 `;
 
 export const SubscribeTextExtended = Styled.a`

@@ -13,20 +13,20 @@ import {
   LoginBtn,
   NavbarLinkExtended,
   SubscribeBtnExtended,
-  SubscribeTextExtended,
+  // SubscribeTextExtended,
 } from "./navbar.style";
+
 import LogoImg from "../../assets/logo-2.png";
 import SubscribeModal from "../SubscribeModal/subscribeModal";
+
 const Navbar = () => {
-  {
-    /* botão modal */
-  }
+
+  {/* botão modal */}
   const [openModal, setOpenModal] = useState(false);
 
-  {
-    /* adicionando funcionalidade no botão mobile */
-  }
+  {/* adicionando funcionalidade no botão mobile */}
   const [ExtendNavbar, setExtendNavbar] = useState(false);
+
   return (
     <NavbarContainer ExtendNavbar={ExtendNavbar}>
       <NavbarInnerContainer>
@@ -49,42 +49,53 @@ const Navbar = () => {
           >
             <NavbarLink to="/inscreva">Inscreva-se</NavbarLink>
           </SubscribeBtn>
+
+          {/* modal button */}
           <Modal>
-            {/* modal button */}
             {openModal && <SubscribeModal closeModal={setOpenModal} />}
           </Modal>
 
+          {/* login button */}
+          <LoginBtn>
+            <NavbarLink to="/quemsomos">Entrar</NavbarLink>
+          </LoginBtn>
+
+        </CategoryContainer>
           {/* mobile button */}
           <OpenLinksBtn
             onClick={() => {
               setExtendNavbar((curr) => !curr);
             }}
           >
-            {ExtendNavbar ? <> &#10005;</> : <> &#8801; </>}
+            
+          {ExtendNavbar ? <>&#10005;</> : <> &#8801;</>}
           </OpenLinksBtn>
-
-          <LoginBtn>
-          <NavbarLink to="/quemsomos">Entrar</NavbarLink>
-          </LoginBtn>
-          
-        </CategoryContainer>
       </NavbarInnerContainer>
 
       {ExtendNavbar && (
         <NavbarExtendedContainer>
-          {/* categories */}
-          <NavbarLinkExtended to="/comofunciona">
-            Como funciona
-          </NavbarLinkExtended>
+          <NavbarLinkExtended to="/comofunciona">Como funciona</NavbarLinkExtended>
           <NavbarLinkExtended to="/quemsomos">Quem somos</NavbarLinkExtended>
           <NavbarLinkExtended to="/contato">Contato</NavbarLinkExtended>
 
           {/* subscribe button */}
-          <SubscribeBtnExtended>
-            <NavbarLinkExtended>
-              <SubscribeTextExtended>Inscreva-se</SubscribeTextExtended>
-            </NavbarLinkExtended>
+          <SubscribeBtnExtended
+            onClick={() => {
+              setOpenModal(true);
+            }}
+          >
+            <NavbarLinkExtended to="/inscreva">Inscreva-se</NavbarLinkExtended>
           </SubscribeBtnExtended>
+
+          {/* modal button */}
+          <Modal>
+            {openModal && <SubscribeModal closeModal={setOpenModal} />}
+          </Modal>
+
+          {/* login button */}
+          <NavbarLinkExtended to="/quemsomos">
+          Entrar
+          </NavbarLinkExtended>
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
