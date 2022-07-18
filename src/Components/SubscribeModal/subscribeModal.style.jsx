@@ -10,9 +10,13 @@ display: flex;
 flex-direction: row;
 z-index: 3;
 box-shadow: 2px 5px 7px #111010;
+border-radius: 10px;
 cursor: default;
-@media(max-width:700px){
+@media(max-width:900px){
   display: grid;
+  position: absolute;
+  width: 100%;
+  height:100vh;
 }
 `;
 
@@ -28,12 +32,10 @@ color: #fff;
 
 export const ModalLeftColumnTitle = Styled.h1`
 font-family:inter;
-
 `;
 
 export const ModalLeftColumnText = Styled.h4`
 font-family:inter;
-
 `;
 
 export const ModalRightColumn = Styled.div`
@@ -43,7 +45,6 @@ padding:50px;
 
 export const ModalRightColumnTitle = Styled.h2`
 font-family:inter;
-
 `;
 
 export const ModalRightColumnImage = Styled.img`
@@ -86,6 +87,7 @@ export const ModalCloseBtn = Styled.div`
   width: 20px;
   font-family: inter;
   font-size:1.5em;
+  font-weight:900;
   color: #000;
   position:absolute;
   top:0;
@@ -94,10 +96,10 @@ export const ModalCloseBtn = Styled.div`
   z-index:5;
   transition:.5s;
   cursor: pointer;
+  @media (max-width:900px){
+   color:#fff;
+  }
   &:hover{
     color: red;
-  }
-  @media (max-width:700px){
-   color:#fff;
   }
 `;

@@ -14,14 +14,15 @@ function Site() {
     <Router>
       {/* Categorias do site */}
       <Navbar />
-      {/* <Header/>
+      <Header/>
       <Intro/>
       <Welcome/>
       <Diferenciais/>
       <Steps/>
-      <AboutUs/>
-      <Footer/> */}
       <SelectPlans/>
+      <AboutUs/>
+      <Footer />
+      {/* <TextForm/> */}
       {/* rotas de navegação */}
       <Routes>
         <Route path='/Como Funciona'/>

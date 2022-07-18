@@ -23,7 +23,7 @@ function SelectPlans() {
       <SelectContainer>
      {/* Header */}
       <SelectContainerHeader>
-        <SelectTitle>Escolha o seu plano</SelectTitle>
+        <SelectTitle>Conheça nossos planos</SelectTitle>
         <SelectSubTitle>
           Criamos as melhores opções para atender às suas necessidades como
           redator. 
@@ -42,7 +42,7 @@ function SelectPlans() {
           {/*card list */}
           <SelectPlanListContainer>
             <SelectPlanList>
-              <SelectPlanListText>5 textos por mês</SelectPlanListText>
+              <SelectPlanListText>5 textos publicados</SelectPlanListText>
             </SelectPlanList>
             <SelectPlanList>
               <SelectPlanListText>1.000 palavras</SelectPlanListText>

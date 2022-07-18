@@ -7,7 +7,6 @@ export const WelcomeContainer = Styled.div`
   margin: 0 auto;
   margin-bottom: 8rem;
   @media(max-width:900px){
-  margin-bottom: 4rem;
   height:fit-content;
   }
 `;
@@ -15,10 +14,9 @@ export const WelcomeContainer = Styled.div`
 export const WelcomeTitle = Styled.h2`
   font-size:2.5rem;
   font-family:inter;
+   margin-bottom: 4rem;
   @media(max-width:700px){
-    margin-bottom: 4rem;
-    font-size:2.2rem;
-  margin: 10px;
+  font-size:2.2rem;
   }
 `;
 

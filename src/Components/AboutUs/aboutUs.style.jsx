@@ -3,13 +3,13 @@ import Styled from "styled-components";
 export const AboutUsContainer = Styled.div`
   text-align:center;
   margin-bottom: 8rem;
-`;
+  `;
 
 export const AboutUsTitle = Styled.h2`
   font-family: inter;
   font-size:2.5rem;
   @media(max-width:700px){
-  font-size:2.2rem;
+     font-size:2.2rem;
   }
 `;
 

@@ -4,8 +4,8 @@ export const HeaderContainer = Styled.div`
     width: 100%;
     height:80vh;  
     margin-bottom: 8rem;
-    @media(max-width:700px){
-      margin-bottom: 1rem;
+    @media(max-width:900px){
+      margin-bottom: 4rem;
     }
 `;
 

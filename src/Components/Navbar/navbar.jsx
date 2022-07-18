@@ -8,6 +8,7 @@ import {
   NavbarInnerContainer,
   NavbarExtendedContainer,
   NavbarLink,
+  NavbarLinkSubscribe,
   SubscribeBtn,
   OpenLinksBtn,
   LoginBtn,
@@ -37,9 +38,15 @@ const Navbar = () => {
 
         {/* left container */}
         <CategoryContainer>
+
           <NavbarLink to="/comofunciona">Como funciona</NavbarLink>
           <NavbarLink to="/quemsomos">Quem somos</NavbarLink>
           <NavbarLink to="/contato">Contato</NavbarLink>
+
+          {/* login button */}
+          <LoginBtn>
+            <NavbarLink to="/quemsomos">Entrar</NavbarLink>
+          </LoginBtn>
 
           {/* subscribe button */}
           <SubscribeBtn
@@ -54,13 +61,11 @@ const Navbar = () => {
           <Modal>
             {openModal && <SubscribeModal closeModal={setOpenModal} />}
           </Modal>
-
-          {/* login button */}
-          <LoginBtn>
-            <NavbarLink to="/quemsomos">Entrar</NavbarLink>
-          </LoginBtn>
-
+          
         </CategoryContainer>
+
+
+        
           {/* mobile button */}
           <OpenLinksBtn
             onClick={() => {

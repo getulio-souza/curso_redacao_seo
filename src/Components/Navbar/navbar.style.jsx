@@ -76,7 +76,7 @@ export const NavbarLinkContainer = Styled.div`
 
 export const NavbarLink = Styled.a`
   color: #000;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px;
   text-align:center;
   text-decoration: none;
@@ -93,6 +93,13 @@ export const NavbarLink = Styled.a`
     display: none;
   }
 `;
+
+export const NavbarLinkSubscribe = Styled.button`
+  width:fit-content;
+
+`;
+
+
 export const NavbarLinkExtended = Styled(Link)`
   position:relative;
   color: #000;

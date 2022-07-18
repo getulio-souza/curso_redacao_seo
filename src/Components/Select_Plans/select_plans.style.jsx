@@ -2,17 +2,20 @@ import styled from "styled-components";
 
 export const SelectContainer = styled.div`
  width:100vw;
- height:50vh;
+  height:fit-content;
+  margin-bottom:4rem;
 `;
 
 export const SelectContainerHeader = styled.div`
   text-align:center;
-  padding: 4rem 0;
+  padding: 2rem 0;
+  margin-bottom:2rem;
 `;
 
 export const SelectTitle = styled.h1`
   font-family:inter;
   font-size:2.5rem;
+   margin-bottom: 4rem;
 `;
 
 export const SelectSubTitle = styled.h3`
@@ -20,21 +23,25 @@ export const SelectSubTitle = styled.h3`
   line-height:1.5rem;
   max-width:500px;
   margin:0 auto;
+  @media(max-width:700px){
+    margin: 0 2rem;
+  }
 `;
 
 export const SelectPlansContainer = styled.div`
+  width:100vw;
+  height: 100vh;
   background-color:#000;
-  padding:3rem 0;
+  padding:5rem 0;
   width:100%;
   height:100%;
   display: flex;
   justify-content:center;
   align-items:center;
   gap:2rem;
-  @media(max-width:700px){
-    display:flex;
-    justify-content:center;
-    align-items:center;
+  @media(max-width:900px){
+   display: flex;
+   flex-direction: column;
   }
 `;
 
@@ -54,6 +61,7 @@ export const SelectPlanCard = styled.div`
 
   &:hover{
     transform: translateY(-10px);
+    background-color:yellow;
   }
 
   @media (max-width:700px){
@@ -89,7 +97,9 @@ export const SelectPlanList = styled.li``;
 
 export const SelectPlanListIcon = styled.i``;
 
-export const SelectPlanListText = styled.p``;
+export const SelectPlanListText = styled.p`
+   font-family: inter;
+`;
 
 export const SelectPlanBtn = styled.button`
   background-color: #000;
@@ -104,7 +114,7 @@ export const SelectPlanBtn = styled.button`
   cursor:pointer;
   transition:.5s;
   &:hover{
-    background-color: transparent;
+    background-color: #fff;
     border:1px solid #000;
     color:#000;
   }

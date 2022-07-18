@@ -2,10 +2,9 @@ import Styled from "styled-components";
 
 export const DiferenciaisContainer = Styled.div`
    text-align:center;
-   margin-bottom: 8rem;
    width:100%;
-   @media (min-width:850px){
-      margin-top: 2rem;
+   @media(min-width:1400px){
+      margin: 10rem auto;
    }
 `;
 export const DiferenciaisTitle = Styled.h3`

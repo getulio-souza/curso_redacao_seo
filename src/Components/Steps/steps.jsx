@@ -37,10 +37,6 @@ function Steps() {
           </StepText>
         </StepItem>
       </StepsItems>
-      {/* plans cta button */}
-      <CTABtn>
-        Conheça os planos
-      </CTABtn>
     </StepsContainer>
   );
 }

@@ -4,9 +4,10 @@ export const IntroContainer = Styled.div`
    text-align:center;
    width: 100vw;
    height: 100vh;
-   @media (max-width:700px){
+   margin-bottom: 8rem;
+   @media (max-width:900px){
       margin: 0 auto;
-      margin-bottom: 8rem;
+      margin-bottom: 4rem;
       height:fit-content;
    }
 `;
@@ -32,9 +33,6 @@ export const FirstContentText = Styled.h4`
   line-height:1.7rem;
   font-family: inter;
   display: block;
-  @media (max-width:700px){
-   margin-bottom:-1rem;
-  }
   `;
 
 export const SecondContentText = Styled(FirstContentText)`
