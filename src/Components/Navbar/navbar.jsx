@@ -19,11 +19,15 @@ import {
 
 import LogoImg from "../../assets/logo-2.png";
 import SubscribeModal from "../SubscribeModal/subscribeModal";
+import LoginModal from "../LoginModal/loginModal";
 
 const Navbar = () => {
 
-  {/* botão modal */}
+  {/* botão modal (Cadastro) */}
   const [openModal, setOpenModal] = useState(false);
+  
+  {/* botão modal (Login) */}
+  const [OpenLoginModal, setOpenLoginModal] = useState(false);
 
   {/* adicionando funcionalidade no botão mobile */}
   const [ExtendNavbar, setExtendNavbar] = useState(false);
@@ -44,9 +48,17 @@ const Navbar = () => {
           <NavbarLink to="/contato">Contato</NavbarLink>
 
           {/* login button */}
-          <LoginBtn>
+          <LoginBtn onClick={() => {
+            setOpenLoginModal(true)
+          }}>
             <NavbarLink to="/quemsomos">Entrar</NavbarLink>
           </LoginBtn>
+
+          
+          {/* modal Login button  */}
+          <Modal>
+            {OpenLoginModal && <LoginModal closeModal= {setOpenLoginModal} />}
+          </Modal>
 
           {/* subscribe button */}
           <SubscribeBtn
@@ -57,15 +69,13 @@ const Navbar = () => {
             <NavbarLink to="/inscreva">Inscreva-se</NavbarLink>
           </SubscribeBtn>
 
-          {/* modal button */}
+          {/* modal subscribe button  */}
           <Modal>
             {openModal && <SubscribeModal closeModal={setOpenModal} />}
           </Modal>
           
         </CategoryContainer>
 
-
-        
           {/* mobile button */}
           <OpenLinksBtn
             onClick={() => {
