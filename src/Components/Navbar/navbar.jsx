@@ -48,18 +48,21 @@ const Navbar = () => {
           <NavbarLink to="/contato">Contato</NavbarLink>
 
           {/* login button */}
-          <LoginBtn onClick={() => {
-            setOpenLoginModal(true)
-          }}>
-            <NavbarLink to="/quemsomos">Entrar</NavbarLink>
+          <LoginBtn
+            onClick={() => {
+              setOpenLoginModal(true);
+            }}
+          >
+            <NavbarLink to="/quemsomos">
+              Entrar
+            </NavbarLink>
           </LoginBtn>
-
           
           {/* modal Login button  */}
           <Modal>
-            {OpenLoginModal && <LoginModal closeModal= {setOpenLoginModal} />}
+            {OpenLoginModal && <LoginModal/>}
           </Modal>
-
+          
           {/* subscribe button */}
           <SubscribeBtn
             onClick={() => {

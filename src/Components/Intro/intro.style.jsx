@@ -18,6 +18,7 @@ export const FirstContent = Styled.div`
    align-items:center;
    gap: 4rem;
    margin: 4rem 8rem;
+   padding: 0 5rem;
   @media (max-width:900px){
     display:grid;
     align-items:center;

@@ -6,8 +6,10 @@ export const WelcomeContainer = Styled.div`
   text-align:center;
   margin: 0 auto;
   margin-bottom: 8rem;
+  padding-bottom:4rem;
   @media(max-width:900px){
   height:fit-content;
+  padding-bottom:2rem;
   }
 `;
 

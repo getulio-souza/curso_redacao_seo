@@ -197,3 +197,5 @@ export const SubscribeTextExtended = Styled.a`
 export const Modal = Styled.div`
   text-align:center;
 `;
+
+export const ModalLogin = Styled(Modal)``;

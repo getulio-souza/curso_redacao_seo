@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LoginModalContainer = styled.div`
-  /* background-color: red; */
+  background-color: red;
   width:200px;
   height:500px;
   display:flex;
@@ -22,3 +22,25 @@ export const PasswordInput = styled.input``;
 export const ForgetPassword = styled.p``;
 export const LoginBtn = styled.div``;
 export const SusbcribeLink = styled.div``;
+
+
+export const ModalCloseLoginBtn = styled.div`
+  width: 20px;
+  font-family: inter;
+  font-size:1.5em;
+  font-weight:900;
+  color: #000;
+  position:absolute;
+  top:0;
+  right:0;
+  margin: 20px;
+  z-index:5;
+  transition:.5s;
+  cursor: pointer;
+  @media (max-width:900px){
+   color:#fff;
+  }
+  &:hover{
+    color: red;
+  }
+`;

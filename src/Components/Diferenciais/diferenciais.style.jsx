@@ -22,7 +22,12 @@ export const DiferenciaisBoxes = Styled.div`
    justify-content: space-evenly;
    @media(max-width:900px){
       display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap:2rem;
+   }
+   @media(max-width:700px){
+      display: grid;
+      grid-template-columns:1fr;
    }
 
 `;

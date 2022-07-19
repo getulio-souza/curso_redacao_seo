@@ -13,12 +13,13 @@ import {
   ForgetPassword,
   LoginBtn,
   SusbcribeLink,
+  ModalCloseLoginBtn,
 } from "./loginModal.style";
 
 function LoginModal({closeModal}) {
   return (
     <LoginModalContainer>
-      <ModalCloseBtn onClick={()=> closeModal(false)}>X</ModalCloseBtn>
+      <ModalCloseLoginBtn onClick={()=> closeModal(false)}>X</ModalCloseLoginBtn>
       <LoginModalTitle>Entre na sua conta</LoginModalTitle>
       {/* Login */}
       <LoginUser>
