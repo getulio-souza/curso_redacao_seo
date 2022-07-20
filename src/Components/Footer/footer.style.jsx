@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import Styled from "styled-components";
 
 export const FooterContainer = Styled.div`
@@ -8,8 +9,6 @@ export const FooterContainer = Styled.div`
   grid-template-columns:1fr 1fr 1fr;
   justify-items:center;
   align-items:center;
-  /* margin-bottom:4rem; */
-
   @media(max-width:900px){
   display: flex;
   flex-direction: column;
@@ -166,4 +165,9 @@ export const FooterLabelTextArea = Styled.textarea`
    width:206px;
    border-radius: 5px;
 
+`;
+
+export const FooterAuthor = styled.p`
+  color:#fff;
+  font-family:inter;
 `;

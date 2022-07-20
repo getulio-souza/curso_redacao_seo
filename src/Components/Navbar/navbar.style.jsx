@@ -96,7 +96,6 @@ export const NavbarLink = Styled.a`
 
 export const NavbarLinkSubscribe = Styled.button`
   width:fit-content;
-
 `;
 
 

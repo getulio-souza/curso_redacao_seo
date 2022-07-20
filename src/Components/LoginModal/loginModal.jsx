@@ -2,17 +2,19 @@ import React from "react";
 import {
   LoginModalContainer,
   LoginModalTitle,
+  LoginModalTitleUnderline,
+  LoginAndPasswordContainer,
   LoginUser,
   LoginModalUser,
-  LoginTitle,
-  LoginInput,
+  InfoTitle,
+  InfoInput,
   PasswordUser,
   PasswordModalUser,
-  PasswordTitle,
-  PasswordInput,
   ForgetPassword,
   LoginBtn,
-  SusbcribeLink,
+  SusbcribeLinkContainer,
+  SubscribeText,
+  SusbcribeLinkCTA,
   ModalCloseLoginBtn,
 } from "./loginModal.style";
 
@@ -21,26 +23,36 @@ function LoginModal({closeModal}) {
     <LoginModalContainer>
       <ModalCloseLoginBtn onClick={()=> closeModal(false)}>X</ModalCloseLoginBtn>
       <LoginModalTitle>Entre na sua conta</LoginModalTitle>
+      <LoginModalTitleUnderline></LoginModalTitleUnderline>
       {/* Login */}
+      <LoginAndPasswordContainer>
       <LoginUser>
         <LoginModalUser>
-          <LoginTitle>Login</LoginTitle>
-          <LoginInput>Digite o seu usuário</LoginInput>
+          <InfoTitle>Login</InfoTitle>
+          <InfoInput placeholder="Digite o seu usuário"></InfoInput>
         </LoginModalUser>
       </LoginUser>
       {/* Password */}
       <PasswordUser>
         <PasswordModalUser>
-          <PasswordTitle>Login</PasswordTitle>
-          <PasswordInput>Digite o seu usuário</PasswordInput>
+          <InfoTitle>Senha</InfoTitle>
+          <InfoInput placeholder="Digite sua senha"></InfoInput>
         </PasswordModalUser>
       </PasswordUser>
+      </LoginAndPasswordContainer>
       {/* Forget password */}
       <ForgetPassword>Esqueceu sua senha?</ForgetPassword>
       {/* Botão entrar */}
       <LoginBtn>Entrar</LoginBtn>
       {/* Botão alternativo (cadastro) */}
-      <SusbcribeLink>Ainda não tem uma conta? Faça seu cadastro <span>aqui</span></SusbcribeLink>
+      <SusbcribeLinkContainer>
+        <SubscribeText>
+        Ainda não tem uma conta?
+        </SubscribeText>
+        <SusbcribeLinkCTA>
+        Faça seu cadastro
+        </SusbcribeLinkCTA>
+      </SusbcribeLinkContainer>
     </LoginModalContainer>
   );
 }

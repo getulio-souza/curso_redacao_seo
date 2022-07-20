@@ -16,6 +16,7 @@ import {
   FooterFormLabel,
   FooterLabelTextArea,
   FooterFormBtn,
+  FooterAuthor,
 } from "./footer.style";
 
 import FooterLogoImg from "../../assets/logo-3.JPG";
@@ -23,6 +24,7 @@ import FacebookIcon from "../../assets/social/facebook.png";
 import InstagramIcon from "../../assets/social/instagram.png";
 import TwitterIcon from "../../assets/social/twitter.png";
 import YoutubeIcon from "../../assets/social/youtube.png";
+import { Link, Route, Routes } from "react-router-dom";
 
 function Footer() {
   return (
@@ -63,6 +65,10 @@ function Footer() {
               <FooterFormBtn>Enviar</FooterFormBtn>
               </FooterForm>
       </FooterFormContainer>
+      <FooterAuthor>
+        Site desenvolvido por
+        <Link to={{ pathname: "getulio-souza.github.io/portfolio_react/" }} target="_blank"> Getúlio Souza</Link>
+      </FooterAuthor>
     </FooterContainer>
   );
 }
