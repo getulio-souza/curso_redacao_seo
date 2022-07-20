@@ -14,6 +14,7 @@ import {
   LoginBtn,
   NavbarLinkExtended,
   SubscribeBtnExtended,
+  LoginBtnExtended,
   // SubscribeTextExtended,
 } from "./navbar.style";
 
@@ -22,15 +23,21 @@ import SubscribeModal from "../SubscribeModal/subscribeModal";
 import LoginModal from "../LoginModal/loginModal";
 
 const Navbar = () => {
-
-  {/* botão modal (Cadastro) */}
+  {
+    /* botão modal (Cadastro) */
+  }
   const [openModal, setOpenModal] = useState(false);
-  
-  {/* botão modal (Login) */}
+
+  {
+    /* botão modal (Login) */
+  }
   const [OpenLoginModal, setOpenLoginModal] = useState(false);
 
-  {/* adicionando funcionalidade no botão mobile */}
+  {
+    /* adicionando funcionalidade no botão mobile  */
+  }
   const [ExtendNavbar, setExtendNavbar] = useState(false);
+
 
   return (
     <NavbarContainer ExtendNavbar={ExtendNavbar}>
@@ -42,7 +49,6 @@ const Navbar = () => {
 
         {/* left container */}
         <CategoryContainer>
-
           <NavbarLink to="/comofunciona">Como funciona</NavbarLink>
           <NavbarLink to="/quemsomos">Quem somos</NavbarLink>
           <NavbarLink to="/contato">Contato</NavbarLink>
@@ -50,19 +56,15 @@ const Navbar = () => {
           {/* login button */}
           <LoginBtn
             onClick={() => {
-            setOpenLoginModal(true);
-          }}
+              setOpenLoginModal(true);
+            }}
           >
-            <NavbarLink to="/quemsomos">
-              Entrar
-            </NavbarLink>
+            <NavbarLink to="/quemsomos">Entrar</NavbarLink>
           </LoginBtn>
-          
-          
+
           {/* modal Login button  */}
-            {OpenLoginModal && <LoginModal closeModal={setOpenLoginModal}/>}
-          
-          
+          {OpenLoginModal && <LoginModal closeModal={setOpenLoginModal} />}
+
           {/* subscribe button */}
           <SubscribeBtn
             onClick={() => {
@@ -76,23 +78,23 @@ const Navbar = () => {
           <Modal>
             {openModal && <SubscribeModal closeModal={setOpenModal} />}
           </Modal>
-          
         </CategoryContainer>
 
-          {/* mobile button */}
-          <OpenLinksBtn
-            onClick={() => {
-              setExtendNavbar((curr) => !curr);
-            }}
-          >
-            
+        {/* mobile button */}
+        <OpenLinksBtn
+          onClick={() => {
+            setExtendNavbar((curr) => !curr);
+          }}
+        >
           {ExtendNavbar ? <>&#10005;</> : <> &#8801;</>}
-          </OpenLinksBtn>
+        </OpenLinksBtn>
       </NavbarInnerContainer>
 
       {ExtendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtended to="/comofunciona">Como funciona</NavbarLinkExtended>
+          <NavbarLinkExtended to="/comofunciona">
+            Como funciona
+          </NavbarLinkExtended>
           <NavbarLinkExtended to="/quemsomos">Quem somos</NavbarLinkExtended>
           <NavbarLinkExtended to="/contato">Contato</NavbarLinkExtended>
 
@@ -111,9 +113,16 @@ const Navbar = () => {
           </Modal>
 
           {/* login button */}
-          <NavbarLinkExtended to="/quemsomos">
-          Entrar
-          </NavbarLinkExtended>
+          <LoginBtnExtended
+            onClick={() => {
+            setOpenLoginModal(true);
+            }}
+          >
+            <NavbarLinkExtended to="/quemsomos">Entrar</NavbarLinkExtended>
+          </LoginBtnExtended>
+        
+          
+
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>

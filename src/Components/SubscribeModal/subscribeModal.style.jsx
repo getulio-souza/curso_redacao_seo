@@ -13,10 +13,11 @@ box-shadow: 2px 5px 7px #111010;
 border-radius: 10px;
 cursor: default;
 @media(max-width:900px){
-  display: grid;
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  width: 100%;
-  height:100vh;
+  width: 80%;
+  height:fit-content;
 }
 `;
 
@@ -55,6 +56,10 @@ export const ModalRightColumnImage = Styled.img`
 export const ModalRightColumnForm = Styled.form`
  display: grid;
  grid-template-columns: 1fr 1fr;
+ @media(max-width:900px){
+  display: flex;
+  flex-direction: column;
+ }
 `;
 
 export const ModalRightColumnInput = Styled.input`

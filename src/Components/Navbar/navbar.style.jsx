@@ -151,6 +151,10 @@ export const SubscribeBtnExtended = Styled.div`
     }
 `;
 
+export const LoginBtnExtended = Styled(SubscribeBtnExtended)`
+text-align:center;
+`;
+
 export const SubscribeBtn = Styled.button`
   padding: 10px 20px; 
   border-radius: 20px;
