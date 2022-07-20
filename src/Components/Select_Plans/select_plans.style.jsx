@@ -78,8 +78,8 @@ export const SelectPlanTitle = styled.h2`
    font-family: inter;
 `;
 
-export const SelectPlanImg = styled.div`
-  background-color: grey;
+export const SelectPlanImg = styled.img`
+  /* background-color: grey; */
   width:50px;
   height:50px;
   margin: 0 auto;

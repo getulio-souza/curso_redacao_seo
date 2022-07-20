@@ -41,10 +41,9 @@ export const DiferencialBox = Styled.div`
     transform: translateY(-10px);
    }
 `;
-export const DirencialIcon = Styled.svg`
-  color:#fff;
-  font-size:30px;
-  margin-top:10px;
+export const DirencialIcon = Styled.img`
+  padding-top:20px;
+  width:50px;
 `;
 export const DiferencialText = Styled.h6`
   font-size: 1rem;

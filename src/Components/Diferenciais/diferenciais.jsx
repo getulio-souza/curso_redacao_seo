@@ -8,7 +8,10 @@ import {
   DiferencialText,
 } from "./diferenciais.style";
 
-import { FaHandsHelping } from 'react-icons/fa';
+import Icon1 from "../../assets/diferenciais/icon-1.png"
+import Icon2 from "../../assets/diferenciais/icon-2.png"
+import Icon3 from "../../assets/diferenciais/icon-3.png"
+import Icon4 from "../../assets/diferenciais/icon-4.png"
 
 const Diferenciais = () => {
   return (
@@ -17,24 +20,24 @@ const Diferenciais = () => {
       <DiferenciaisBoxes>
         {/* diferencial 1 */}
         <DiferencialBox>
-          {/* <DirencialIcon></DirencialIcon> */}
+          <DirencialIcon src={Icon1}></DirencialIcon>
           <DiferencialText>Acompanhamento personalizado</DiferencialText>
         </DiferencialBox>
         {/* diferencial 2 */}
         <DiferencialBox>
-          
+          <DirencialIcon src={Icon2}></DirencialIcon>
           <DiferencialText>Versatilidade na escrita</DiferencialText>
         </DiferencialBox>
         {/* diferencial 3 */}
         <DiferencialBox>
-          
+          <DirencialIcon src={Icon3}></DirencialIcon>
           <DiferencialText>
             Possibilidade de crescer na carreira
           </DiferencialText>
         </DiferencialBox>
         {/* diferencial 4 */}
         <DiferencialBox>
-          
+          <DirencialIcon src={Icon4}></DirencialIcon>
           <DiferencialText>Preço que cabe no seu bolso</DiferencialText>
         </DiferencialBox>
       </DiferenciaisBoxes>

@@ -17,6 +17,9 @@ import {
     SelectPlanBtn,
 } from "./select_plans.style";
 
+import Free from "../../assets/svgs/free.png"
+import Basic from "../../assets/svgs/basic.png"
+import Professional from "../../assets/svgs/professional.png"
 
 function SelectPlans() {
   return (
@@ -35,7 +38,7 @@ function SelectPlans() {
         <SelectPlanCard>
           <SelectPlanHeader>
             <SelectPlanTitle>Gratuito</SelectPlanTitle>
-            <SelectPlanImg></SelectPlanImg>
+            <SelectPlanImg src={Free}></SelectPlanImg>
             <SelectPlanPrice>Gratis / Mês</SelectPlanPrice>
                   </SelectPlanHeader>
                   
@@ -58,7 +61,7 @@ function SelectPlans() {
         <SelectPlanCard>
           <SelectPlanHeader>
             <SelectPlanTitle>Básico</SelectPlanTitle>
-            <SelectPlanImg></SelectPlanImg>
+            <SelectPlanImg src={Basic}></SelectPlanImg>
             <SelectPlanPrice>R$9,00 / Mês</SelectPlanPrice>
                   </SelectPlanHeader>
                   
@@ -81,7 +84,7 @@ function SelectPlans() {
         <SelectPlanCard>
           <SelectPlanHeader>
             <SelectPlanTitle>Completo</SelectPlanTitle>
-            <SelectPlanImg></SelectPlanImg>
+            <SelectPlanImg src={Professional}></SelectPlanImg>
             <SelectPlanPrice>R$200 / Ano</SelectPlanPrice>
                   </SelectPlanHeader>
                   

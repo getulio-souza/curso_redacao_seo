@@ -59,12 +59,14 @@ export const ModalRightColumnForm = Styled.form`
  @media(max-width:900px){
   display: flex;
   flex-direction: column;
+  align-items:center;
  }
 `;
 
 export const ModalRightColumnInput = Styled.input`
 border-style: none;
 border-bottom: 0.5px solid #D3D3D3;
+/* max-width:200px; */
 text-align:center;
 margin:10px;
 padding:5px;
