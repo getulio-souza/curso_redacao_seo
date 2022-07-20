@@ -36,6 +36,7 @@ export const StepsItems = Styled.div`
 `;
 
 export const StepItem = Styled.div`
+  
   cursor: default;
   transition:.5s;
   &hover{
@@ -43,8 +44,10 @@ export const StepItem = Styled.div`
   }
 `;
 
-export const StepIcon = Styled.div`
-  background-color:#000;
+export const StepIconImg = Styled.img`
+  width:60px;
+  /* background-color:grey;
+  box-shadow: 1px 2px 5px #000;
   padding:30px;
   color:#fff;
   max-width:10px;
@@ -52,7 +55,11 @@ export const StepIcon = Styled.div`
   margin:0 auto;
   font-family: inter;
   font-weight:700;
-  text-align:center;
+  text-align:center; */
+`;
+
+export const StepIconColor2 = Styled.div`
+  
 `;
 
 export const StepText = Styled.h6`

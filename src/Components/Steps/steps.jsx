@@ -4,10 +4,15 @@ import {
   StepsTitle,
   StepsItems,
   StepItem,
-  StepIcon,
+  StepIconImg,
   StepText,
-  CTABtn,
+  // CTABtn,
 } from "./steps.style";
+
+import Icon1 from "../../assets/steps/subscribe.png"
+import Icon2 from "../../assets/steps/account.png"
+import Icon3 from "../../assets/steps/fill.png"
+import Icon4 from "../../assets/steps/publishing.png"
 
 function Steps() {
   return (
@@ -15,23 +20,23 @@ function Steps() {
       <StepsTitle>Como funciona</StepsTitle>
       <StepsItems>
         <StepItem>
-          <StepIcon>1</StepIcon>
+          <StepIconImg src={Icon1}></StepIconImg>
           <StepText>
             Faça o seu cadastro clicando no botão “Inscreva-se”.
           </StepText>
         </StepItem>
         <StepItem>
-          <StepIcon>2</StepIcon>
+          <StepIconImg src={Icon3}></StepIconImg>
           <StepText>Escolha um dos planos para começar. </StepText>
         </StepItem>
         <StepItem>
-          <StepIcon>3</StepIcon>
+          <StepIconImg src={Icon2}></StepIconImg>
           <StepText>
             Entre na sua conta. Preencha o campo “Titulo” e “Corpo do texto”.
           </StepText>
         </StepItem>
         <StepItem>
-          <StepIcon>4</StepIcon>
+          <StepIconImg src={Icon4}></StepIconImg>
           <StepText>
             Agora clique no botão “Publicar”. Pronto, o seu texto já está no ar!
           </StepText>
