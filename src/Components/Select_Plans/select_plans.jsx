@@ -84,7 +84,7 @@ function SelectPlans() {
             </SelectPlanList>
             <SelectPlanList>
               <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
-              <SelectPlanListText>Revisão ortográfica inclusa</SelectPlanListText>
+              <SelectPlanListText>Auditoria de SEO inclusa</SelectPlanListText>
             </SelectPlanList>
                   </SelectPlanListContainer>
                   <SelectPlanBtn>Selecionar</SelectPlanBtn>
@@ -110,7 +110,11 @@ function SelectPlans() {
             </SelectPlanList>
             <SelectPlanList>
               <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
-              <SelectPlanListText>Revisão ortográfica inclusa</SelectPlanListText>
+              <SelectPlanListText>Ganha até R$200 por texto ranqueado</SelectPlanListText>
+            </SelectPlanList>
+            <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
+              <SelectPlanListText>Auditoria de SEO inclusa</SelectPlanListText>
             </SelectPlanList>
             <SelectPlanList>
               <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
