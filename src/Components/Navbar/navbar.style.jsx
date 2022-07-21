@@ -57,7 +57,7 @@ export const OpenLinksBtn = Styled.button`
       font-size: 45px;
       cursor: pointer;
       transition: .5s;
-      z-index:3;
+      z-index:1;
   @media(min-width:900px){
     display:none;
   }
@@ -100,7 +100,7 @@ export const NavbarLinkSubscribe = Styled.button`
 
 
 export const NavbarLinkExtended = Styled(Link)`
-  position:relative;
+  /* position:relative; */
   color: #000;
   font-size: 20px;
   padding: 10px;
@@ -132,8 +132,7 @@ export const NavbarExtendedContainer = Styled.div`
     display: flex;
     flex-direction:column;
     margin:10rem auto;
-    z-index:999;
-
+    z-index:1;
     @media(min-width:900px){
       display: none;
     }

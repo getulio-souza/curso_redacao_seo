@@ -120,9 +120,7 @@ const Navbar = () => {
           >
             <NavbarLinkExtended to="/quemsomos">Entrar</NavbarLinkExtended>
           </LoginBtnExtended>
-        
-          
-
+      
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>

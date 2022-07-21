@@ -12,12 +12,14 @@ z-index: 3;
 box-shadow: 2px 5px 7px #111010;
 border-radius: 10px;
 cursor: default;
+font-family:inter;
+
 @media(max-width:900px){
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 80%;
-  height:fit-content;
+  width:100vw;
+  height:100vh;
 }
 `;
 
@@ -29,19 +31,24 @@ align-items: center;
 padding:50px;
 background-color: #000;
 color: #fff;
+@media(max-width:900px){
+padding:25px;
+}
 `;
 
 export const ModalLeftColumnTitle = Styled.h1`
-font-family:inter;
+  margin:10px;
 `;
 
 export const ModalLeftColumnText = Styled.h4`
-font-family:inter;
 `;
 
 export const ModalRightColumn = Styled.div`
 background-color:#fff;
 padding:50px;
+@media(max-width:900px){
+padding:20px;
+}
 `;
 
 export const ModalRightColumnTitle = Styled.h2`
@@ -57,9 +64,7 @@ export const ModalRightColumnForm = Styled.form`
  display: grid;
  grid-template-columns: 1fr 1fr;
  @media(max-width:900px){
-  display: flex;
-  flex-direction: column;
-  align-items:center;
+  display: grid;
  }
 `;
 
