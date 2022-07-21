@@ -2,14 +2,12 @@ import Styled from "styled-components";
 
 export const WelcomeContainer = Styled.div`
   max-width:600px;
-  height:100vh;
+  height:fit-content;
   text-align:center;
   margin: 0 auto;
-  margin-bottom: 8rem;
-  padding-bottom:4rem;
   @media(max-width:900px){
-  height:fit-content;
-  padding-bottom:2rem;
+    height:fit-content;
+    padding-bottom:1rem;
   }
 `;
 
@@ -33,9 +31,9 @@ export const WelcomeImg = Styled.img`
    }
 `;
 
-export const WelcomeContent = Styled.h5`
+export const WelcomeContent = Styled.h4`
   margin: 2rem;
-  font-size:1.5rem;
+  font-size:20px;
   font-weight:500;
   font-family:inter;
   @media(max-width:700px){

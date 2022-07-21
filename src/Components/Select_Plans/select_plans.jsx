@@ -17,9 +17,13 @@ import {
     SelectPlanBtn,
 } from "./select_plans.style";
 
+{/* planos */}
 import Free from "../../assets/svgs/free.png"
 import Basic from "../../assets/svgs/basic.png"
 import Professional from "../../assets/svgs/professional.png"
+
+import CheckImg from "../../assets/Plans/check.png"
+import CheckImg2 from "../../assets/Plans/check-2.png"
 
 function SelectPlans() {
   return (
@@ -45,12 +49,15 @@ function SelectPlans() {
           {/*card list */}
           <SelectPlanListContainer>
             <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
               <SelectPlanListText>5 textos publicados</SelectPlanListText>
             </SelectPlanList>
             <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
               <SelectPlanListText>1.000 palavras</SelectPlanListText>
             </SelectPlanList>
             <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
               <SelectPlanListText>Sem revisão ortográfica</SelectPlanListText>
             </SelectPlanList>
                   </SelectPlanListContainer>
@@ -68,12 +75,15 @@ function SelectPlans() {
           {/*card list */}
           <SelectPlanListContainer>
             <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
               <SelectPlanListText>10 textos publicados</SelectPlanListText>
             </SelectPlanList>
             <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
               <SelectPlanListText>5.000 palavras</SelectPlanListText>
             </SelectPlanList>
             <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
               <SelectPlanListText>Revisão ortográfica inclusa</SelectPlanListText>
             </SelectPlanList>
                   </SelectPlanListContainer>
@@ -91,13 +101,20 @@ function SelectPlans() {
           {/*card list */}
           <SelectPlanListContainer>
             <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
               <SelectPlanListText>20 textos (por mês)</SelectPlanListText>
             </SelectPlanList>
             <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
               <SelectPlanListText>10 mil palavras (por mês)</SelectPlanListText>
             </SelectPlanList>
             <SelectPlanList>
-              <SelectPlanListText>Sem revisão ortográfica</SelectPlanListText>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
+              <SelectPlanListText>Revisão ortográfica inclusa</SelectPlanListText>
+            </SelectPlanList>
+            <SelectPlanList>
+              <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
+              <SelectPlanListText>Correção ao vivo por vídeo chamada</SelectPlanListText>
             </SelectPlanList>
             {/* <SelectPlanList>
               <SelectPlanListText>Chamada de vídeo ao vivo</SelectPlanListText>

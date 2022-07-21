@@ -15,7 +15,7 @@ export const SelectContainerHeader = styled.div`
 export const SelectTitle = styled.h1`
   font-family:inter;
   font-size:2.5rem;
-   margin-bottom: 4rem;
+   margin-bottom: 2rem;
 `;
 
 export const SelectSubTitle = styled.h3`
@@ -35,6 +35,7 @@ export const SelectPlansContainer = styled.div`
   padding:5rem 0;
   width:100%;
   height:100%;
+  display: grid;
   display: flex;
   justify-content:center;
   align-items:center;
@@ -93,12 +94,20 @@ export const SelectPlanListContainer = styled.div`
   list-style: none;
 `;
 
-export const SelectPlanList = styled.li``;
+export const SelectPlanList = styled.div`
+ display: flex;
+ align-items:center;
+`;
 
-export const SelectPlanListIcon = styled.i``;
+export const SelectPlanListIcon = styled.img`
+ width:20px;
+ height:20px;
+ padding-right:5px;
+`;
 
 export const SelectPlanListText = styled.p`
    font-family: inter;
+   font-size:15px;
 `;
 
 export const SelectPlanBtn = styled.button`

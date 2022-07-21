@@ -124,15 +124,18 @@ export const FooterForm = Styled.div`
   display: flex;
   flex-direction: column;
   gap:1rem;
+     font-family:inter;
+
 `;
 
 export const FooterFormTitle = Styled.h4`
    color:#fff;
-   font-size:25px;
-   width:fit-content;
-   @media(max-width:700px){
-    text-align:center;
-   }
+   font-size:20px;
+   text-align:center;
+`;
+
+export const FooterFormText = styled.h6`
+  font-size:17px;
 `;
 
 export const FooterFormLabel = Styled.input`
@@ -140,11 +143,13 @@ export const FooterFormLabel = Styled.input`
    width:200px;
    background-color:#fff;
    border-radius: 5px;
+   font-family:inter;
 `;
 
 export const FooterFormBtn = Styled.div`
    background-color: #fff;
    color:#000;
+   width:190px;
    font-weight:700;
    text-align:center;
    border:1px solid #fff;
@@ -164,7 +169,7 @@ export const FooterFormBtn = Styled.div`
 export const FooterLabelTextArea = Styled.textarea`
    width:206px;
    border-radius: 5px;
-
+   font-family:inter;
 `;
 
 export const FooterAuthor = styled.p`

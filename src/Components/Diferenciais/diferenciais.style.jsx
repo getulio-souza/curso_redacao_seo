@@ -20,6 +20,8 @@ export const DiferenciaisTitle = Styled.h3`
 export const DiferenciaisBoxes = Styled.div`
    display: flex;
    justify-content: space-evenly;
+   gap:2rem;
+   padding:0 20px;
    @media(max-width:900px){
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -33,21 +35,30 @@ export const DiferenciaisBoxes = Styled.div`
 `;
 export const DiferencialBox = Styled.div`
    background-color: #000;
-   padding: 2px 30px;
+   color:#fff;
+   padding: 2px 40px;
+   max-width:600px;
+   font-family: inter;
    border-radius: 20px;
    box-shadow: 2px 5px 7px #000;
    transition:.5s;
    &:hover{
     transform: translateY(-10px);
+    background-color:transparent;
+    color:#000;
+    /* border:1px solid #000; */
    }
 `;
 export const DirencialIcon = Styled.img`
   padding-top:20px;
   width:50px;
 `;
-export const DiferencialText = Styled.h6`
-  font-size: 1rem;
-  font-family: inter;
+export const DiferencialTitle = Styled.h4`
+  font-size: 1.2rem;
   font-weight: 900;
-  color:#fff;
+`;
+
+export const DiferencialText = Styled.h6`
+  font-size: 0.9rem;
+  line-height:1.5rem;
 `;

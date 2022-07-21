@@ -29,9 +29,9 @@ export const AboutUsBoxContent = Styled.div`
    }
 `;
 
-export const AboutUsText = Styled.h6`
+export const AboutUsText = Styled.h4`
    max-width:400px;
-   font-size:1.5rem;
+   font-size:20px;
    font-family: inter;
    font-weight:500;
    @media(max-width:700px){

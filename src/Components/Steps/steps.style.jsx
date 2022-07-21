@@ -62,9 +62,9 @@ export const StepIconColor2 = Styled.div`
   
 `;
 
-export const StepText = Styled.h6`
+export const StepText = Styled.h4`
   color:#000;
-  font-size:1.5rem;
+  font-size:20px;
   padding:0 20px;
   max-width:300px;
   margin:20px auto;

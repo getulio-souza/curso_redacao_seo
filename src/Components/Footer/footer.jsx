@@ -13,6 +13,7 @@ import {
   FooterFormContainer,
   FooterForm,
   FooterFormTitle,
+  FooterFormText,
   FooterFormLabel,
   FooterLabelTextArea,
   FooterFormBtn,
@@ -56,7 +57,9 @@ function Footer() {
 
       {/* form */}
       <FooterFormContainer>
-              <FooterFormTitle>Dúvidas? Mande uma mensagem pra gente</FooterFormTitle>
+        <FooterFormTitle>Dúvidas?
+          Mande uma mensagem pra gente
+          </FooterFormTitle>
               <FooterForm>
               <FooterFormLabel placeholder="Nome"></FooterFormLabel>
               <FooterFormLabel placeholder="Telefone/Celular"></FooterFormLabel>
