@@ -23,7 +23,7 @@ function Site() {
       <SelectPlans/>
       <AboutUs/>
       <Footer />
-      {/* <CreateUploadText /> */}
+      <CreateUploadText />
       {/* <TextForm/> */}
       {/* rotas de navegação */}
       <Routes>

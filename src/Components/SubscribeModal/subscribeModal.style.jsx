@@ -65,6 +65,7 @@ export const ModalRightColumnForm = Styled.form`
  grid-template-columns: 1fr 1fr;
  @media(max-width:900px){
   display: grid;
+  grid-template-columns:1fr;
  }
 `;
 
