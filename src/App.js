@@ -7,7 +7,8 @@ import Steps from './Components/Steps/steps';
 import SelectPlans from './Components/Select_Plans/select_plans';
 import AboutUs from './Components/AboutUs/aboutUs';
 import Footer from './Components/Footer/footer';
-import CreateUploadText from './Components/CreateUploadText/createUploadText';
+// import CreateUploadText from './Components/CreateUploadText/createUploadText';
+import Editor from './Components/Editor/Editor';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function Site() {
@@ -23,7 +24,8 @@ function Site() {
       <SelectPlans/>
       <AboutUs/>
       <Footer />
-      <CreateUploadText />
+      <Editor/>
+      {/* <CreateUploadText /> */}
       {/* <TextForm/> */}
       {/* rotas de navegação */}
       <Routes>
