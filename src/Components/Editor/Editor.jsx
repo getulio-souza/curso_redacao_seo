@@ -43,7 +43,7 @@ const Editor = ({ placeholder }) => {
         onChange={(newContent) => {}}
       />
       <ButtonsContainer>
-        <BtnEditor>Salvar</BtnEditor>
+        <BtnEditor>Publicar</BtnEditor>
       </ButtonsContainer>
     </EditorContainer>
   );

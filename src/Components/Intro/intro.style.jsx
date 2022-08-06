@@ -3,7 +3,7 @@ import Styled from "styled-components";
 export const IntroContainer = Styled.div`
    text-align:center;
    width: 100vw;
-   height: 100vh;
+   height: fit;
    margin-bottom: 8rem;
    @media (max-width:900px){
       margin-bottom: 4rem;

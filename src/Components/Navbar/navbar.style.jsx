@@ -15,7 +15,8 @@ export const NavbarContainer = Styled.nav`
 
 //38:57
 
-{/* container da esquerda */}
+{/* container da esquerda */ }
+
 export const LogoContainer = Styled.div`
     flex:30%;
     display: flex;
@@ -35,11 +36,12 @@ export const Logo = Styled.img`
   }
 `;
 
-{/* container da direita */}
+{/* container da direita */ }
+
 export const CategoryContainer = Styled.div`
     display: flex;
     align-items: center;
-    padding-right:50px;
+    /* padding-right:50px; */
     background-color:#fff;
    @media(max-width:900px){
      display:none;
