@@ -2,23 +2,27 @@ import React from "react";
 import {
   PaymentModalContainer,
   PaymentBox,
+  PaymentMainTitle,
   PaymentCardNumber,
   PaymentCardNumberInput,
   PaymentCardOwner,
   ExpirationMonth,
-  ExpirationYear,
   InputText,
   InputBoxMonthSelect,
   PaymentCodeBox,
   PaymentCodeTitle,
   PaymentCodeInput,
   PaymentSubmitBtn,
+  PaymentPasswordSaveBox,
+  PaymentPasswordSaveText,
+  PaymentPasswordSaveCheck,
   ClosePaymentBtn,
 } from "./Payment.style";
 function PaymentModal({ closeModal }) {
   return (
     <PaymentModalContainer>
       <PaymentBox>
+        <PaymentMainTitle>Informe seus dados</PaymentMainTitle>
         <PaymentCardNumber>Número do cartão</PaymentCardNumber>
         <PaymentCardNumberInput
           type="text"
@@ -33,7 +37,7 @@ function PaymentModal({ closeModal }) {
         ></PaymentCardNumberInput>
       </PaymentBox>
       <ExpirationMonth>
-        <InputText>Mês de expiração</InputText>
+        <InputText>Data de expiração</InputText>
         <InputBoxMonthSelect>
           <option value="mês" selected disabled>
             Mês
@@ -51,9 +55,6 @@ function PaymentModal({ closeModal }) {
           <option value="11">11</option>
           <option value="12">12</option>
         </InputBoxMonthSelect>
-      </ExpirationMonth>
-      <ExpirationYear>
-        <InputText>Ano de expiração</InputText>
         <InputBoxMonthSelect>
           <option value="mês" selected disabled>
             Ano
@@ -68,14 +69,21 @@ function PaymentModal({ closeModal }) {
           <option value="2029">2029</option>
           <option value="2030">2030</option>
         </InputBoxMonthSelect>
-          </ExpirationYear>
-          <PaymentCodeBox>
-          <PaymentCodeTitle>CVV</PaymentCodeTitle>
-          <PaymentCodeInput type="text" maxLength="3" pattern="[0-9]+"></PaymentCodeInput>
-          </PaymentCodeBox>
-          <PaymentSubmitBtn>Confirmar</PaymentSubmitBtn>
-      <ClosePaymentBtn> 
-        <button onClick={() => closeModal(false)}>x</button>
+      </ExpirationMonth>
+      <PaymentCodeBox>
+        <PaymentCodeTitle>CVV</PaymentCodeTitle>
+        <PaymentCodeInput
+          type="text"
+          maxLength="3"
+          pattern="[0-9]+"
+        ></PaymentCodeInput>
+      </PaymentCodeBox>
+      <PaymentPasswordSaveBox>
+        <PaymentPasswordSaveCheck>check</PaymentPasswordSaveCheck>
+        <PaymentPasswordSaveText>Memorizar cartão</PaymentPasswordSaveText>
+      </PaymentPasswordSaveBox>
+      <PaymentSubmitBtn>Confirmar</PaymentSubmitBtn>
+      <ClosePaymentBtn onClick={() => closeModal(false)}>x
       </ClosePaymentBtn>
     </PaymentModalContainer>
   );
