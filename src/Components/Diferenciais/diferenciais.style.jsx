@@ -9,7 +9,7 @@ export const DiferenciaisContainer = Styled.div`
 `;
 export const DiferenciaisTitle = Styled.h3`
    font-size: 2.5rem;
-   margin-bottom: 4rem;
+   margin: 4rem 0;
    font-family: inter;
    @media(max-width:700px){
   font-size:2.2rem;

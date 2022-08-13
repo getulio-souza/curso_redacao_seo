@@ -23,7 +23,8 @@ export const StepsTitle = Styled.h2`
 export const StepsItems = Styled.div`
    display: flex;
    justify-content: space-evenly;
-   margin-bottom:3rem;
+   padding-top: 2rem;
+   padding-bottom:2rem;
    @media(max-width:900px){
     display: grid;
     grid-template-columns:repeat(2,1fr);
@@ -64,7 +65,7 @@ export const StepIconColor2 = Styled.div`
 
 export const StepText = Styled.h4`
   color:#000;
-  font-size:20px;
+  font-size:15px;
   padding:0 20px;
   max-width:300px;
   margin:20px auto;

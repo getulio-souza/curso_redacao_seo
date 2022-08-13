@@ -42,7 +42,10 @@ export const EditorLabelContainer = styled.div`
 
 export const EditorLabel = styled.label`
    margin-bottom:10px;
-   font-size:30px;
+   font-size:25px;
+   @media(max-width:900px){
+    font-size:20px;
+   }
 `;
 
 export const EditorInputContainer = styled.div`
@@ -53,12 +56,13 @@ export const EditorInputContainer = styled.div`
   `;
 
 export const EditorInput = styled.input`
- font-size: 20px;
+ font-size: 15px;
   text-align: center;
   border: none;
   width: 500px;
   @media (max-width:700px){
    width:350px;
+   font-size:12px;
   }
 `;
 

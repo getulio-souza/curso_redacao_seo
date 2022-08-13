@@ -15,7 +15,7 @@ export const SelectContainerHeader = styled.div`
 export const SelectTitle = styled.h1`
   font-family:inter;
   font-size:2.5rem;
-   margin-bottom: 2rem;
+   margin-top:4rem;
 `;
 
 export const SelectSubTitle = styled.h3`
@@ -29,20 +29,21 @@ export const SelectSubTitle = styled.h3`
 `;
 
 export const SelectPlansContainer = styled.div`
-  width:100vw;
+  width: 100vw;
   height: 100vh;
-  background-color:#000;
-  padding:5rem 0;
-  width:100%;
-  height:100%;
+  background-color: #000;
+  padding: 5rem 0;
+  width: 100%;
+  height: 100%;
   display: grid;
   display: flex;
-  justify-content:center;
-  align-items:center;
-  gap:2rem;
-  @media(max-width:900px){
-   display: flex;
-   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
   }
 `;
 

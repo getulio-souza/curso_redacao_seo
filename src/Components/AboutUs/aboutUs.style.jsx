@@ -41,7 +41,7 @@ export const AboutUsText = Styled.h4`
 `;
 
 export const AboutUsImg = Styled.img`
-   width: 700px;
+   width: 500px;
    height:auto;
    border-radius: 20px;
    box-shadow: 2px 5px 7px #000;

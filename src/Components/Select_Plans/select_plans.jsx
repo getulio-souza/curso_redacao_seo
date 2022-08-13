@@ -22,10 +22,6 @@ import Professional from "../../assets/svgs/professional.png";
 import PaymentModal from "../PaymentModal/Payment";
 import CheckImg from "../../assets/Plans/check.png";
 
-{
-  /* planos */
-}
-
 function SelectPlans() {
   const [openPaymentModal, setPaymentModal] = useState(false);
 
