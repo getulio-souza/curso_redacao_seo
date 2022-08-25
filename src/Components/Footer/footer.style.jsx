@@ -144,6 +144,7 @@ export const FooterFormLabel = Styled.input`
    background-color:#fff;
    border-radius: 5px;
    font-family:inter;
+   font-size:10px;
 `;
 
 export const FooterFormBtn = Styled.div`
@@ -170,6 +171,7 @@ export const FooterLabelTextArea = Styled.textarea`
    width:206px;
    border-radius: 5px;
    font-family:inter;
+   font-size:10px;
 `;
 
 export const FooterAuthor = styled.p`

@@ -70,7 +70,7 @@ function Footer() {
       </FooterFormContainer>
       <FooterAuthor>
         Site desenvolvido por
-        <Link to={{ pathname: "getulio-souza.github.io/portfolio_react/" }} target="_blank"> Getúlio Souza</Link>
+        <Link to={{ pathname: "https://www.getulio-souza.github.io/portfolio_react/" }} target="_blank"> Getúlio Souza</Link>
       </FooterAuthor>
     </FooterContainer>
   );

@@ -4,7 +4,7 @@ export const StepsContainer = Styled.div`
   text-align:center;
   margin-top:10rem;
   width:100%;
-  height:50vh;
+  /* height:50vh; */
   @media(max-width:900px){
     margin-bottom:2rem;
     height:fit-content;

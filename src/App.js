@@ -25,8 +25,6 @@ function Site() {
       <AboutUs/>
       <Footer />
       <Editor/>
-      {/* <CreateUploadText /> */}
-      {/* <TextForm/> */}
       {/* rotas de navegação */}
       <Routes>
         <Route path='/Como Funciona'/>

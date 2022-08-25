@@ -32,7 +32,7 @@ function Steps() {
         <StepItem>
           <StepIconImg src={Icon2}></StepIconImg>
           <StepText>
-            Entre na sua conta. Preencha o campo “Titulo” e “Corpo do texto”.
+            Entre na sua conta. Agora, você está na página de texto. Preencha o campo “Titulo” e “Corpo do texto”.
           </StepText>
         </StepItem>
         <StepItem>

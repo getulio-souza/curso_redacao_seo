@@ -117,7 +117,7 @@ function SelectPlans() {
             <SelectPlanList>
               <SelectPlanListIcon src={CheckImg}></SelectPlanListIcon>
               <SelectPlanListText>
-                Ganha até R$200 por texto ranqueado
+                Ganhe até R$200 por texto ranqueado
               </SelectPlanListText>
             </SelectPlanList>
             <SelectPlanList>
