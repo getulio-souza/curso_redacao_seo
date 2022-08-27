@@ -16,7 +16,7 @@ import {
   PaymentSubmitBtn,
   PaymentPasswordSaveBox,
   PaymentPasswordSaveText,
-  PaymentPasswordSaveCheck,
+  // PaymentPasswordSaveCheck,
   ClosePaymentBtn,
 } from "./Payment.style";
 function PaymentModal({ closeModal }) {

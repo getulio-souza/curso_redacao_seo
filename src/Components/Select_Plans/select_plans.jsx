@@ -92,9 +92,9 @@ function SelectPlans() {
           >
             Selecionar
           </SelectPlanBtn>
-          {/* paymentModal */}
-          {openPaymentModal && <PaymentModal closeModal={setPaymentModal} />}
         </SelectPlanCard>
+        {/* paymentModal */}
+        {openPaymentModal && <PaymentModal closeModal={setPaymentModal} />}
 
         {/* Card */}
         <SelectPlanCard>
@@ -130,12 +130,17 @@ function SelectPlans() {
                 Correção ao vivo por vídeo chamada
               </SelectPlanListText>
             </SelectPlanList>
-            {/* <SelectPlanList>
-              <SelectPlanListText>Chamada de vídeo ao vivo</SelectPlanListText>
-            </SelectPlanList> */}
           </SelectPlanListContainer>
-          <SelectPlanBtn>Selecionar</SelectPlanBtn>
+          <SelectPlanBtn
+            onClick={() => {
+              setPaymentModal(true);
+            }}
+          >
+            Selecionar
+          </SelectPlanBtn>
         </SelectPlanCard>
+        {/* paymentModal */}
+        {openPaymentModal && <PaymentModal closeModal={setPaymentModal} />}
       </SelectPlansContainer>
     </SelectContainer>
   );
