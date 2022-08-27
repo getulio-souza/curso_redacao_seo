@@ -59,15 +59,7 @@ function SelectPlans() {
               <SelectPlanListText>Sem revisão ortográfica</SelectPlanListText>
             </SelectPlanList>
           </SelectPlanListContainer>
-          <SelectPlanBtn
-            onClick={() => {
-              setPaymentModal(true);
-            }}
-          >
-            Selecionar
-          </SelectPlanBtn>
-          {/* paymentModal */}
-          {openPaymentModal && <PaymentModal closeModal={setPaymentModal} />}
+          <SelectPlanBtn>Selecionar</SelectPlanBtn>
         </SelectPlanCard>
 
         {/* Card */}
@@ -93,7 +85,15 @@ function SelectPlans() {
               <SelectPlanListText>Auditoria de SEO inclusa</SelectPlanListText>
             </SelectPlanList>
           </SelectPlanListContainer>
-          <SelectPlanBtn>Selecionar</SelectPlanBtn>
+          <SelectPlanBtn
+            onClick={() => {
+              setPaymentModal(true);
+            }}
+          >
+            Selecionar
+          </SelectPlanBtn>
+          {/* paymentModal */}
+          {openPaymentModal && <PaymentModal closeModal={setPaymentModal} />}
         </SelectPlanCard>
 
         {/* Card */}
