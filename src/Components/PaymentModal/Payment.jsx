@@ -16,9 +16,10 @@ import {
   /* cartão - verso */
   CreditCardBack,
   CreditCardBackStripe,
+  CreditCardBackSecurityContainer,
   CreditCardBackSecurityCode,
   CreditCardBackBox,
-  CreditCardBackImage,
+  // CreditCardBackImage,
   /*campos */
   PaymentInfoContainer,
   PaymentBox,
@@ -63,9 +64,11 @@ function PaymentModal({ closeModal }) {
           {/* area do cartão - verso */}
           <CreditCardBack>
             <CreditCardBackStripe></CreditCardBackStripe>
-            <CreditCardBackSecurityCode>CVV</CreditCardBackSecurityCode>
-            <CreditCardBackBox></CreditCardBackBox>
-            <CreditCardBackImage src={Cardflag}></CreditCardBackImage>
+            <CreditCardBackSecurityContainer>
+              <CreditCardBackSecurityCode>CVV</CreditCardBackSecurityCode>
+              <CreditCardBackBox></CreditCardBackBox>
+            </CreditCardBackSecurityContainer>
+            {/* <CreditCardBackImage src={Cardflag}></CreditCardBackImage> */}
           </CreditCardBack>
         </CreditCardContainer>
 

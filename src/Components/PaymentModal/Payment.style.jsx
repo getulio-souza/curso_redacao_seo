@@ -31,7 +31,7 @@ export const PaymentModalInternalContainer = styled.div`
 /* Área do cartão - frente */
 
 export const CreditCardContainer = styled.div`
-  background-color: #fff;
+  background-color: #3c3333;
   width: 100%;
   height: fit-content;
   margin-bottom: 10px;
@@ -90,7 +90,7 @@ export const CreditCardBack = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #3c3333;
   box-shadow: 1px 2px 3px #000;
   border-radius: 5px;
   text-align:right;
@@ -103,14 +103,29 @@ export const CreditCardBackStripe = styled.div`
   margin:10px 0;
   height:20px;
 `;
+            
+export const CreditCardBackSecurityContainer = styled.div`
+   display:flex;
+   justify-content:flex-end;
+
+`; 
 
 export const CreditCardBackBox = styled.div`
+   background-color: #fff;
    padding:0 20px;
+   width:130px;
+   height:20px;
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
 `;
 
 export const CreditCardBackSecurityCode = styled.h6`
-   color: #fff;
-   font-size:15px;
+   color: #;
+   z-index:99999;
+   margin-right:20px;
+   margin-top:0;
 `;
 
 export const CreditCardBackImage = styled.img`
