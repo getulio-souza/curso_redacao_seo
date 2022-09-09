@@ -15,7 +15,7 @@ export const PaymentModalContainer = styled.form`
   z-index: 44;
   font-family: inter;
   @media (max-width: 900px) {
-    width: 300px;
+    /* width: 300px; */
   }
 `;
 
@@ -31,7 +31,7 @@ export const PaymentModalInternalContainer = styled.div`
 /* Área do cartão - frente */
 
 export const CreditCardContainer = styled.div`
-  background-color: #3c3333;
+  background-color: #cbb32b;
   width: 100%;
   height: fit-content;
   margin-bottom: 10px;
@@ -39,6 +39,7 @@ export const CreditCardContainer = styled.div`
   box-shadow: 1px 2px 3px #000;
   border-radius: 10px;
   transition: transform 0.4s ease-out;
+  transform: perspective(1000px) rotateY(0deg);
 `;
 
 export const CreditCardFlagContainer = styled.div`
@@ -66,7 +67,7 @@ export const CreditCardChip = styled.img`
 `;
 
 export const CreditCardNumber = styled.h6`
-  margin:10px 0 0 10px;
+  margin: 10px 0 0 10px;
 `;
 
 export const CreditCardNameAndExpiration = styled.div`
@@ -90,48 +91,54 @@ export const CreditCardBack = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #3c3333;
+  background-color: #cbb32b;
   box-shadow: 1px 2px 3px #000;
   border-radius: 5px;
-  text-align:right;
-  transition:transform .4s ease-out;
+  text-align: right;
+  transition: transform 0.4s ease-out;
+  transform: perspective(1000px) rotateY(180deg);
 `;
 
 export const CreditCardBackStripe = styled.div`
-  background-color:#000;
-  width:100%;
-  margin:10px 0;
-  height:20px;
+  background-color: #000;
+  width: 100%;
+  margin: 20px 0;
+  height: 20px;
 `;
-            
-export const CreditCardBackSecurityContainer = styled.div`
-   display:flex;
-   justify-content:flex-end;
 
-`; 
+export const CreditCardBackSecurityContainer = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`;
 
 export const CreditCardBackBox = styled.div`
-   background-color: #fff;
-   padding:0 20px;
-   width:130px;
-   height:20px;
-   position:absolute;
-   top:50%;
-   left:50%;
-   transform: translate(-50%,-50%);
+  background-color: #000;
+  padding: 0 20px;
+  width: 130px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 10px;
+  border-radius: 3px;
 `;
 
 export const CreditCardBackSecurityCode = styled.h6`
-   color: #;
-   z-index:99999;
-   margin-right:20px;
-   margin-top:0;
+  color: #000;
+  z-index: 99999;
+  margin-right: 20px;
+  margin-top: -10px;
 `;
 
-export const CreditCardBackImage = styled.img`
- width:30px;
- height:30px;
+/*https://www.youtube.com/watch?v=G7_VTWnWz40&t=389s ->>>>  terminar de assistir!  16:30*/
 
+export const CreditCardBackImage = styled.img`
+  width: 30px;
+  height: auto;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
 `;
 
 /* Área de preenchimento de dados **/
@@ -192,8 +199,8 @@ export const InputBoxMonthSelect = styled.select`
   font-size: 10px;
   border-radius: 5px;
   cursor: pointer;
-  transition:.5s;
-  &:hover{
+  transition: 0.5s;
+  &:hover {
     animation-direction: normal;
   }
 `;

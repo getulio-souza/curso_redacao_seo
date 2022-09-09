@@ -19,7 +19,7 @@ import {
   CreditCardBackSecurityContainer,
   CreditCardBackSecurityCode,
   CreditCardBackBox,
-  // CreditCardBackImage,
+  CreditCardBackImage,
   /*campos */
   PaymentInfoContainer,
   PaymentBox,
@@ -40,6 +40,8 @@ import {
 import Cardflag from "../../assets/credit-card/flag-2.png";
 
 import CardChip from "../../assets/credit-card/chip.jpg";
+
+import visaLogo from "../../assets/credit-card/visa-logo.png";
 
 function PaymentModal({ closeModal }) {
   return (
@@ -68,7 +70,7 @@ function PaymentModal({ closeModal }) {
               <CreditCardBackSecurityCode>CVV</CreditCardBackSecurityCode>
               <CreditCardBackBox></CreditCardBackBox>
             </CreditCardBackSecurityContainer>
-            {/* <CreditCardBackImage src={Cardflag}></CreditCardBackImage> */}
+            <CreditCardBackImage src={visaLogo}></CreditCardBackImage>
           </CreditCardBack>
         </CreditCardContainer>
 
