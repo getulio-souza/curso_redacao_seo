@@ -28,119 +28,6 @@ export const PaymentModalInternalContainer = styled.div`
   z-index: 43;
 `;
 
-/* Área do cartão - frente */
-
-export const CreditCardContainer = styled.div`
-  /* background-color: #cbb32b; */
-  width: 100%;
-  height: fit-content;
-  margin-bottom: 10px;
-  position: relative;
-  box-shadow: 1px 2px 3px #000;
-  border-radius: 10px;
-  transition: transform 0.4s ease-out;
-  transform: perspective(1000px) rotateY(0deg);
-`;
-
-export const CreditCardFlagContainer = styled.div`
-  display: flex;
-`;
-
-export const CreditCardFlag = styled.img`
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-`;
-
-export const CreditCardChipAndNumber = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-export const CreditCardChip = styled.img`
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-  margin-top: 10px;
-`;
-
-export const CreditCardNumber = styled.h6`
-  margin: 10px 0 0 10px;
-`;
-
-export const CreditCardNameAndExpiration = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 10px;
-`;
-
-export const CreditCardName = styled.h6``;
-
-export const CreditCardExpiration = styled.p`
-  font-size: 10px;
-`;
-
-/* Área do cartão - verso */
-
-export const CreditCardBack = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: #cbb32b; */
-  box-shadow: 1px 2px 3px #000;
-  border-radius: 5px;
-  text-align: right;
-  transition: transform 0.4s ease-out;
-  transform: perspective(1000px) rotateY(180deg);
-`;
-
-export const CreditCardBackStripe = styled.div`
-  background-color: #000;
-  width: 100%;
-  margin: 20px 0;
-  height: 20px;
-`;
-
-export const CreditCardBackSecurityContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
-
-export const CreditCardBackBox = styled.div`
-  background-color: #000;
-  padding: 0 20px;
-  width: 130px;
-  height: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 10px;
-  border-radius: 3px;
-`;
-
-export const CreditCardBackSecurityCode = styled.h6`
-  color: #000;
-  z-index: 99999;
-  margin-right: 20px;
-  margin-top: -10px;
-`;
-
-/*https://www.youtube.com/watch?v=G7_VTWnWz40&t=389s ->>>>  terminar de assistir!  16:30*/
-
-export const CreditCardBackImage = styled.img`
-  width: 30px;
-  height: auto;
-  position: absolute;
-  bottom: 10px;
-  right: 15px;
-`;
-
 /* Área de preenchimento de dados **/
 
 export const PaymentInfoContainer = styled.div``;
@@ -168,6 +55,7 @@ export const PaymentCardOwner = styled.h4`
 export const PaymentCardNumberInput = styled.input`
   border: none;
   border-radius: 5px;
+  text-align:center;
 `;
 
 export const InputBoxContainer = styled.div``;
@@ -181,7 +69,6 @@ export const ExpirationMonth = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin-top: 10px;
 `;
 
 export const ExpirationDate = styled.div`
@@ -192,8 +79,8 @@ export const ExpirationDate = styled.div`
 
 export const InputText = styled.h5`
   font-size: 10px;
-  /* padding:0 20px; */
   color: #444242;
+  margin-bottom:0;
 `;
 
 export const InputBoxMonthSelect = styled.select`
@@ -237,12 +124,14 @@ export const PaymentCodeBox = styled.div`
 export const PaymentCodeTitle = styled.h5`
   font-size: 10px;
   color: #444242;
+  margin-bottom:10px;
 `;
 
 export const PaymentCodeInput = styled.input`
   width: 50px;
   border: none;
   border-radius: 5px;
+  text-align:center;
 `;
 
 export const PaymentPasswordSaveBox = styled.label`

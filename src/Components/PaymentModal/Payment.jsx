@@ -11,7 +11,6 @@ import {
   PaymentCardOwner,
   ExpirationMonth,
   InputText,
-  InputMonthandYear,
   PaymentCodeBox,
   PaymentCodeTitle,
   PaymentCodeInput,
@@ -49,7 +48,6 @@ function PaymentModal({ closeModal }) {
               type="tel"
               name="number"
               maxLength={16}
-              placeholder="Card Number"
               value={number}
               onChange={(e) => setNumber(e.target.value)}
               onFocus={(e) => setFocus(e.target.name)}
@@ -60,7 +58,6 @@ function PaymentModal({ closeModal }) {
             <PaymentCardNumberInput
               type="text"
               name="name"
-              placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               onFocus={(e) => setFocus(e.target.name)}
@@ -68,15 +65,15 @@ function PaymentModal({ closeModal }) {
           </PaymentBox>
           <ExpirationMonth>
             <InputText>Data de expiração</InputText>
-            <InputMonthandYear
+            <PaymentCodeInput
               type="text"
               maxLength={4}
               name="expira em:"
-              placeholder="MM/YY"
+              placeholder="mm/yy"
               value={expiry}
               onChange={(e) => setExpiry(e.target.value)}
               onFocus={(e) => setFocus(e.target.name)}
-            ></InputMonthandYear>
+            ></PaymentCodeInput>
           </ExpirationMonth>
 
           <PaymentCodeBox>
