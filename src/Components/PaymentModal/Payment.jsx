@@ -1,26 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import Cards from "react-credit-cards";
+import "react-credit-cards/es/styles-compiled.css";
 import {
   PaymentModalContainer,
   PaymentModalInternalContainer,
-
-  /* cartão - frente */
-  CreditCardContainer,
-  CreditCardFlagContainer,
-  CreditCardFlag,
-  CreditCardChipAndNumber,
-  CreditCardChip,
-  CreditCardNumber,
-  CreditCardNameAndExpiration,
-  CreditCardName,
-  CreditCardExpiration,
-  /* cartão - verso */
-  CreditCardBack,
-  CreditCardBackStripe,
-  CreditCardBackSecurityContainer,
-  CreditCardBackSecurityCode,
-  CreditCardBackBox,
-  CreditCardBackImage,
-  /*campos */
   PaymentInfoContainer,
   PaymentBox,
   PaymentCardNumber,
@@ -28,7 +11,7 @@ import {
   PaymentCardOwner,
   ExpirationMonth,
   InputText,
-  InputBoxMonthSelect,
+  InputMonthandYear,
   PaymentCodeBox,
   PaymentCodeTitle,
   PaymentCodeInput,
@@ -37,99 +20,75 @@ import {
   ClosePaymentBtn,
 } from "./Payment.style";
 
-import Cardflag from "../../assets/credit-card/flag-2.png";
-
-import CardChip from "../../assets/credit-card/chip.jpg";
-
-import visaLogo from "../../assets/credit-card/visa-logo.png";
 
 function PaymentModal({ closeModal }) {
+
+  /* variáveis para preencher o cartão com dados*/
+  const [number, setNumber] = useState("");
+  const [name, setName] = useState("");
+  const [expiry, setExpiry] = useState("");
+  const [cvc, setCvc] = useState("");
+  const [focus, setFocus] = useState("");
+
   return (
     <PaymentModalContainer>
       <PaymentModalInternalContainer>
-        {/* area do cartão - frente */}
-        <CreditCardContainer>
-          <CreditCardFlagContainer>
-            <CreditCardFlag src={Cardflag}></CreditCardFlag>
-          </CreditCardFlagContainer>
-
-          <CreditCardChipAndNumber>
-            <CreditCardChip src={CardChip}></CreditCardChip>
-            <CreditCardNumber>0000 0000 0000 0000</CreditCardNumber>
-          </CreditCardChipAndNumber>
-
-          <CreditCardNameAndExpiration>
-            <CreditCardName>José Bonifácio Santana</CreditCardName>
-            <CreditCardExpiration>00/00</CreditCardExpiration>
-          </CreditCardNameAndExpiration>
-
-          {/* area do cartão - verso */}
-          <CreditCardBack>
-            <CreditCardBackStripe></CreditCardBackStripe>
-            <CreditCardBackSecurityContainer>
-              <CreditCardBackSecurityCode>CVV</CreditCardBackSecurityCode>
-              <CreditCardBackBox></CreditCardBackBox>
-            </CreditCardBackSecurityContainer>
-            <CreditCardBackImage src={visaLogo}></CreditCardBackImage>
-          </CreditCardBack>
-        </CreditCardContainer>
-
+        {/* area do cartão */}
+        <Cards 
+          number={number}
+          name={name}
+          expiry={expiry}
+          cvc={cvc}
+          focused={focus}
+        />
         {/* area para preencher dados */}
         <PaymentInfoContainer>
           <PaymentBox>
             <PaymentCardNumber>Número do cartão</PaymentCardNumber>
             <PaymentCardNumberInput
-              type="text"
-              maxLength="16"
+              type="tel"
+              name="number"
+              maxLength={16}
+              placeholder="Card Number"
+              value={number}
+              onChange={(e) => setNumber(e.target.value)}
+              onFocus={(e) => setFocus(e.target.name)}
             ></PaymentCardNumberInput>
           </PaymentBox>
-          <ExpirationMonth>
-            <InputText>Data de expiração</InputText>
-            <InputBoxMonthSelect>
-              <option value="mês" selected disabled>
-                Mês
-              </option>
-              <option value="01">01</option>
-              <option value="02">02</option>
-              <option value="03">03</option>
-              <option value="04">04</option>
-              <option value="05">05</option>
-              <option value="06">06</option>
-              <option value="07">07</option>
-              <option value="08">08</option>
-              <option value="09">09</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </InputBoxMonthSelect>
-            <InputBoxMonthSelect>
-              <option value="mês" selected disabled>
-                Ano
-              </option>
-              <option value="2022">2022</option>
-              <option value="2023">2023</option>
-              <option value="2024">2024</option>
-              <option value="2025">2025</option>
-              <option value="2026">2026</option>
-              <option value="2027">2027</option>
-              <option value="2028">2028</option>
-              <option value="2029">2029</option>
-              <option value="2030">2030</option>
-            </InputBoxMonthSelect>
-          </ExpirationMonth>
           <PaymentBox>
             <PaymentCardOwner>Dono do cartão</PaymentCardOwner>
             <PaymentCardNumberInput
               type="text"
-              maxLength="16"
+              name="name"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              onFocus={(e) => setFocus(e.target.name)}
             ></PaymentCardNumberInput>
           </PaymentBox>
+          <ExpirationMonth>
+            <InputText>Data de expiração</InputText>
+            <InputMonthandYear
+              type="text"
+              maxLength={4}
+              name="expira em:"
+              placeholder="MM/YY"
+              value={expiry}
+              onChange={(e) => setExpiry(e.target.value)}
+              onFocus={(e) => setFocus(e.target.name)}
+            ></InputMonthandYear>
+          </ExpirationMonth>
+
           <PaymentCodeBox>
             <PaymentCodeTitle>CVV</PaymentCodeTitle>
             <PaymentCodeInput
-              type="text"
-              maxLength="3"
-              pattern="[0-9]+"
+              type="tel"
+              maxLength={3}
+              name="cvc"
+              placeholder="CVC"
+              value={cvc}
+              onChange={(e) => setCvc(e.target.value)}
+              onFocus={(e) => setFocus(e.target.name)}
             ></PaymentCodeInput>
           </PaymentCodeBox>
           <PaymentPasswordSaveBox>

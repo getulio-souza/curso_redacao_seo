@@ -31,7 +31,7 @@ export const PaymentModalInternalContainer = styled.div`
 /* Área do cartão - frente */
 
 export const CreditCardContainer = styled.div`
-  background-color: #cbb32b;
+  /* background-color: #cbb32b; */
   width: 100%;
   height: fit-content;
   margin-bottom: 10px;
@@ -91,7 +91,7 @@ export const CreditCardBack = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #cbb32b;
+  /* background-color: #cbb32b; */
   box-shadow: 1px 2px 3px #000;
   border-radius: 5px;
   text-align: right;
@@ -172,8 +172,13 @@ export const PaymentCardNumberInput = styled.input`
 
 export const InputBoxContainer = styled.div``;
 
+export const InputMonthandYear = styled.input`
+  display:flex;
+`;
+
 export const ExpirationMonth = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
   margin-top: 10px;
