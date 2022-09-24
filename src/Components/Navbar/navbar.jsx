@@ -26,7 +26,7 @@ const Navbar = () => {
   {
     /* botão modal (Cadastro) */
   }
-  const [openModal, setOpenModal] = useState(false);
+  const [openSubscribeModal, setOpenModal] = useState(false);
 
   {
     /* botão modal (Login) */
@@ -37,7 +37,6 @@ const Navbar = () => {
     /* adicionando funcionalidade no botão mobile  */
   }
   const [ExtendNavbar, setExtendNavbar] = useState(false);
-
 
   return (
     <NavbarContainer ExtendNavbar={ExtendNavbar}>
@@ -76,7 +75,7 @@ const Navbar = () => {
 
           {/* modal subscribe button  */}
           <Modal>
-            {openModal && <SubscribeModal closeModal={setOpenModal} />}
+            {openSubscribeModal && <SubscribeModal closeModal={setOpenModal} />}
           </Modal>
         </CategoryContainer>
 
@@ -109,18 +108,17 @@ const Navbar = () => {
 
           {/* modal button */}
           <Modal>
-            {openModal && <SubscribeModal closeModal={setOpenModal} />}
+            {openSubscribeModal && <SubscribeModal closeModal={setOpenModal} />}
           </Modal>
 
           {/* login button */}
           <LoginBtnExtended
             onClick={() => {
-            setOpenLoginModal(true);
+              setOpenLoginModal(true);
             }}
           >
             <NavbarLinkExtended to="/quemsomos">Entrar</NavbarLinkExtended>
           </LoginBtnExtended>
-      
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>
