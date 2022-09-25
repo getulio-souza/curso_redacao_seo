@@ -1,14 +1,38 @@
 import React from "react";
-import { EditorPageContainer } from "./editor-page.style";
+import {
+  EditorPageContainer,
+  EditorPageTitle,
+  EditorPageBoxContainer,
+  EditorPageBox,
+  EditorPageBoxTitle,
+} from "./editor-page.style";
 
-function editorPage({ closeModal }) {
+function EditorPage({ closeModal }) {
   return (
     <>
       <EditorPageContainer>
-        <h3>um texto aqui</h3>
+        <EditorPageTitle>Selecione uma categoria</EditorPageTitle>
+        <EditorPageBoxContainer>
+          {/* box */}
+          <EditorPageBox>
+            <EditorPageBoxTitle>Criar novo texto</EditorPageBoxTitle>
+          </EditorPageBox>
+          {/* box */}
+          <EditorPageBox>
+            <EditorPageBoxTitle>Revisões pendentes</EditorPageBoxTitle>
+          </EditorPageBox>
+          {/* box */}
+          <EditorPageBox>
+            <EditorPageBoxTitle>Últimos textos</EditorPageBoxTitle>
+          </EditorPageBox>
+          {/* box */}
+          <EditorPageBox>
+            <EditorPageBoxTitle>Desempenho de SEO</EditorPageBoxTitle>
+          </EditorPageBox>
+        </EditorPageBoxContainer>
       </EditorPageContainer>
     </>
   );
 }
 
-export default editorPage;
+export default EditorPage;

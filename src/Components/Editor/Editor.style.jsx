@@ -5,7 +5,7 @@ export const EditorContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
   margin: 2rem;
   @media (min-width: 900px) {
     max-width: 800px;

@@ -61,6 +61,7 @@ const Navbar = () => {
             <NavbarLink to="/quemsomos">Entrar</NavbarLink>
           </LoginBtn>
 
+          <NavbarLink to="/contato">Meu Perfil</NavbarLink>
           {/* modal Login button  */}
           {OpenLoginModal && <LoginModal closeModal={setOpenLoginModal} />}
 
