@@ -76,7 +76,7 @@ export const NavbarLinkContainer = Styled.div`
   display: flex;
 `;
 
-export const NavbarLink = Styled.a`
+export const NavbarLink = Styled(Link)`
   color: #000;
   font-size: 15px;
   padding: 10px;

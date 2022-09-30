@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
+
 import {
   NavbarContainer,
   Modal,
@@ -21,24 +23,19 @@ import {
 import LogoImg from "../../assets/logo-2.png";
 import SubscribeModal from "../SubscribeModal/subscribeModal";
 import LoginModal from "../LoginModal/loginModal";
+import { click } from "@testing-library/user-event/dist/click";
 
 const Navbar = () => {
-  {
-    /* botão modal (Cadastro) */
-  }
+  /* botão modal (Cadastro) */
   const [openModal, setOpenModal] = useState(false);
 
-  {
     /* botão modal (Login) */
-  }
   const [OpenLoginModal, setOpenLoginModal] = useState(false);
 
-  {
     /* adicionando funcionalidade no botão mobile  */
-  }
   const [ExtendNavbar, setExtendNavbar] = useState(false);
 
-
+   
   return (
     <NavbarContainer ExtendNavbar={ExtendNavbar}>
       <NavbarInnerContainer>
@@ -49,9 +46,9 @@ const Navbar = () => {
 
         {/* left container */}
         <CategoryContainer>
-          <NavbarLink to="/comofunciona">Como funciona</NavbarLink>
+          <NavbarLink to="/editor">Como funciona</NavbarLink>
           <NavbarLink to="/quemsomos">Quem somos</NavbarLink>
-          <NavbarLink to="/contato">Contato</NavbarLink>
+          {/* <Link to="/footer" spy={true} smooth={true} offset={50} duration={500} onClick={} >Contato</Link> */}
 
           {/* login button */}
           <LoginBtn
