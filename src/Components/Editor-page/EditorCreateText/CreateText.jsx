@@ -23,15 +23,15 @@ const EditorCreateText = ({ placeholder }) => {
 
   return (
     <EditorContainer>
-      <EditorTitle>Preencha os campos abaixo antes de começar</EditorTitle>
+      <EditorTitle>Preencha os campos abaixo para criar o seu texto</EditorTitle>
       <EditorInfoContainer>
         <EditorLabelContainer>
           <EditorLabel>Autor</EditorLabel>
-          <EditorInput placeholder="fulano da Silva"></EditorInput>
+          <EditorInput placeholder="Digite o nome"></EditorInput>
         </EditorLabelContainer>
         <EditorInputContainer>
           <EditorLabel>Título do texto</EditorLabel>
-          <EditorInput placeholder="10 razões para escrever um livro de ficção"></EditorInput>
+          <EditorInput placeholder="Digite o título"></EditorInput>
         </EditorInputContainer>
       </EditorInfoContainer>
       <JoditEditor

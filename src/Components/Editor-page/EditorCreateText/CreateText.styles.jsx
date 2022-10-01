@@ -18,7 +18,8 @@ export const EditorTitle = styled.h1`
   text-align: center;
   margin: 0 10px;
   padding-bottom: 20px;
-  font-size: 40px;
+  font-size: 30px;
+  max-width: 420px;
   @media (max-width: 700px) {
     font-size: 1.5rem;
   }
@@ -34,8 +35,8 @@ export const EditorInfoContainer = styled.div`
   border-top: 1px solid #d8d6d6;
   border-left: 1px solid #d8d6d6;
   border-right: 1px solid #d8d6d6;
-  padding: 40px 0;
-  max-width: 470px;
+  padding: 10px 0;
+  max-width: 450px;
 `;
 
 export const EditorLabelContainer = styled.div`
@@ -47,7 +48,7 @@ export const EditorLabelContainer = styled.div`
 
 export const EditorLabel = styled.label`
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 20px;
   @media (max-width: 900px) {
     font-size: 20px;
   }
@@ -61,7 +62,7 @@ export const EditorInputContainer = styled.div`
 `;
 
 export const EditorInput = styled.input`
-  font-size: 15px;
+  font-size: 12px;
   text-align: center;
   border: none;
   width: 500px;
@@ -80,7 +81,7 @@ export const ButtonsContainer = styled.div`
 `;
 
 export const BtnEditor = styled.button`
-  margin-left: 10px;
+  /* margin-left: 10px; */
   border: none;
   background-color: #000;
   font-size: 20px;
