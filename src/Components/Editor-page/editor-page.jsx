@@ -7,7 +7,7 @@ import {
   EditorPageBoxTitle,
 } from "./editor-page.style";
 
-function EditorPage({ closeModal }) {
+function EditorPageMain({ closeModal }) {
   return (
     <>
       <EditorPageContainer>
@@ -35,4 +35,4 @@ function EditorPage({ closeModal }) {
   );
 }
 
-export default EditorPage;
+export default EditorPageMain;

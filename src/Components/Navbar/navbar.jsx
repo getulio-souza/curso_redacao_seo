@@ -23,29 +23,17 @@ import {
 import LogoImg from "../../assets/logo-2.png";
 import SubscribeModal from "../SubscribeModal/subscribeModal";
 import LoginModal from "../LoginModal/loginModal";
-import { click } from "@testing-library/user-event/dist/click";
 
 const Navbar = () => {
-<<<<<<< HEAD
-  {
-    /* botão modal (Cadastro) */
-  }
-  const [openSubscribeModal, setOpenModal] = useState(false);
-=======
   /* botão modal (Cadastro) */
-  const [openModal, setOpenModal] = useState(false);
->>>>>>> 6011b4f8307578565e3124a7a30a6c945b56c16f
+  const [openSubscribeModal, setOpenModal] = useState(false);
 
-    /* botão modal (Login) */
+  /* botão modal (Login) */
   const [OpenLoginModal, setOpenLoginModal] = useState(false);
 
-    /* adicionando funcionalidade no botão mobile  */
+  /* adicionando funcionalidade no botão mobile  */
   const [ExtendNavbar, setExtendNavbar] = useState(false);
 
-<<<<<<< HEAD
-=======
-   
->>>>>>> 6011b4f8307578565e3124a7a30a6c945b56c16f
   return (
     <NavbarContainer ExtendNavbar={ExtendNavbar}>
       <NavbarInnerContainer>
@@ -56,7 +44,7 @@ const Navbar = () => {
 
         {/* left container */}
         <CategoryContainer>
-          <NavbarLink to="/editor">Como funciona</NavbarLink>
+          <NavbarLink to="/editor-page">Como funciona</NavbarLink>
           <NavbarLink to="/quemsomos">Quem somos</NavbarLink>
           {/* <Link to="/footer" spy={true} smooth={true} offset={50} duration={500} onClick={} >Contato</Link> */}
 

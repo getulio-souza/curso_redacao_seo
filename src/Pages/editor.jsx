@@ -1,13 +1,13 @@
 import React from "react";
 
-import Editor from "../Components/Editor/Editor";
+import Editor from "../../src/Components/Editor-page/editor-page";
 
-function EditorPage(){
-  return(
+function EditorPage() {
+  return (
     <>
-    <Editor/>
+      <Editor />
     </>
-  )
+  );
 }
 
 export default EditorPage;
