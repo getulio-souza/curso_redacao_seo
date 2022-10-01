@@ -8078,6 +8078,11 @@
   "resolved" "https://registry.npmjs.org/lodash.sortby/-/lodash.sortby-4.7.0.tgz"
   "version" "4.7.0"
 
+"lodash.throttle@^4.1.1":
+  "integrity" "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ=="
+  "resolved" "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
+  "version" "4.1.1"
+
 "lodash.union@^4.6.0":
   "integrity" "sha512-c4pB2CdGrGdjMKYLA+XiRDO7Y0PRQbm/Gzg8qMj+QH+pFVAoTp5sBpO0odL3FjoPCGjK96p6qsP+yQoiLoOBcw=="
   "resolved" "https://registry.npmjs.org/lodash.union/-/lodash.union-4.6.0.tgz"
@@ -9788,7 +9793,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.8.1":
+"prop-types@^15.7.2", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -10140,6 +10145,14 @@
     "workbox-webpack-plugin" "^6.4.1"
   optionalDependencies:
     "fsevents" "^2.3.2"
+
+"react-scroll@^1.8.7":
+  "integrity" "sha512-fBOIwweAlhicx8RqP9tQXn/Uhd+DTtVRjw+0VBsIn1Z+MjRYLhTZ0tMoTAU1vOD3dce8mI6copexI4yWII+Luw=="
+  "resolved" "https://registry.npmjs.org/react-scroll/-/react-scroll-1.8.7.tgz"
+  "version" "1.8.7"
+  dependencies:
+    "lodash.throttle" "^4.1.1"
+    "prop-types" "^15.7.2"
 
 "react@^18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="

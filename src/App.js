@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Navbar from "./Components/Navbar/navbar";
 import Header from "./Components/Header/header";
 import Intro from "./Components/Intro/intro";
@@ -45,6 +46,25 @@ function Site() {
       </NavLink>
       <Footer/>
       </Routes>
+=======
+
+// import CreateUploadText from './Components/CreateUploadText/createUploadText';
+import { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom';
+import Landing from './Pages/landing';
+import EditorPage from './Pages/editor';
+import Footer from './Components/Footer/footer';
+
+function Site() {
+  return (
+
+  <Router>
+     <Routes>
+        <Route path='/editor' element={<EditorPage/>} />
+        <Route path='/' element={<Landing/>} />
+        <Route path='/footer' element={<Footer/>} />
+     </Routes>
+  </Router>
+>>>>>>> 6011b4f8307578565e3124a7a30a6c945b56c16f
   );
 }
 
