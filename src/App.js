@@ -3,7 +3,7 @@
 import { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom';
 import Landing from './Pages/landing';
 import EditorPageMain from './Components/Editor-page/editor-page';
-import EditorCreateText from './Components/EditorCreateText/CreateText';
+import EditorCreateText from './Components/Editor-page/EditorCreateText/CreateText';
 import Footer from './Components/Footer/footer';
 
 function Site() {
