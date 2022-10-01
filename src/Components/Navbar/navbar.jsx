@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
 
 import {
   NavbarContainer,
@@ -10,7 +9,6 @@ import {
   NavbarInnerContainer,
   NavbarExtendedContainer,
   NavbarLink,
-  NavbarLinkSubscribe,
   SubscribeBtn,
   OpenLinksBtn,
   LoginBtn,

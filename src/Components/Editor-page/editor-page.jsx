@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   EditorPageContainer,
   EditorPageTitle,
@@ -14,9 +15,11 @@ function EditorPageMain({ closeModal }) {
         <EditorPageTitle>Selecione uma categoria</EditorPageTitle>
         <EditorPageBoxContainer>
           {/* box */}
-          <EditorPageBox>
-            <EditorPageBoxTitle>Criar novo texto</EditorPageBoxTitle>
-          </EditorPageBox>
+          <Link to="/editor-page/editor-create-text">
+            <EditorPageBox>
+              <EditorPageBoxTitle>Criar novo texto</EditorPageBoxTitle>
+            </EditorPageBox>
+          </Link>
           {/* box */}
           <EditorPageBox>
             <EditorPageBoxTitle>Revisões pendentes</EditorPageBoxTitle>

@@ -1,13 +1,13 @@
-import React from "react";
+// import React from "react";
 
-import Editor from "../../src/Components/Editor-page/editor-page";
+// import Editor from "../../src/Components/Editor-page/editor-page";
 
-function EditorPage() {
-  return (
-    <>
-      <Editor />
-    </>
-  );
-}
+// function EditorPage() {
+//   return (
+//     <>
+//       <Editor />
+//     </>
+//   );
+// }
 
-export default EditorPage;
+// export default EditorPage;

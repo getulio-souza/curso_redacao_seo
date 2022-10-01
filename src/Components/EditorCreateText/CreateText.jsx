@@ -10,9 +10,9 @@ import {
   EditorLabel,
   EditorInputContainer,
   EditorInput,
-} from "./Editor.style";
+} from "./CreateText.styles";
 
-const Editor = ({ placeholder }) => {
+const EditorCreateText = ({ placeholder }) => {
   const editor = useRef(null);
   const [content, setContent] = useState("");
 
@@ -49,4 +49,4 @@ const Editor = ({ placeholder }) => {
   );
 };
 
-export default Editor;
+export default EditorCreateText;
