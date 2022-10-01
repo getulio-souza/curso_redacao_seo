@@ -2,7 +2,8 @@ import React from "react";
 
 import {
   LastTextsContainer,
-  LastTextsContainerTitle,
+    LastTextsContainerTitle,
+  LastTextcardsContainer,
   LastTextCard,
   LastTextCardTitle,
   LastTextCardInfo,
@@ -15,38 +16,56 @@ function LastTexts() {
       <LastTextsContainerTitle>
         Últimos textos publicados
       </LastTextsContainerTitle>
-      <LastTextCard>
-        <LastTextCardTitle>Texto 1</LastTextCardTitle>
-        <LastTextCardInfo>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
-          beatae...
-        </LastTextCardInfo>
-        <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
-      </LastTextCard>
-      <LastTextCard>
-        <LastTextCardTitle>Texto 2</LastTextCardTitle>
-        <LastTextCardInfo>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
-          beatae...
-        </LastTextCardInfo>
-        <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
-      </LastTextCard>
-      <LastTextCard>
-        <LastTextCardTitle>Texto 3</LastTextCardTitle>
-        <LastTextCardInfo>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
-          beatae...
-        </LastTextCardInfo>
-        <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
-      </LastTextCard>
-      <LastTextCard>
-        <LastTextCardTitle>Texto 4</LastTextCardTitle>
-        <LastTextCardInfo>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
-          beatae...
-        </LastTextCardInfo>
-        <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
-      </LastTextCard>
+      <LastTextcardsContainer>
+        <LastTextCard>
+          <LastTextCardTitle>Texto 1</LastTextCardTitle>
+          <LastTextCardInfo>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
+            beatae...
+          </LastTextCardInfo>
+          <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
+        </LastTextCard>
+        <LastTextCard>
+          <LastTextCardTitle>Texto 2</LastTextCardTitle>
+          <LastTextCardInfo>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
+            beatae...
+          </LastTextCardInfo>
+          <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
+        </LastTextCard>
+        <LastTextCard>
+          <LastTextCardTitle>Texto 3</LastTextCardTitle>
+          <LastTextCardInfo>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
+            beatae...
+          </LastTextCardInfo>
+          <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
+        </LastTextCard>
+        <LastTextCard>
+          <LastTextCardTitle>Texto 4</LastTextCardTitle>
+          <LastTextCardInfo>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
+            beatae...
+          </LastTextCardInfo>
+          <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
+        </LastTextCard>
+        <LastTextCard>
+          <LastTextCardTitle>Texto 4</LastTextCardTitle>
+          <LastTextCardInfo>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
+            beatae...
+          </LastTextCardInfo>
+          <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
+        </LastTextCard>
+        <LastTextCard>
+          <LastTextCardTitle>Texto 4</LastTextCardTitle>
+          <LastTextCardInfo>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi,
+            beatae...
+          </LastTextCardInfo>
+          <LastTextCardBtn>Ler texto na integra</LastTextCardBtn>
+        </LastTextCard>
+      </LastTextcardsContainer>
     </LastTextsContainer>
   );
 }
