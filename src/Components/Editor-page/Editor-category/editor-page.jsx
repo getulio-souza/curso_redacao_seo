@@ -21,15 +21,15 @@ function EditorPageMain({ closeModal }) {
             </EditorPageBox>
           </Link>
           {/* box */}
-          <Link to="/editor-page/last-texts">
           <EditorPageBox>
             <EditorPageBoxTitle>Revisões pendentes</EditorPageBoxTitle>
           </EditorPageBox>
-          </Link>
           {/* box */}
+          <Link to="/editor-page/last-texts">
           <EditorPageBox>
             <EditorPageBoxTitle>Últimos textos</EditorPageBoxTitle>
           </EditorPageBox>
+           </Link>
           {/* box */}
           <EditorPageBox>
             <EditorPageBoxTitle>Desempenho de SEO</EditorPageBoxTitle>

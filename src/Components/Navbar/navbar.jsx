@@ -42,7 +42,7 @@ const Navbar = () => {
 
         {/* left container */}
         <CategoryContainer>
-          <NavbarLink to="/editor-page">Como funciona</NavbarLink>
+          <NavbarLink to="/editor-page">Publique seu texto</NavbarLink>
           <NavbarLink to="/quemsomos">Quem somos</NavbarLink>
           {/* <Link to="/footer" spy={true} smooth={true} offset={50} duration={500} onClick={} >Contato</Link> */}
 

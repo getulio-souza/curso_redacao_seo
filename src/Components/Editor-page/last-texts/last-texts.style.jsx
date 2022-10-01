@@ -13,7 +13,7 @@ export const LastTextsContainer = styled.div`
 `;
 
 export const LastTextsContainerTitle = styled.h1`
-  text-align: center;
+  text-align: start;
   margin-right: 20px;
 `;
 
@@ -26,12 +26,31 @@ export const LastTextcardsContainer = styled.div`
 export const LastTextCard = styled.div`
   background-color:#000;
   color:#fff;
-  width:200px;
-  height:fit-content;
+  width:220px;
+  height:auto;
   padding:20px 10px;
   border-radius:10px;
 `;
 
-export const LastTextCardTitle = styled.h4``;
-export const LastTextCardInfo = styled.p``;
-export const LastTextCardBtn = styled.button``;
+export const LastTextCardTitle = styled.h4`
+   margin:15px 0;
+`;
+
+export const LastTextCardInfo = styled.p`
+  font-size:12px;
+`;
+
+export const LastTextCardBtn = styled.button`
+  border:none;
+  padding:5px 10px;
+  border-radius:10px;
+  background-color:#fff;
+  color:#000;
+  transition: 0.5s;
+  cursor:pointer;
+  &:hover{
+    background-color:transparent;
+    border:1px solid #fff;
+    color:#fff;
+  }
+`;
