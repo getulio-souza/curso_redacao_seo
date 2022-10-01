@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const EditorPageContainer = styled.div`
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   background-color: #000;
   color: #fff;
   text-align: center;
