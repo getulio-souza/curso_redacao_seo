@@ -13,13 +13,14 @@ box-shadow: 2px 5px 7px #111010;
 border-radius: 10px;
 cursor: default;
 font-family:inter;
+height:95vh;
 
 @media(max-width:900px){
   display: flex;
   flex-direction: column;
   position: absolute;
   width:100vw;
-  height:100vh;
+  height:95vh;
 }
 `;
 
