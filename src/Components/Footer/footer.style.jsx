@@ -130,7 +130,7 @@ export const FooterForm = Styled.div`
 
 export const FooterFormTitle = Styled.h4`
    color:#fff;
-   font-size:20px;
+   font-size:15px;
    text-align:center;
 `;
 

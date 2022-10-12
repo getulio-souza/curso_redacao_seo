@@ -30,9 +30,9 @@ export const SecondContent = Styled(FirstContent)``;
 
 export const FirstContentText = Styled.h4`
   text-align:center;
-  font-size:20px;
+  font-size:15px;
   font-weight:500;
-  line-height:1.7rem;
+  line-height:1.4rem;
   font-family: inter;
   display: block;
   `;

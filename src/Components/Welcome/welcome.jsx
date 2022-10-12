@@ -2,6 +2,7 @@ import {
   WelcomeContainer,
   WelcomeTitle,
   WelcomeImg,
+  WelcomeContentContainer,
   WelcomeContent,
 } from "./welcome.style";
 
@@ -13,6 +14,7 @@ function welcome() {
     <WelcomeContainer>
       <WelcomeTitle>Bem-vindo ao curso de Redação para SEO!</WelcomeTitle>
       <WelcomeImg src={welcomeimg}></WelcomeImg>
+      <WelcomeContentContainer>
       <WelcomeContent>
         Só aqui você terá a oportunidade de desenvolver suas habilidades na
         escrita, tornando-se um escritor de SEO de alta capacidade técnica e
@@ -26,6 +28,7 @@ function welcome() {
           A gente está aqui para te ajudar desde as primeiras palavras até a
           construção de uma narrativa sólida e consistente que gera resultados.
         </WelcomeContent>
+      </WelcomeContentContainer>
     </WelcomeContainer>
   );
 }

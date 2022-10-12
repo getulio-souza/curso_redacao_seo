@@ -19,9 +19,10 @@ export const SelectTitle = styled.h1`
 `;
 
 export const SelectSubTitle = styled.h3`
+  font-size: 15px;
   font-family:inter;
   line-height:1.5rem;
-  max-width:500px;
+  max-width:400px;
   margin:0 auto;
   @media(max-width:700px){
     margin: 0 2rem;

@@ -31,9 +31,10 @@ export const AboutUsBoxContent = Styled.div`
 
 export const AboutUsText = Styled.h4`
    max-width:400px;
-   font-size:20px;
+   font-size:15px;
    font-family: inter;
    font-weight:500;
+  line-height:1.5rem;
    @media(max-width:700px){
     margin:1rem 2rem;
    font-size:20px;

@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import Styled from "styled-components";
 
 export const WelcomeContainer = Styled.div`
@@ -31,11 +32,18 @@ export const WelcomeImg = Styled.img`
    }
 `;
 
+export const WelcomeContentContainer = Styled.div`
+     max-width:450px;
+     margin: 0 auto;
+`;
+
 export const WelcomeContent = Styled.h4`
   margin: 2rem;
-  font-size:20px;
+  font-size:15px;
   font-weight:500;
   font-family:inter;
+  text-align:center;
+  line-height:1.4rem;
   @media(max-width:700px){
   font-size:20px;
   }
