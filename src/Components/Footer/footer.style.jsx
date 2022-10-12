@@ -38,11 +38,12 @@ export const FooterLogo = Styled.img`
 
 export const FooterText = Styled.div`
   color:#fff;
-  max-width:280px;
   padding:0 10px;
   font-family:inter;
-  font-size: 15px;
+  font-size: 10px;
   margin-bottom: 2rem;
+  max-width:200px;
+  line-height:1.2rem;
 `;
 
 export const FooterSocialIcons = Styled.div`
