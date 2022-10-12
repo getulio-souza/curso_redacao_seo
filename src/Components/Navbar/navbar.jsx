@@ -52,7 +52,7 @@ const Navbar = () => {
               setOpenLoginModal(true);
             }}
           >
-            <NavbarLink to="/quemsomos">Entrar</NavbarLink>
+            <NavbarLink>Entrar</NavbarLink>
           </LoginBtn>
 
           <NavbarLink to="/contato">Meu Perfil</NavbarLink>
@@ -65,7 +65,7 @@ const Navbar = () => {
               setOpenModal(true);
             }}
           >
-            <NavbarLink to="/inscreva">Inscreva-se</NavbarLink>
+            <NavbarLink>Inscreva-se</NavbarLink>
           </SubscribeBtn>
 
           {/* modal subscribe button  */}
