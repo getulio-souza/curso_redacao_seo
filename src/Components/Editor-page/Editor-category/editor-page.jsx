@@ -31,9 +31,11 @@ function EditorPageMain({ closeModal }) {
             </EditorPageBox>
           </Link>
           {/* box */}
-          <EditorPageBox>
-            <EditorPageBoxTitle>Desempenho de SEO</EditorPageBoxTitle>
-          </EditorPageBox>
+          <Link to="/editor-page/seo-metrics">
+            <EditorPageBox>
+              <EditorPageBoxTitle>Desempenho de SEO</EditorPageBoxTitle>
+            </EditorPageBox>
+          </Link>
         </EditorPageBoxContainer>
       </EditorPageContainer>
     </>
