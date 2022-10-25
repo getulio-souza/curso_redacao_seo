@@ -4,8 +4,8 @@ import {
   EditorPageContainer,
   EditorPageTitle,
   EditorPageBoxContainer,
-  EditorPageBox,
   EditorPageBoxTitle,
+  EditorPageBox,
 } from "./editor-page.style";
 
 function EditorPageMain({ closeModal }) {
