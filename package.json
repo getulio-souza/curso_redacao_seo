@@ -204,7 +204,9 @@
     "workbox-broadcast-update": "^6.5.3",
     "workbox-precaching": "^6.5.3",
     "workbox-sw": "^6.5.3",
-    "workbox-window": "^6.5.3"
+    "workbox-window": "^6.5.3",
+    "node": "16.17.1",
+    "npm": "8.15.0"
   },
   "devDependencies": {},
   "scripts": {
