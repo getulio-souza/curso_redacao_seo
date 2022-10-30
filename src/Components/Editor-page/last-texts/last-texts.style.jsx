@@ -12,6 +12,7 @@ export const LastTextsContainer = styled.div`
   font-family: inter;
   @media screen and (max-width: 900px) {
     flex-direction: column;
+    margin: 40px 0;
   }
   @media screen and (max-width: 700px) {
     height: 100vh;
@@ -21,15 +22,16 @@ export const LastTextsContainer = styled.div`
 export const LastTextsContainerTitle = styled.h1`
   text-align: start;
   margin-right: 20px;
-  @media screen and (max-width: 900px) {
+  /* @media screen and (max-width: 900px) {
     text-align: center;
-  }
+  } */
 `;
 
 export const LastTextcardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  padding-bottom: 40px;
   @media screen and (max-width: 900px) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -53,6 +55,7 @@ export const LastTextCardTitle = styled.h4`
 
 export const LastTextCardInfo = styled.p`
   font-size: 12px;
+  text-align: justify;
 `;
 
 export const LastTextCardBtn = styled.button`
@@ -63,6 +66,7 @@ export const LastTextCardBtn = styled.button`
   color: #000;
   transition: 0.5s;
   cursor: pointer;
+  margin-top: 10px;
   &:hover {
     background-color: transparent;
     border: 1px solid #fff;
