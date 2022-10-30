@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const SeoMetricsBackground = styled.div`
-  background-color: #000;
+  background-color: #fff;
   width: 100%;
   height: 100vh;
 `;
@@ -24,7 +24,7 @@ export const SeoMetricsTitleContainer = styled.div`
 `;
 
 export const SeoMetricsTitle = styled.h1`
-  color: #fff;
+  color: #000;
   text-align: center;
 `;
 
@@ -72,6 +72,10 @@ export const SeoMetricsTableContainer = styled.table`
   text-align: center;
   background-color: #000;
   padding: 10px;
+  max-width: 50%;
+  @media screen and (max-width: 900px) {
+    max-width: 20%;
+  }
 `;
 
 export const SeoMetricsTableRow = styled.tr`

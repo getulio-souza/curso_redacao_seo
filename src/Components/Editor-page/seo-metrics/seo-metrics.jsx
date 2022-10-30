@@ -50,7 +50,6 @@ function seoMetrics() {
           </SeoMetricsCard>
         </SeoMetricsCardsContainer>
         {/* table */}
-        {/* table */}
         <SeoMetricsTableContainer>
           <SeoMetricsTableRow>
             <SeoMetricsTableHead>Autor</SeoMetricsTableHead>
