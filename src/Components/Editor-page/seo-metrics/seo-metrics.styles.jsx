@@ -6,9 +6,7 @@ export const SeoMetricsBackground = styled.div`
 `;
 
 export const SeoMetricsContainer = styled.div`
-  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px #c8c4c4;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -26,7 +24,7 @@ export const SeoMetricsTitleContainer = styled.div`
 `;
 
 export const SeoMetricsTitle = styled.h1`
-  color: #000;
+  color: #fff;
   text-align: center;
 `;
 
@@ -46,6 +44,7 @@ export const SeoMetricsCard = styled.div`
   min-width: 220px;
   min-height: 110px;
   border-radius: 20px;
+  border: 1px solid #fff;
 `;
 
 export const SeoMetricsCardIcon = styled.div``;
@@ -57,11 +56,56 @@ export const SeoMetricsCardtitle = styled.h5`
   margin: 0 auto;
   margin-top: 10px;
 `;
-export const SeoMetricsCardNumber = styled.div``;
+export const SeoMetricsCardNumber = styled.div`
+  margin-top: 10px;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+`;
 export const SeoMetricsCardPercentage = styled.div``;
 
-export const SeoMetricsTableContainer = styled.div`
-  width: 100%;
-  height: auto;
+/* table */
+
+export const SeoMetricsTableContainer = styled.table`
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
   background-color: #000;
+  padding: 10px;
+`;
+
+export const SeoMetricsTableRow = styled.tr`
+  padding-bottom: 10px;
+`;
+
+export const SeoMetricsTableHead = styled.th`
+  padding: 0 50px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  border: 1px solid #fff;
+`;
+
+export const SeoMetricsTableData = styled.td`
+  border: 1px solid #fff;
+  border-top: none;
+  color: #fff;
+  font-size: 15px;
+`;
+
+export const SeoMetricsTableDataBtn = styled.button`
+  border: none;
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
 `;

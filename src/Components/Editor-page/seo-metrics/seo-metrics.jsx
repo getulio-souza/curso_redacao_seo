@@ -11,6 +11,10 @@ import {
   SeoMetricsCardPercentage,
   SeoMetricsTitle,
   SeoMetricsTableContainer,
+  SeoMetricsTableRow,
+  SeoMetricsTableHead,
+  SeoMetricsTableData,
+  SeoMetricsTableDataBtn,
 } from "./seo-metrics.styles";
 
 function seoMetrics() {
@@ -45,7 +49,48 @@ function seoMetrics() {
             <SeoMetricsCardPercentage></SeoMetricsCardPercentage>
           </SeoMetricsCard>
         </SeoMetricsCardsContainer>
-        <SeoMetricsTableContainer></SeoMetricsTableContainer>
+        {/* table */}
+        {/* table */}
+        <SeoMetricsTableContainer>
+          <SeoMetricsTableRow>
+            <SeoMetricsTableHead>Autor</SeoMetricsTableHead>
+            <SeoMetricsTableHead>Texto</SeoMetricsTableHead>
+            <SeoMetricsTableHead>quantidade de palavas</SeoMetricsTableHead>
+            <SeoMetricsTableHead>Ação</SeoMetricsTableHead>
+          </SeoMetricsTableRow>
+          <SeoMetricsTableRow>
+            <SeoMetricsTableData>José</SeoMetricsTableData>
+            <SeoMetricsTableData>Texto 1</SeoMetricsTableData>
+            <SeoMetricsTableData>visualizar</SeoMetricsTableData>
+            <SeoMetricsTableData>
+              <SeoMetricsTableDataBtn>ver mais</SeoMetricsTableDataBtn>
+            </SeoMetricsTableData>
+          </SeoMetricsTableRow>
+          <SeoMetricsTableRow>
+            <SeoMetricsTableData>José</SeoMetricsTableData>
+            <SeoMetricsTableData>Texto 2</SeoMetricsTableData>
+            <SeoMetricsTableData>850</SeoMetricsTableData>
+            <SeoMetricsTableData>
+              <SeoMetricsTableDataBtn>ver mais</SeoMetricsTableDataBtn>
+            </SeoMetricsTableData>
+          </SeoMetricsTableRow>
+          <SeoMetricsTableRow>
+            <SeoMetricsTableData>José</SeoMetricsTableData>
+            <SeoMetricsTableData>Texto 3</SeoMetricsTableData>
+            <SeoMetricsTableData>670</SeoMetricsTableData>
+            <SeoMetricsTableData>
+              <SeoMetricsTableDataBtn>ver mais</SeoMetricsTableDataBtn>
+            </SeoMetricsTableData>
+          </SeoMetricsTableRow>
+          <SeoMetricsTableRow>
+            <SeoMetricsTableData>José</SeoMetricsTableData>
+            <SeoMetricsTableData>Texto 4</SeoMetricsTableData>
+            <SeoMetricsTableData>1210</SeoMetricsTableData>
+            <SeoMetricsTableData>
+              <SeoMetricsTableDataBtn>ver mais</SeoMetricsTableDataBtn>
+            </SeoMetricsTableData>
+          </SeoMetricsTableRow>
+        </SeoMetricsTableContainer>
       </SeoMetricsContainer>
     </SeoMetricsBackground>
   );
