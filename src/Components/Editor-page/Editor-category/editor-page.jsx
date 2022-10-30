@@ -6,38 +6,41 @@ import {
   EditorPageBoxContainer,
   EditorPageBoxTitle,
   EditorPageBox,
+  EditorPageBackground,
 } from "./editor-page.style";
 
 function EditorPageMain({ closeModal }) {
   return (
     <>
-      <EditorPageContainer>
-        <EditorPageTitle>Selecione uma categoria</EditorPageTitle>
-        <EditorPageBoxContainer>
-          {/* box */}
-          <Link to="/editor-page/editor-create-text">
+      <EditorPageBackground>
+        <EditorPageContainer>
+          <EditorPageTitle>Selecione uma categoria</EditorPageTitle>
+          <EditorPageBoxContainer>
+            {/* box */}
+            <Link to="/editor-page/editor-create-text">
+              <EditorPageBox>
+                <EditorPageBoxTitle>Criar novo texto</EditorPageBoxTitle>
+              </EditorPageBox>
+            </Link>
+            {/* box */}
             <EditorPageBox>
-              <EditorPageBoxTitle>Criar novo texto</EditorPageBoxTitle>
+              <EditorPageBoxTitle>Revisões pendentes</EditorPageBoxTitle>
             </EditorPageBox>
-          </Link>
-          {/* box */}
-          <EditorPageBox>
-            <EditorPageBoxTitle>Revisões pendentes</EditorPageBoxTitle>
-          </EditorPageBox>
-          {/* box */}
-          <Link to="/editor-page/last-texts">
-            <EditorPageBox>
-              <EditorPageBoxTitle>Últimos textos</EditorPageBoxTitle>
-            </EditorPageBox>
-          </Link>
-          {/* box */}
-          <Link to="/editor-page/seo-metrics">
-            <EditorPageBox>
-              <EditorPageBoxTitle>Desempenho de SEO</EditorPageBoxTitle>
-            </EditorPageBox>
-          </Link>
-        </EditorPageBoxContainer>
-      </EditorPageContainer>
+            {/* box */}
+            <Link to="/editor-page/last-texts">
+              <EditorPageBox>
+                <EditorPageBoxTitle>Últimos textos</EditorPageBoxTitle>
+              </EditorPageBox>
+            </Link>
+            {/* box */}
+            <Link to="/editor-page/seo-metrics">
+              <EditorPageBox>
+                <EditorPageBoxTitle>Desempenho de SEO</EditorPageBoxTitle>
+              </EditorPageBox>
+            </Link>
+          </EditorPageBoxContainer>
+        </EditorPageContainer>
+      </EditorPageBackground>
     </>
   );
 }

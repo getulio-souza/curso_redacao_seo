@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
-export const EditorPageContainer = styled.div`
+export const EditorPageBackground = styled.div`
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: #000;
+`;
+
+export const EditorPageContainer = styled.div`
   color: #fff;
   text-align: center;
   display: flex;
@@ -12,7 +15,6 @@ export const EditorPageContainer = styled.div`
   align-items: center;
   z-index: 99999999;
   font-family: inter;
-  margin-bottom: 4rem;
   padding-bottom: 30px;
 `;
 

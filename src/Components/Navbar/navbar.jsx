@@ -24,7 +24,7 @@ import LoginModal from "../LoginModal/loginModal";
 
 const Navbar = () => {
   /* botão modal (Cadastro) */
-  const [openSubscribeModal, setOpenModal] = useState(false);
+  const [openSubscribeModal, setOpenSubscribeModal] = useState(false);
 
   /* botão modal (Login) */
   const [OpenLoginModal, setOpenLoginModal] = useState(false);
@@ -62,7 +62,7 @@ const Navbar = () => {
           {/* subscribe button */}
           <SubscribeBtn
             onClick={() => {
-              setOpenModal(true);
+              setOpenSubscribeModal(true);
             }}
           >
             <NavbarLink>Inscreva-se</NavbarLink>
@@ -70,7 +70,9 @@ const Navbar = () => {
 
           {/* modal subscribe button  */}
           <Modal>
-            {openSubscribeModal && <SubscribeModal closeModal={setOpenModal} />}
+            {openSubscribeModal && (
+              <SubscribeModal closeModal={setOpenSubscribeModal} />
+            )}
           </Modal>
         </CategoryContainer>
 
@@ -95,7 +97,7 @@ const Navbar = () => {
           {/* subscribe button */}
           <SubscribeBtnExtended
             onClick={() => {
-              setOpenModal(true);
+              setOpenSubscribeModal(true);
             }}
           >
             <NavbarLinkExtended to="/inscreva">Inscreva-se</NavbarLinkExtended>
@@ -103,7 +105,9 @@ const Navbar = () => {
 
           {/* modal button */}
           <Modal>
-            {openSubscribeModal && <SubscribeModal closeModal={setOpenModal} />}
+            {openSubscribeModal && (
+              <SubscribeModal closeModal={setOpenSubscribeModal} />
+            )}
           </Modal>
 
           {/* login button */}
