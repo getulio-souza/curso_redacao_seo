@@ -21,7 +21,6 @@ function Site() {
         <Route path='/footer' element={<Footer/>} />
      </Routes>
   </Router>
-  
   );
 }
 

@@ -86,8 +86,8 @@ const Navbar = () => {
 
       {ExtendNavbar && (
         <NavbarExtendedContainer>
-          <NavbarLinkExtended to="/comofunciona">
-            Como funciona
+          <NavbarLinkExtended to="/editor-page">
+            Publique seu texto
           </NavbarLinkExtended>
           <NavbarLinkExtended to="/quemsomos">Quem somos</NavbarLinkExtended>
           <NavbarLinkExtended to="/contato">Contato</NavbarLinkExtended>

@@ -26,6 +26,10 @@ export const EditorPageBoxContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   align-items: center;
+  @media screen and (max-width: 900px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `;
 export const EditorPageBox = styled.div`
   width: 300px;
