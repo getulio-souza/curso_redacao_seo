@@ -16,10 +16,14 @@ export const EditorPageContainer = styled.div`
   z-index: 99999999;
   font-family: inter;
   padding-bottom: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const EditorPageTitle = styled.h1`
-  color: #fff;
+  color: #000;
   margin-bottom: 50px;
   font-size: 40px;
 `;
@@ -36,9 +40,8 @@ export const EditorPageBoxContainer = styled.div`
 export const EditorPageBox = styled.div`
   width: 300px;
   height: 150px;
-  background-color: #fff;
-  box-shadow: 1px 2px 2px #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
   border-radius: 20px;
   display: flex;
   justify-content: center;
