@@ -100,7 +100,7 @@ const Navbar = () => {
               setOpenSubscribeModal(true);
             }}
           >
-            <NavbarLinkExtended to="/inscreva">Inscreva-se</NavbarLinkExtended>
+            <NavbarLinkExtended>Inscreva-se</NavbarLinkExtended>
           </SubscribeBtnExtended>
 
           {/* modal button */}
@@ -116,7 +116,7 @@ const Navbar = () => {
               setOpenLoginModal(true);
             }}
           >
-            <NavbarLinkExtended to="/quemsomos">Entrar</NavbarLinkExtended>
+            <NavbarLinkExtended>Entrar</NavbarLinkExtended>
           </LoginBtnExtended>
         </NavbarExtendedContainer>
       )}

@@ -13,14 +13,12 @@ box-shadow: 2px 5px 7px #111010;
 border-radius: 10px;
 cursor: default;
 font-family:inter;
-height:95vh;
 
 @media(max-width:900px){
   display: flex;
   flex-direction: column;
   position: absolute;
   width:100vw;
-  height:95vh;
 }
 `;
 
@@ -32,9 +30,6 @@ align-items: center;
 padding:50px;
 background-color: #000;
 color: #fff;
-@media(max-width:900px){
-padding:25px;
-}
 `;
 
 export const ModalLeftColumnTitle = Styled.h1`
@@ -64,16 +59,11 @@ export const ModalRightColumnImage = Styled.img`
 export const ModalRightColumnForm = Styled.form`
  display: grid;
  grid-template-columns: 1fr 1fr;
- @media(max-width:900px){
-  display: grid;
-  grid-template-columns:1fr;
- }
 `;
 
 export const ModalRightColumnInput = Styled.input`
 border-style: none;
 border-bottom: 0.5px solid #D3D3D3;
-/* max-width:200px; */
 text-align:center;
 margin:10px;
 padding:5px;
