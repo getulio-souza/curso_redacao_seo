@@ -136,7 +136,7 @@ export const FooterFormTitle = Styled.h4`
 `;
 
 export const FooterFormText = styled.h6`
-  font-size:17px;
+  font-size: 17px;
 `;
 
 export const FooterFormLabel = Styled.input`
@@ -176,6 +176,16 @@ export const FooterLabelTextArea = Styled.textarea`
 `;
 
 export const FooterAuthor = styled.p`
-  color:#fff;
-  font-family:inter;
+  color: #fff;
+  font-family: inter;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+`;
+
+export const FooterAuthorName = styled.p`
+  font-weight: 700;
+  color: red;
+  font-family: inter;
 `;

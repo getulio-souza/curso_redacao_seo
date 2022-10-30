@@ -18,6 +18,7 @@ import {
   FooterLabelTextArea,
   FooterFormBtn,
   FooterAuthor,
+  FooterAuthorName,
 } from "./footer.style";
 
 import FooterLogoImg from "../../assets/logo-3.JPG";
@@ -34,7 +35,8 @@ function Footer() {
         <FooterLogo src={FooterLogoImg}></FooterLogo>
         <FooterText>
           Este site foi criado para democratizar a formação de produtores de
-          conteúdo para SEO que desejam se especializar na área de redação para web.
+          conteúdo para SEO que desejam se especializar na área de redação para
+          web.
         </FooterText>
         <FooterSocialIcons>
           <FooterSocialIcon src={FacebookIcon}></FooterSocialIcon>
@@ -57,20 +59,25 @@ function Footer() {
 
       {/* form */}
       <FooterFormContainer>
-        <FooterFormTitle>Dúvidas?
-          Mande uma mensagem pra gente
-          </FooterFormTitle>
-              <FooterForm>
-              <FooterFormLabel placeholder="Nome"></FooterFormLabel>
-              <FooterFormLabel placeholder="Telefone/Celular"></FooterFormLabel>
-                  <FooterFormLabel placeholder="E-mail"></FooterFormLabel>
-                  <FooterLabelTextArea placeholder="Digite sua mensagem"></FooterLabelTextArea>
-              <FooterFormBtn>Enviar</FooterFormBtn>
-              </FooterForm>
+        <FooterFormTitle>Dúvidas? Mande uma mensagem pra gente</FooterFormTitle>
+        <FooterForm>
+          <FooterFormLabel placeholder="Nome"></FooterFormLabel>
+          <FooterFormLabel placeholder="Telefone/Celular"></FooterFormLabel>
+          <FooterFormLabel placeholder="E-mail"></FooterFormLabel>
+          <FooterLabelTextArea placeholder="Digite sua mensagem"></FooterLabelTextArea>
+          <FooterFormBtn>Enviar</FooterFormBtn>
+        </FooterForm>
       </FooterFormContainer>
       <FooterAuthor>
         Site desenvolvido por
-        <Link to={{ pathname: "https://www.getulio-souza.github.io/portfolio_react/" }} target="_blank"> Getúlio Souza</Link>
+        <Link
+          to={{
+            pathname: "https://www.getulio-souza.github.io/portfolio_react/",
+          }}
+          target="_blank"
+        >
+          <FooterAuthorName>Getúlio Souza</FooterAuthorName>
+        </Link>
       </FooterAuthor>
     </FooterContainer>
   );
