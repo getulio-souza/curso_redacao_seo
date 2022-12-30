@@ -35,6 +35,7 @@ export const FirstContentText = Styled.h4`
   line-height:1.4rem;
   font-family: inter;
   display: block;
+  max-width: 400px;
   `;
 
 export const SecondContentText = Styled(FirstContentText)`
@@ -60,4 +61,3 @@ export const ContentImg2 = Styled.img`
    display: none;
    }
   `;
-
