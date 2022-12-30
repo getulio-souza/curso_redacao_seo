@@ -1,30 +1,30 @@
 import styled from "styled-components";
 
 export const SelectContainer = styled.div`
- width:100vw;
-  height:fit-content;
-  margin-bottom:4rem;
+  width: 100vw;
+  height: fit-content;
+  margin-bottom: 4rem;
 `;
 
 export const SelectContainerHeader = styled.div`
-  text-align:center;
+  text-align: center;
   padding: 2rem 0;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
 `;
 
 export const SelectTitle = styled.h1`
-  font-family:inter;
-  font-size:2.5rem;
-   margin-top:4rem;
+  font-family: inter;
+  font-size: 2.5rem;
+  margin-top: 4rem;
 `;
 
 export const SelectSubTitle = styled.h3`
   font-size: 15px;
-  font-family:inter;
-  line-height:1.5rem;
-  max-width:400px;
-  margin:0 auto;
-  @media(max-width:700px){
+  font-family: inter;
+  line-height: 1.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+  @media (max-width: 700px) {
     margin: 0 2rem;
   }
 `;
@@ -49,42 +49,42 @@ export const SelectPlansContainer = styled.div`
 `;
 
 export const SelectPlanCard = styled.div`
-  background-color:#FFFFFF;
-  max-width:200px;
-  height:fit-content;
-  padding:5rem 2rem;
-  border-radius:10px;
+  background-color: #ffffff;
+  width: 200px;
+  min-height: 500px;
+  padding: 2rem;
+  border-radius: 10px;
   display: flex;
-  flex-direction:column;
-  margin:2rem 0;
-  justify-content:space-evenly;
-  align-items:center;
-  transition:.5s;
-  cursor:default;
+  flex-direction: column;
+  margin: 2rem 0;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: 0.5s;
+  cursor: default;
 
-  &:hover{
+  &:hover {
     transform: translateY(-10px);
-    background-color:yellow;
+    background-color: yellow;
   }
 
-  @media (max-width:700px){
+  @media (max-width: 700px) {
     display: grid;
     grid-template-columns: 1fr;
   }
 `;
 
 export const SelectPlanHeader = styled.div`
-  text-align:center;
+  text-align: center;
 `;
 
 export const SelectPlanTitle = styled.h2`
-   font-family: inter;
+  font-family: inter;
 `;
 
 export const SelectPlanImg = styled.img`
   /* background-color: grey; */
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
   margin: 0 auto;
   clip-path: circle(50%);
 `;
@@ -92,41 +92,41 @@ export const SelectPlanImg = styled.img`
 export const SelectPlanPrice = styled.p``;
 
 export const SelectPlanListContainer = styled.div`
-  text-align:left;
+  text-align: left;
   list-style: none;
 `;
 
 export const SelectPlanList = styled.div`
- display: flex;
- align-items:center;
+  display: flex;
+  align-items: center;
 `;
 
 export const SelectPlanListIcon = styled.img`
- width:20px;
- height:20px;
- padding-right:5px;
+  width: 20px;
+  height: 20px;
+  padding-right: 5px;
 `;
 
 export const SelectPlanListText = styled.p`
-   font-family: inter;
-   font-size:15px;
+  font-family: inter;
+  font-size: 15px;
 `;
 
 export const SelectPlanBtn = styled.button`
   background-color: #000;
-  color:#fff;
-  border-style:none;
-  border-radius:10px;
-  font-size:20px;
-  font-family:inter;
-  font-weight:700;
-  padding:7px 40px;
-  margin-top:2rem;
-  cursor:pointer;
-  transition:.5s;
-  &:hover{
+  color: #fff;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: inter;
+  font-weight: 700;
+  padding: 7px 40px;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
     background-color: #fff;
-    border:1px solid #000;
-    color:#000;
+    border: 1px solid #000;
+    color: #000;
   }
 `;
