@@ -13,8 +13,11 @@ import {
   DashboardGraphicsContainer,
   DashboardGraphsAndTopRankContainer,
   DashboardWordsRanked,
+  DashboardWordsRankedTitle,
   DashboardSeoPosition,
+  DashboardSeoPositionTitle,
   DashboardTopTextsRanked,
+  DashboardTopTextsRankedTitle,
 } from "./dashboard.styles";
 
 //profile image
@@ -48,10 +51,22 @@ function dashboard() {
           </DashboardProfileContainer>
           <DashboardGraphsAndTopRankContainer>
             <DashboardGraphicsContainer>
-              <DashboardWordsRanked></DashboardWordsRanked>
-              <DashboardSeoPosition></DashboardSeoPosition>
+              <DashboardWordsRanked>
+                <DashboardWordsRankedTitle>
+                  Palavras Ranqueadas
+                </DashboardWordsRankedTitle>
+              </DashboardWordsRanked>
+              <DashboardSeoPosition>
+                <DashboardSeoPositionTitle>
+                  Posição em SEO
+                </DashboardSeoPositionTitle>
+              </DashboardSeoPosition>
             </DashboardGraphicsContainer>
-            <DashboardTopTextsRanked></DashboardTopTextsRanked>
+            <DashboardTopTextsRanked>
+              <DashboardTopTextsRankedTitle>
+                Top 6 textos otimizados
+              </DashboardTopTextsRankedTitle>
+            </DashboardTopTextsRanked>
           </DashboardGraphsAndTopRankContainer>
         </DashboardContainer>
       </DashboardBackground>

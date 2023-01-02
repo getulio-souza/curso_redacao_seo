@@ -106,8 +106,11 @@ export const DashboardGraphsAndTopRankContainer = styled.div`
 export const DashboardWordsRanked = styled.div`
   background-color: #fff;
   width: 100%;
-  height: 200px;
+  font-family: inter;
+  text-align: center;
 `;
+
+export const DashboardWordsRankedTitle = styled.h3``;
 
 export const DashboardSeoPosition = styled.div`
   background-color: #fff;
@@ -115,8 +118,22 @@ export const DashboardSeoPosition = styled.div`
   height: 200px;
 `;
 
+export const DashboardSeoPositionTitle = styled.h3`
+  background-color: #fff;
+  width: 100%;
+  font-family: inter;
+  text-align: center;
+`;
+
 export const DashboardTopTextsRanked = styled.div`
   background-color: #fff;
   width: 100%;
-  height: 50vh;
+  height: 60%;
+`;
+
+export const DashboardTopTextsRankedTitle = styled.h3`
+  background-color: #fff;
+  width: 100%;
+  font-family: inter;
+  text-align: center;
 `;
