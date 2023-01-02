@@ -79,13 +79,23 @@ export const DashboardProfileInfoProfession = styled.div`
   color: #fff;
 `;
 
+export const DashboardProfileInfoDescription = styled.div`
+  text-align: left;
+  line-height: 13px;
+  padding: 10px 50px 0px 50px;
+  font-size: 10px;
+  font-family: inter;
+  font-weight: 500;
+  color: #fff;
+`;
+
 export const DashboardOptionsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
   font-family: inter;
 `;
 

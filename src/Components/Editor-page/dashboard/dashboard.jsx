@@ -8,6 +8,7 @@ import {
   DashboardProfileInfoPhoto,
   DashboardProfileInfoName,
   DashboardProfileInfoProfession,
+  DashboardProfileInfoDescription,
   DashboardOptionsContainer,
   DashBoardSingleOption,
   DashBoardSingleOptionSelected,
@@ -43,6 +44,11 @@ function dashboard() {
                 Content Writer
               </DashboardProfileInfoProfession>
             </DashboardProfileInfo>
+
+            <DashboardProfileInfoDescription>
+              Navegue pelos botões abaixo ou pelos gráficos para acompanhar a
+              sua evolução como escritor de SEO.
+            </DashboardProfileInfoDescription>
 
             {/* options to select */}
             <DashboardOptionsContainer>
