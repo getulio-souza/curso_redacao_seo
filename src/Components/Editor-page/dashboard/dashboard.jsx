@@ -10,6 +10,7 @@ import {
   DashboardProfileInfoProfession,
   DashboardOptionsContainer,
   DashBoardSingleOption,
+  DashBoardSingleOptionSelected,
   DashboardGraphicsContainer,
   DashboardGraphsAndTopRankContainer,
   DashboardWordsRanked,
@@ -45,10 +46,12 @@ function dashboard() {
 
             {/* options to select */}
             <DashboardOptionsContainer>
-              <DashBoardSingleOption>options 1</DashBoardSingleOption>
-              <DashBoardSingleOption>options 2</DashBoardSingleOption>
-              <DashBoardSingleOption>options 3</DashBoardSingleOption>
-              <DashBoardSingleOption>options 4</DashBoardSingleOption>
+              <DashBoardSingleOptionSelected>
+                Ranking
+              </DashBoardSingleOptionSelected>
+              <DashBoardSingleOption>Posição (SEO)</DashBoardSingleOption>
+              <DashBoardSingleOption>Textos</DashBoardSingleOption>
+              <DashBoardSingleOption>Voltar</DashBoardSingleOption>
             </DashboardOptionsContainer>
           </DashboardProfileContainer>
           <DashboardGraphsAndTopRankContainer>
@@ -70,22 +73,22 @@ function dashboard() {
               </DashboardTopTextsRankedTitle>
               <DashboardTopTextsRankedContent>
                 <DashboardTopTextsRankedText>
-                  # 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  # 1 - Lorem ipsum dolor sit amet.
                 </DashboardTopTextsRankedText>
                 <DashboardTopTextsRankedText>
-                  # 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  # 2 - Lorem ipsum dolor sit amet.
                 </DashboardTopTextsRankedText>
                 <DashboardTopTextsRankedText>
-                  # 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  # 3 - Lorem ipsum dolor sit amet.
                 </DashboardTopTextsRankedText>
                 <DashboardTopTextsRankedText>
-                  # 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  # 4 - Lorem ipsum dolor sit amet.
                 </DashboardTopTextsRankedText>
                 <DashboardTopTextsRankedText>
-                  # 5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  # 5 - Lorem ipsum dolor sit amet.
                 </DashboardTopTextsRankedText>
                 <DashboardTopTextsRankedText>
-                  # 6 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                  # 6 - Lorem ipsum dolor sit amet.
                 </DashboardTopTextsRankedText>
               </DashboardTopTextsRankedContent>
             </DashboardTopTextsRanked>
