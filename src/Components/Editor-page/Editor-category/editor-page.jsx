@@ -33,7 +33,7 @@ function EditorPageMain({ closeModal }) {
               </EditorPageBox>
             </Link>
             {/* box */}
-            <Link to="/editor-page/seo-metrics">
+            <Link to="/editor-page/dashboard">
               <EditorPageBox>
                 <EditorPageBoxTitle>Desempenho de SEO</EditorPageBoxTitle>
               </EditorPageBox>
