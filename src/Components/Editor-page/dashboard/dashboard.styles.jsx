@@ -36,7 +36,14 @@ export const DashboardProfileInfo = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 30px 0;
+`;
+
+export const DashboardTitle = styled.div`
+  margin-bottom: 20px;
+  font-family: inter;
+  font-weight: 700;
+  text-decoration: underline;
 `;
 
 export const DashboardProfileInfoPhoto = styled.img`
@@ -58,8 +65,30 @@ export const DashboardProfileInfoProfession = styled.div`
   font-weight: 500;
 `;
 
-export const DashboardOptionsContainer = styled.div``;
-export const DashBoardSingleOption = styled.div``;
+export const DashboardOptionsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+`;
+
+export const DashBoardSingleOption = styled.div`
+  background-color: #2a2a2a;
+  padding: 5px 40px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 1px 2px 4px #000;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+    background-color: #fff;
+    border: 1px solid #2a2a2a;
+    color: #2a2a2a;
+  }
+`;
 
 export const DashboardGraphicsContainer = styled.div`
   display: flex;

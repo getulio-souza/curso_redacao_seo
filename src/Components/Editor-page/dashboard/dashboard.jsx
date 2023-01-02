@@ -3,6 +3,7 @@ import {
   DashboardBackground,
   DashboardContainer,
   DashboardProfileContainer,
+  DashboardTitle,
   DashboardProfileInfo,
   DashboardProfileInfoPhoto,
   DashboardProfileInfoName,
@@ -27,6 +28,7 @@ function dashboard() {
           <DashboardProfileContainer>
             {/* info about user */}
             <DashboardProfileInfo>
+              <DashboardTitle>Painel de informações</DashboardTitle>
               <DashboardProfileInfoPhoto
                 src={ProfilePhoto1}
               ></DashboardProfileInfoPhoto>
