@@ -29,6 +29,7 @@ export const DashboardProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 10px;
 `;
 
 export const DashboardProfileInfo = styled.div`
@@ -36,7 +37,7 @@ export const DashboardProfileInfo = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px 0;
+  padding: 20px 0px 30px 0;
 `;
 
 export const DashboardTitle = styled.div`
@@ -108,6 +109,7 @@ export const DashboardWordsRanked = styled.div`
   width: 100%;
   font-family: inter;
   text-align: center;
+  border-radius: 10px;
 `;
 
 export const DashboardWordsRankedTitle = styled.h3``;
@@ -116,6 +118,7 @@ export const DashboardSeoPosition = styled.div`
   background-color: #fff;
   width: 100%;
   height: 200px;
+  border-radius: 10px;
 `;
 
 export const DashboardSeoPositionTitle = styled.h3`
@@ -129,6 +132,7 @@ export const DashboardTopTextsRanked = styled.div`
   background-color: #fff;
   width: 100%;
   height: 60%;
+  border-radius: 10px;
 `;
 
 export const DashboardTopTextsRankedTitle = styled.h3`
@@ -136,4 +140,22 @@ export const DashboardTopTextsRankedTitle = styled.h3`
   width: 100%;
   font-family: inter;
   text-align: center;
+`;
+
+export const DashboardTopTextsRankedContent = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  font-family: inter;
+  padding: 0 40px;
+`;
+
+export const DashboardTopTextsRankedText = styled.div`
+  font-size: 15px;
+  cursor: pointer;
+  &:hover {
+    font-weight: 700;
+  }
 `;

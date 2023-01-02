@@ -18,6 +18,8 @@ import {
   DashboardSeoPositionTitle,
   DashboardTopTextsRanked,
   DashboardTopTextsRankedTitle,
+  DashboardTopTextsRankedContent,
+  DashboardTopTextsRankedText,
 } from "./dashboard.styles";
 
 //profile image
@@ -66,6 +68,26 @@ function dashboard() {
               <DashboardTopTextsRankedTitle>
                 Top 6 textos otimizados
               </DashboardTopTextsRankedTitle>
+              <DashboardTopTextsRankedContent>
+                <DashboardTopTextsRankedText>
+                  # 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </DashboardTopTextsRankedText>
+                <DashboardTopTextsRankedText>
+                  # 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </DashboardTopTextsRankedText>
+                <DashboardTopTextsRankedText>
+                  # 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </DashboardTopTextsRankedText>
+                <DashboardTopTextsRankedText>
+                  # 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </DashboardTopTextsRankedText>
+                <DashboardTopTextsRankedText>
+                  # 5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </DashboardTopTextsRankedText>
+                <DashboardTopTextsRankedText>
+                  # 6 - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </DashboardTopTextsRankedText>
+              </DashboardTopTextsRankedContent>
             </DashboardTopTextsRanked>
           </DashboardGraphsAndTopRankContainer>
         </DashboardContainer>
