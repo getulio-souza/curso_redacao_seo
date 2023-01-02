@@ -102,6 +102,7 @@ export const DashboardGraphsAndTopRankContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 20px;
 `;
 
 export const DashboardWordsRanked = styled.div`
