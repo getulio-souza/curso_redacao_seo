@@ -17,6 +17,11 @@ export const UserData = [
     {
         id: 4,
         month: "abril",
-        wordsRanked: 300,
+        wordsRanked: 60,
+    },
+    {
+        id: 4,
+        month: "maio",
+        wordsRanked: 70,
     },
 ]

@@ -16,6 +16,7 @@ import {
   DashboardGraphsAndTopRankContainer,
   DashboardWordsRanked,
   DashboardWordsRankedTitle,
+  ChartContainer,
   DashboardSeoPosition,
   DashboardSeoPositionTitle,
   DashboardTopTextsRanked,
@@ -25,19 +26,34 @@ import {
 } from "./dashboard.styles";
 
 //charts
-import BarChart from "./charts/barChart";
-import { UserData } from "./charts/barData";
+import BarChart from "./charts/wordsRanked/barChart";
+import { UserData } from "./charts/wordsRanked/barData";
+
+import SeoChart from "./charts/seoPosition/seoChart";
+import { SeoData } from "./charts/seoPosition/seoData";
 
 //profile image
 import ProfilePhoto1 from "../../../assets/profile/photo-1.png";
 
 function dashboard() {
+  //chart words ranked
   const [userData, setUserData] = useState({
     labels: UserData.map((data) => data.month),
     datasets: [
       {
         label: "Palavras ranqueadas",
         data: UserData.map((data) => data.wordsRanked),
+      },
+    ],
+  });
+
+  //charts SEO Position
+  const [seoData, setSeoData] = useState({
+    labels: SeoData.map((data) => data.position),
+    datasets: [
+      {
+        label: "posição em SEO",
+        data: SeoData.map((data) => data.page),
       },
     ],
   });
@@ -80,12 +96,17 @@ function dashboard() {
                 <DashboardWordsRankedTitle>
                   Palavras Ranqueadas
                 </DashboardWordsRankedTitle>
-                <BarChart chartData={userData} />
+                <ChartContainer>
+                  <BarChart chartData={userData} />
+                </ChartContainer>
               </DashboardWordsRanked>
               <DashboardSeoPosition>
                 <DashboardSeoPositionTitle>
                   Posição em SEO
                 </DashboardSeoPositionTitle>
+                <ChartContainer>
+                  <SeoChart chartData={seoData} />
+                </ChartContainer>
               </DashboardSeoPosition>
             </DashboardGraphicsContainer>
             <DashboardTopTextsRanked>

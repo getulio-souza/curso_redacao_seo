@@ -173,16 +173,23 @@ export const DashboardWordsRanked = styled.div`
     width: 100%;
     min-width: 100%;
     margin: 0 auto;
-    height: 200px;
+    height: fit-content;
   }
 `;
 
 export const DashboardWordsRankedTitle = styled.h3``;
 
+export const ChartContainer = styled.div`
+  width: 400px;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 20px;
+`;
+
 export const DashboardSeoPosition = styled.div`
   background-color: #1a1717;
   width: 100%;
-  height: 200px;
+  height: 300px;
   border-radius: 10px;
   @media (max-width: 900px) {
     width: 100%;
