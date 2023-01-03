@@ -21,8 +21,6 @@ import {
   DashboardSeoPositionTitle,
   DashboardTopTextsRanked,
   DashboardTopTextsRankedTitle,
-  DashboardTopTextsRankedContent,
-  DashboardTopTextsRankedText,
 } from "./dashboard.styles";
 
 //charts
@@ -30,7 +28,10 @@ import BarChart from "./charts/wordsRanked/barChart";
 import { UserData } from "./charts/wordsRanked/barData";
 
 import SeoChart from "./charts/seoPosition/seoChart";
-import { SeoData } from "./charts/seoPosition/seoData";
+import { SeoData, SeoData2 } from "./charts/seoPosition/seoData";
+
+//table
+import TopTextsTable from "./table-texts/table";
 
 //profile image
 import ProfilePhoto1 from "../../../assets/profile/photo-1.png";
@@ -41,7 +42,7 @@ function dashboard() {
     labels: UserData.map((data) => data.month),
     datasets: [
       {
-        label: "Palavras ranqueadas",
+        label: "Texto 1",
         data: UserData.map((data) => data.wordsRanked),
       },
     ],
@@ -52,8 +53,12 @@ function dashboard() {
     labels: SeoData.map((data) => data.position),
     datasets: [
       {
-        label: "posição em SEO",
+        label: "texto 1",
         data: SeoData.map((data) => data.page),
+      },
+      {
+        label: "texto 2",
+        data: SeoData2.map((data) => data.page),
       },
     ],
   });
@@ -113,26 +118,7 @@ function dashboard() {
               <DashboardTopTextsRankedTitle>
                 Top 6 textos otimizados
               </DashboardTopTextsRankedTitle>
-              <DashboardTopTextsRankedContent>
-                <DashboardTopTextsRankedText>
-                  # 1 - Lorem ipsum dolor sit amet.
-                </DashboardTopTextsRankedText>
-                <DashboardTopTextsRankedText>
-                  # 2 - Lorem ipsum dolor sit amet.
-                </DashboardTopTextsRankedText>
-                <DashboardTopTextsRankedText>
-                  # 3 - Lorem ipsum dolor sit amet.
-                </DashboardTopTextsRankedText>
-                <DashboardTopTextsRankedText>
-                  # 4 - Lorem ipsum dolor sit amet.
-                </DashboardTopTextsRankedText>
-                <DashboardTopTextsRankedText>
-                  # 5 - Lorem ipsum dolor sit amet.
-                </DashboardTopTextsRankedText>
-                <DashboardTopTextsRankedText>
-                  # 6 - Lorem ipsum dolor sit amet.
-                </DashboardTopTextsRankedText>
-              </DashboardTopTextsRankedContent>
+              <TopTextsTable></TopTextsTable>
             </DashboardTopTextsRanked>
           </DashboardGraphsAndTopRankContainer>
         </DashboardContainer>

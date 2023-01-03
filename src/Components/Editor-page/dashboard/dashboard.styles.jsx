@@ -53,7 +53,7 @@ export const DashboardTitle = styled.div`
   font-family: inter;
   font-weight: 700;
   text-decoration: underline;
-  color: #fff;
+  color: #e1d7d7;
   padding: 0 10px;
   text-align: center;
 `;
@@ -69,14 +69,14 @@ export const DashboardProfileInfoName = styled.div`
   font-size: 14px;
   font-family: inter;
   font-weight: 700;
-  color: #fff;
+  color: #e1d7d7;
 `;
 
 export const DashboardProfileInfoProfession = styled.div`
   font-size: 10px;
   font-family: inter;
   font-weight: 500;
-  color: #fff;
+  color: #e1d7d7;
 `;
 
 export const DashboardProfileInfoDescription = styled.div`
@@ -86,7 +86,7 @@ export const DashboardProfileInfoDescription = styled.div`
   font-size: 10px;
   font-family: inter;
   font-weight: 500;
-  color: #fff;
+  color: #e1d7d7;
 `;
 
 export const DashboardOptionsContainer = styled.div`
@@ -104,16 +104,16 @@ export const DashBoardSingleOption = styled.div`
   width: 70px;
   min-width: 70px;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #e1d7d7;
   padding: 8px 40px;
   border-radius: 10px;
-  color: #fff;
+  color: #e1d7d7;
   box-shadow: 1px 2px 4px #000;
   margin: 5px 0;
   cursor: pointer;
   transition: 0.5s;
   &:hover {
-    background-color: #fff;
+    background-color: #e1d7d7;
     border: 1px solid #2a2a2a;
     color: #2a2a2a;
   }
@@ -124,7 +124,7 @@ export const DashBoardSingleOptionSelected = styled.div`
   font-weight: 700;
   width: 70px;
   min-width: 70px;
-  background-color: #fff;
+  background-color: #e1d7d7;
   padding: 8px 40px;
   border-radius: 10px;
   color: #2a2a2a;
@@ -135,7 +135,7 @@ export const DashBoardSingleOptionSelected = styled.div`
   &:hover {
     background-color: #2a2a2a;
     border: 1px solid #2a2a2a;
-    color: #fff;
+    color: #e1d7d7;
   }
 `;
 
@@ -164,7 +164,7 @@ export const DashboardGraphsAndTopRankContainer = styled.div`
 
 export const DashboardWordsRanked = styled.div`
   background-color: #1a1717;
-  color: #fff;
+  color: #e1d7d7;
   width: 100%;
   font-family: inter;
   text-align: center;
@@ -203,7 +203,7 @@ export const DashboardSeoPositionTitle = styled.h3`
   width: 100%;
   font-family: inter;
   text-align: center;
-  color: #fff;
+  color: #e1d7d7;
 `;
 
 export const DashboardTopTextsRanked = styled.div`
@@ -220,14 +220,14 @@ export const DashboardTopTextsRanked = styled.div`
 `;
 
 export const DashboardTopTextsRankedTitle = styled.h3`
-  color: #fff;
+  color: #e1d7d7;
   width: 100%;
   font-family: inter;
   text-align: center;
 `;
 
 export const DashboardTopTextsRankedContent = styled.div`
-  color: #fff;
+  color: #e1d7d7;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
