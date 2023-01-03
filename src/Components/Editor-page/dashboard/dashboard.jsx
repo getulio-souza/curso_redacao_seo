@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   DashboardBackground,
   DashboardContainer,
@@ -24,10 +24,24 @@ import {
   DashboardTopTextsRankedText,
 } from "./dashboard.styles";
 
+//charts
+import BarChart from "./charts/barChart";
+import { UserData } from "./charts/barData";
+
 //profile image
 import ProfilePhoto1 from "../../../assets/profile/photo-1.png";
 
 function dashboard() {
+  const [userData, setUserData] = useState({
+    labels: UserData.map((data) => data.month),
+    datasets: [
+      {
+        label: "Palavras ranqueadas",
+        data: UserData.map((data) => data.wordsRanked),
+      },
+    ],
+  });
+
   return (
     <>
       <DashboardBackground>
@@ -66,6 +80,7 @@ function dashboard() {
                 <DashboardWordsRankedTitle>
                   Palavras Ranqueadas
                 </DashboardWordsRankedTitle>
+                <BarChart chartData={userData} />
               </DashboardWordsRanked>
               <DashboardSeoPosition>
                 <DashboardSeoPositionTitle>
@@ -101,7 +116,6 @@ function dashboard() {
           </DashboardGraphsAndTopRankContainer>
         </DashboardContainer>
       </DashboardBackground>
-      ;
     </>
   );
 }

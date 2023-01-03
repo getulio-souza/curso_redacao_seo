@@ -80,7 +80,7 @@ export const DashboardProfileInfoProfession = styled.div`
 `;
 
 export const DashboardProfileInfoDescription = styled.div`
-  text-align: left;
+  text-align: center;
   line-height: 13px;
   padding: 10px 50px 0px 50px;
   font-size: 10px;
@@ -125,7 +125,7 @@ export const DashBoardSingleOptionSelected = styled.div`
   width: 70px;
   min-width: 70px;
   background-color: #fff;
-  padding: 5px 40px;
+  padding: 8px 40px;
   border-radius: 10px;
   color: #2a2a2a;
   box-shadow: 1px 2px 4px #000;
