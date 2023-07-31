@@ -95,6 +95,7 @@ function dashboard() {
               <DashBoardSingleOption>Voltar</DashBoardSingleOption>
             </DashboardOptionsContainer>
           </DashboardProfileContainer>
+
           <DashboardGraphsAndTopRankContainer>
             <DashboardGraphicsContainer>
               <DashboardWordsRanked>

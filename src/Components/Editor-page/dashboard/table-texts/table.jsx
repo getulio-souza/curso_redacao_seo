@@ -2,6 +2,7 @@ import React from "react";
 import {
   TableTextContainer,
   TableTextRow,
+  TableTextBody,
   TabletextHead,
   TableTextData,
   TableActionBtn,
@@ -20,42 +21,46 @@ function TopTextsTable() {
           <TabletextHead>Comentários</TabletextHead>
           <TabletextHead>Visualizar</TabletextHead>
         </TableTextRow>
-        <TableTextRow>
-          <TableTextData>#1</TableTextData>
-          <TableTextData>texto 3</TableTextData>
-          <TableTextData>2000</TableTextData>
-          <TableTextData>1min33s</TableTextData>
-          <TableTextData>11</TableTextData>
-          <TableTextData>7</TableTextData>
-          <TableTextData>
-            <TableActionBtn>Abrir</TableActionBtn>
-          </TableTextData>
-        </TableTextRow>
-        <TableTextRow>
-          <TableTextData>#2</TableTextData>
-          <TableTextData>texto 3</TableTextData>
-          <TableTextData>2200</TableTextData>
-          <TableTextData>6m12s</TableTextData>
-          <TableTextData>90</TableTextData>
-          <TableTextData>14</TableTextData>
-          <TableTextData>
-            <TableActionBtn>Abrir</TableActionBtn>
-          </TableTextData>
-        </TableTextRow>
-        <TableTextRow>
-          <TableTextData>#3</TableTextData>
-          <TableTextData>texto 4</TableTextData>
-          <TableTextData>5000</TableTextData>
-          <TableTextData>8m44s</TableTextData>
-          <TableTextData>54</TableTextData>
-          <TableTextData>22</TableTextData>
-          <TableTextData>
-            <TableActionBtn>Abrir</TableActionBtn>
-          </TableTextData>
-        </TableTextRow>
+        <TableTextBody>
+          <TableTextRow>
+            <TableTextData className="data">#1</TableTextData>
+            <TableTextData className="data">texto 3</TableTextData>
+            <TableTextData className="data">2000</TableTextData>
+            <TableTextData className="data">1min33s</TableTextData>
+            <TableTextData className="data">11</TableTextData>
+            <TableTextData className="data">7</TableTextData>
+            <TableTextData className="data">
+              <TableActionBtn>Abrir</TableActionBtn>
+            </TableTextData>
+          </TableTextRow>
+          <TableTextRow>
+            <TableTextData className="data">#2</TableTextData>
+            <TableTextData className="data">texto 3</TableTextData>
+            <TableTextData className="data">2200</TableTextData>
+            <TableTextData className="data">6m12s</TableTextData>
+            <TableTextData className="data">90</TableTextData>
+            <TableTextData className="data">14</TableTextData>
+            <TableTextData className="data">
+              <TableActionBtn>Abrir</TableActionBtn>
+            </TableTextData>
+          </TableTextRow>
+          <TableTextRow>
+            <TableTextData className="data">#3</TableTextData>
+            <TableTextData className="data">texto 4</TableTextData>
+            <TableTextData className="data">5000</TableTextData>
+            <TableTextData className="data">8m44s</TableTextData>
+            <TableTextData className="data">54</TableTextData>
+            <TableTextData className="data">22</TableTextData>
+            <TableTextData className="data">
+              <TableActionBtn>Abrir</TableActionBtn>
+            </TableTextData>
+          </TableTextRow>
+        </TableTextBody>
       </TableTextContainer>
     </>
   );
 }
 
 export default TopTextsTable;
+
+//https://www.youtube.com/watch?v=HKWtJPumb7g

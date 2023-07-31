@@ -3,23 +3,19 @@ import styled from "styled-components";
 export const DashboardBackground = styled.div`
   background-color: #000;
   width: 100%;
-  height: 100vh;
-  position: relative;
+  height: 100%;
   @media (max-width: 900px) {
     height: 100%;
   }
 `;
 
 export const DashboardContainer = styled.div`
-  width: 90vw;
-  height: 90%;
+  height: 100%;
+  width: auto;
   margin: 0 auto;
   display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   gap: 20px;
+  padding: 20px;
   @media (max-width: 900px) {
     flex-direction: column;
   }
@@ -27,16 +23,15 @@ export const DashboardContainer = styled.div`
 
 export const DashboardProfileContainer = styled.div`
   background-color: #1a1717;
-  width: 25%;
-  min-width: 25%;
-  height: 90vh;
+  width: 250px;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
   @media (max-width: 900px) {
     width: 100%;
-    padding-top: 20px;
+    padding: 40px 0%;
   }
 `;
 
@@ -90,12 +85,12 @@ export const DashboardProfileInfoDescription = styled.div`
 `;
 
 export const DashboardOptionsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   text-align: center;
   padding: 20px 0;
+  margin: 0 auto;
   font-family: inter;
 `;
 
@@ -146,8 +141,6 @@ export const DashboardGraphicsContainer = styled.div`
   @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 300px;
   }
 `;
 
@@ -157,6 +150,8 @@ export const DashboardGraphsAndTopRankContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  height: 600px;
+  min-height: 600px;
   @media (max-width: 900px) {
     padding-bottom: 20px;
   }
@@ -180,22 +175,23 @@ export const DashboardWordsRanked = styled.div`
 export const DashboardWordsRankedTitle = styled.h3``;
 
 export const ChartContainer = styled.div`
-  width: 400px;
   height: fit-content;
   margin: 0 auto;
   padding: 20px;
+  width: 300px;
+  @media (max-width: 700px) {
+    width: 200px;
+  }
 `;
 
 export const DashboardSeoPosition = styled.div`
   background-color: #1a1717;
   width: 100%;
-  height: 300px;
   border-radius: 10px;
   @media (max-width: 900px) {
     width: 100%;
     min-width: 100%;
     margin: 0 auto;
-    height: 200px;
   }
 `;
 
@@ -209,13 +205,13 @@ export const DashboardSeoPositionTitle = styled.h3`
 export const DashboardTopTextsRanked = styled.div`
   background-color: #1a1717;
   width: 100%;
-  height: 60%;
+  height: 100%;
   border-radius: 10px;
   @media (max-width: 900px) {
     width: 100%;
     min-width: 100%;
     margin: 0 auto;
-    height: fit-content;
+    /* height: fit-content; */
   }
 `;
 

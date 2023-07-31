@@ -4,25 +4,59 @@ export const TableTextContainer = styled.table`
   text-align: center;
   margin: 0 auto;
   font-family: inter;
+  box-shadow: 1px 2px 3px #000;
   border: 1px solid #e1d7d7;
   padding: 10px 15px;
   border-radius: 10px;
-  box-shadow: 1px 2px 3px #000;
+  @media (max-width: 768px) {
+    border: none;
+    box-shadow: none;
+  }
 `;
 
-export const TableTextRow = styled.tr``;
+export const TableTextRow = styled.tr`
+  @media (max-width: 768px) {
+    display: block;
+    text-align: right;
+    position: relative;
+  }
+`;
 
 export const TabletextHead = styled.th`
   padding: 5px 10px;
   color: #e1d7d7;
   font-weight: 700;
   font-size: 13px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+export const TableTextBody = styled.tbody`
+  @media (max-width: 768px) {
+    width: 200px;
+    display: block;
+    text-align: right;
+    position: relative;
+  }
 `;
 
 export const TableTextData = styled.td`
   padding: 2px 10px;
   color: #8a8888;
   font-size: 11px;
+  @media (max-width: 768px) {
+    display: block;
+    text-align: right;
+    position: relative;
+    ::before {
+      content: attr(data);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      text-align: left;
+    }
+  }
 `;
 
 export const TableActionBtn = styled.button`
