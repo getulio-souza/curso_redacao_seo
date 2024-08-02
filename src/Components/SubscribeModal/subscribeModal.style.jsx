@@ -18,7 +18,7 @@ font-family:inter;
   display: flex;
   flex-direction: column;
   position: absolute;
-  width:100vw;
+  width:80vw;
 }
 `;
 
@@ -59,6 +59,9 @@ export const ModalRightColumnImage = Styled.img`
 export const ModalRightColumnForm = Styled.form`
  display: grid;
  grid-template-columns: 1fr 1fr;
+ @media(max-width:900px){
+  grid-template-columns: 1fr;
+ }
 `;
 
 export const ModalRightColumnInput = Styled.input`
