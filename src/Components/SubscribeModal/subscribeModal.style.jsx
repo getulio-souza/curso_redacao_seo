@@ -70,6 +70,7 @@ border-bottom: 0.5px solid #D3D3D3;
 text-align:center;
 margin:10px;
 padding:5px;
+font-size: 10px;
 `;
 
 export const ModalRightColumnButton = Styled.button`
