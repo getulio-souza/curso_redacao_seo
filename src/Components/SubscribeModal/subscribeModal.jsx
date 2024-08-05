@@ -30,6 +30,21 @@ const formatPhoneNumber = (value) => {
   )}`;
 };
 
+//logica para validar o nome de usuario
+
+const validateUserName = (username) => {
+  const hasOnlyLetterAndSpaces = /^[A-Za-z\s]+$/.test(username);
+
+  const alphabeticCharacterCount = (username.match(/[A-Za-z]/g) || []).length;
+  return hasOnlyLetterAndSpaces && alphabeticCharacterCount >= 10;
+};
+
+//logica para vlaidar o email
+const validateEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email)
+}
+
 //logica para validar o campo de senha
 const validatePassword = (password) => {
   const hasUpperCase = /[A-Z]/.test(password);
@@ -43,6 +58,8 @@ function SubscribeModal({ closeModal }) {
   const [OpenSubscribeModal, SetOpenSubscribeModal] = useState(false);
 
   //inputs validations
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const handlePhoneNumber = (e) => {
@@ -53,6 +70,37 @@ function SubscribeModal({ closeModal }) {
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const [sucessMessage, setSucessMessage] = useState("");
+
+  //funcao para verificar nome do usuario
+  const handleUserName = (e) => {
+    const userNameValue = e.target.value;
+    setUserName(userNameValue);
+
+    if (userNameValue === "") {
+      setErrorMessage("O nome é obrigatório.")
+    } else if (!validateUserName(userNameValue)) {
+      setErrorMessage("O nome deve conter apenas caracteres alfabéticos.");
+      setSucessMessage("");
+    } else {
+      setErrorMessage("");
+      setSucessMessage("O nome é válido!");
+    }
+  }
+
+  const handleEmail = (e) => {
+    const emailValue = e.target.value;
+    setEmail(emailValue);
+
+    if (emailValue === "") {
+      setErrorMessage("E-mail é obrigatório.")
+    } else if (!validateEmail(emailValue)) {
+      setErrorMessage("O e-mail deve estar no padrão correto.")
+      setSucessMessage("")
+    } else {
+      setErrorMessage("");
+      setSucessMessage("O e-mail está no padrão correto.")
+    }
+  }
 
   const handlePassword = (e) => {
     const passwordValue = e.target.value;
@@ -70,6 +118,14 @@ function SubscribeModal({ closeModal }) {
     }
   };
 
+  //habilta o botao de cadastro apenas se os campos estiverem preenchidos 
+  const isUserNameValid = validateUserName(userName);
+  const isEmailValid = validateEmail(email)
+  const isPhoneNumberValid = phoneNumber.replace(/\D/g, "").length === 11;
+  const isPasswordValid = validatePassword(password)
+  
+  const isFormValid = isUserNameValid && isEmailValid && isPhoneNumberValid && isPasswordValid
+
   return (
     <ModalContainer>
       <ModalCloseBtn onClick={() => closeModal(false)}>X</ModalCloseBtn>
@@ -85,8 +141,20 @@ function SubscribeModal({ closeModal }) {
         <ModalRightColumnTitle>Curso de redação para SEO</ModalRightColumnTitle>
         <ModalRightColumnImage src={ModalImg}></ModalRightColumnImage>
         <ModalRightColumnForm>
-          <ModalRightColumnInput placeholder="Nome"></ModalRightColumnInput>
-          <ModalRightColumnInput placeholder="E-mail"></ModalRightColumnInput>
+          <ModalRightColumnInput
+            type="text"
+            id="username"
+            value={userName}
+            onChange={handleUserName}
+            placeholder="Seu nome completo"
+          />
+          <ModalRightColumnInput
+            type="email"
+            id="email"
+            value={email}
+            onChange={handleEmail}
+            placeholder="fulano_da_silva@gmail.com"
+          ></ModalRightColumnInput>
           <ModalRightColumnInput
             type="tel"
             id="phone"
@@ -112,7 +180,7 @@ function SubscribeModal({ closeModal }) {
                 fontFamily: "inter",
                 fontSize: "10px",
                 width: "200px",
-                margin: "0 auto"
+                margin: "0 auto",
               }}
             >
               {errorMessage}
@@ -127,7 +195,7 @@ function SubscribeModal({ closeModal }) {
                 fontFamily: "inter",
                 fontSize: "10px",
                 width: "200px",
-                margin: "0 auto"
+                margin: "0 auto",
               }}
             >
               {sucessMessage}
@@ -137,8 +205,11 @@ function SubscribeModal({ closeModal }) {
         {/* subscribe button */}
         <ModalRightColumnButton
           onClick={() => {
-            setOpenLoginModal(true) && SetOpenSubscribeModal(false);
+            if (isFormValid) {
+              setOpenLoginModal(true) && SetOpenSubscribeModal(false);
+            }
           }}
+          disabled={!isFormValid}
         >
           Cadastrar
         </ModalRightColumnButton>
