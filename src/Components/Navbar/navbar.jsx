@@ -121,11 +121,8 @@ const Navbar = () => {
 
           {/* modal button - subscribe */}
           <Modal>
-            {OpenLoginModal && (
-              <LoginModal closeModal={setOpenLoginModal} />
-            )}
+            {OpenLoginModal && <LoginModal closeModal={setOpenLoginModal} />}
           </Modal>
-
         </NavbarExtendedContainer>
       )}
     </NavbarContainer>

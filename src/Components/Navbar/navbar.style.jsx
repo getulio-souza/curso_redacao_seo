@@ -49,28 +49,29 @@ export const CategoryContainer = Styled.div`
 /* Menu mobile button */
 
 export const OpenLinksBtn = Styled.button`
-      background-color: transparent;
-      color:#000;
-      border:none;
-      width:70px;
-      height:50px;
-      font-weight:700;
-      font-size: 45px;
-      cursor: pointer;
-      transition: .5s;
-      z-index:1;
+  background-color: transparent;
+  color:#000;
+  border:none;
+  font-weight:700;
+  font-size: 35px;
+  cursor: pointer;
+  transition: .5s;
+  z-index:1;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   @media(min-width:900px){
     display:none;
   }
 `;
 
 export const NavbarInnerContainer = Styled.div`
-    width:100%;
-    height:80px;
-    display:flex;
+  width:100%;
+  height:80px;
+  display:flex;
 `;
 
-/* Aqui fica o container que vai agrupar os links*/
+/* Aqui fica o container que vai agrupar os links */
 
 export const NavbarLinkContainer = Styled.div`
   display: flex;

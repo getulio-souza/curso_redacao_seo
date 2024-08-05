@@ -14,6 +14,7 @@ import {
 } from "./subscribeModal.style";
 import ModalImg from "../../assets/modal/modal_btn_subscribe.jpg";
 import LoginModal from "../LoginModal/loginModal";
+import closeBtn from "../../assets/modal/close.png"
 
 //formatando numero de telefone para o padrao (xx) xxxxx-xxx
 const formatPhoneNumber = (value) => {
@@ -141,8 +142,8 @@ function SubscribeModal({ closeModal }) {
   return (
     <>
       {OpenSubscribeModal && (
-    <ModalContainer>
-      <ModalCloseBtn onClick={() => closeModal(false)}>X</ModalCloseBtn>
+        <ModalContainer>
+      <ModalCloseBtn  CloseBtn onClick={() => closeModal(false)} src={closeBtn}></ModalCloseBtn>
       {/* left column */}
       <ModalLeftColumn>
         <ModalLeftColumnTitle>VAMOS COMEÇAR?</ModalLeftColumnTitle>

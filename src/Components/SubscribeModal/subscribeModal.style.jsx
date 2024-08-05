@@ -30,6 +30,9 @@ align-items: center;
 padding:50px;
 background-color: #000;
 color: #fff;
+@media(max-width: 900px){
+  padding: 20px;
+}
 `;
 
 export const ModalLeftColumnTitle = Styled.h1`
@@ -91,23 +94,23 @@ export const ModalRightColumnButton = Styled.button`
  }
 `;
 
-export const ModalCloseBtn = Styled.div`
-  width: 20px;
+export const ModalCloseBtn = Styled.img`
+  width: 15px;
+  height: 15px;
   font-family: inter;
   font-size:1.5em;
   font-weight:900;
   color: #000;
   position:absolute;
-  top:0;
-  right:0;
-  margin: 20px;
+  top:10px;
+  right:10px;
   z-index:101;
   transition:.5s;
   cursor: pointer;
-  @media (max-width:900px){
-   color:#fff;
-  }
   &:hover{
-    color: red;
+    opacity: 0.7;
+  }
+  @media(max-width:900px){
+    filter:invert(100);
   }
 `;
