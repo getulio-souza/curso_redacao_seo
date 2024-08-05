@@ -55,21 +55,18 @@ const validatePassword = (password) => {
 
 function SubscribeModal({ closeModal }) {
   const [OpenLoginModal, setOpenLoginModal] = useState(false);
-  const [OpenSubscribeModal, SetOpenSubscribeModal] = useState(false);
-
-  //inputs validations
+  const [OpenSubscribeModal, SetOpenSubscribeModal] = useState(true);
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [sucessMessage, setSucessMessage] = useState("");
 
   const handlePhoneNumber = (e) => {
     setPhoneNumber(formatPhoneNumber(e.target.value));
   };
 
-  //password
-  const [password, setPassword] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-  const [sucessMessage, setSucessMessage] = useState("");
 
   //funcao para verificar nome do usuario
   const handleUserName = (e) => {
@@ -124,9 +121,26 @@ function SubscribeModal({ closeModal }) {
   const isPhoneNumberValid = phoneNumber.replace(/\D/g, "").length === 11;
   const isPasswordValid = validatePassword(password)
   
-  const isFormValid = isUserNameValid && isEmailValid && isPhoneNumberValid && isPasswordValid
+  const isFormValid =
+    userName.trim() !== "" &&
+    email.trim() !== "" &&
+    phoneNumber.trim() !== "" &&
+    password.trim() !== "" &&
+    isUserNameValid &&
+    isEmailValid &&
+    isPhoneNumberValid &&
+    isPasswordValid;
+  
+  const handleSubmit = () => {
+    if (isFormValid) {
+      SetOpenSubscribeModal(false);
+      setOpenLoginModal(true);
+    }
+  };
 
   return (
+    <>
+      {OpenSubscribeModal && (
     <ModalContainer>
       <ModalCloseBtn onClick={() => closeModal(false)}>X</ModalCloseBtn>
       {/* left column */}
@@ -204,18 +218,18 @@ function SubscribeModal({ closeModal }) {
         </ModalRightColumnForm>
         {/* subscribe button */}
         <ModalRightColumnButton
-          onClick={() => {
-            if (isFormValid) {
-              setOpenLoginModal(true) && SetOpenSubscribeModal(false);
-            }
-          }}
+          onClick={handleSubmit}
           disabled={!isFormValid}
         >
           Cadastrar
-        </ModalRightColumnButton>
-        {OpenLoginModal && <LoginModal closeModal={setOpenLoginModal} />}
+          </ModalRightColumnButton>
+          
+        {/* {OpenLoginModal && <LoginModal closeModal={() => setOpenLoginModal(false)} />} */}
       </ModalRightColumn>
     </ModalContainer>
+      )}
+      {OpenLoginModal && <LoginModal closeModal={()=> setOpenLoginModal(false)}/>}
+    </>
   );
 }
 

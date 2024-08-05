@@ -8,7 +8,7 @@ left:50%;
 transform: translate(-50%, -50%);
 display: flex;
 flex-direction: row;
-z-index: 3;
+z-index: 100;
 box-shadow: 2px 5px 7px #111010;
 border-radius: 10px;
 cursor: default;
@@ -101,7 +101,7 @@ export const ModalCloseBtn = Styled.div`
   top:0;
   right:0;
   margin: 20px;
-  z-index:5;
+  z-index:101;
   transition:.5s;
   cursor: pointer;
   @media (max-width:900px){

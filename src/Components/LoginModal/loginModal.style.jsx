@@ -13,7 +13,7 @@ export const LoginModalContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
-  z-index: 3;
+  z-index: 200;
   font-family: inter;
   box-shadow: 2px 5px 10px #000;
   border-radius: 10px;
